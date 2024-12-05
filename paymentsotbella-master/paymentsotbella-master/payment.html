@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alike:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alike:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alike:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alike:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,400;1,400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alike:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alike:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alike:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alike:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alike:wght@400&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl.carousel/2.3.4/owl.carousel.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=MonteCarlo&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=MonteCarlo&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/2.3.4/assets/owl.theme.default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <title>PaymentPage</title>
+</head>
+
+<body>
+  <!-- indicator -->
+  <div class="d-flex justify-content-center indicator-container">
+    <div>
+      <div class="d-flex">
+        <span class="bg-black rounded-circle w-10 h-10"></span>
+        <span class="" style="
+              border-bottom: 1px dotted;
+              width: 95px;
+              justify-content: center;
+              display: flex;
+              margin-bottom: 4.5px;
+            "></span>
+      </div>
+      <div class="center-step-text">Bag</div>
+    </div>
+    <div>
+      <div class="d-flex">
+        <span class="bg-black rounded-circle w-10 h-10"></span>
+        <span class="" style="
+              border-bottom: 1px dotted;
+              width: 95px;
+              justify-content: center;
+              display: flex;
+              margin-bottom: 4.5px;
+            "></span>
+      </div>
+      <div class="center-step-text">Address</div>
+    </div>
+    <div>
+      <div class="d-flex">
+        <span class="bg-black rounded-circle w-10 h-10"></span>
+        <span class="" style="
+              border-bottom: 1px dotted;
+              width: 95px;
+              justify-content: center;
+              display: flex;
+              margin-bottom: 4.5px;
+            "></span>
+      </div>
+      <div class="center-step-text">payment</div>
+    </div>
+    <div>
+      <div class="d-flex">
+        <span class="bg-black rounded-circle w-10 h-10"></span>
+      </div>
+      <div class="center-step-text">Completed</div>
+    </div>
+  </div>
+  <!-- indicator -->
+  <div>
+    <div class="container justify-content-center d-flex">
+      <p class="prepaidorder" style="width: 1300px;">*10% off on prepaid order*</p>
+    </div>
+
+    <div class="container col-md-12 text-start mb-4">
+      <div class="row">
+        <div class="container col-md-7">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="paymentpageleft">
+                <div class="col-md-12">
+                  <div class="url1 m-0 p-0">
+                    <div class="d-flex justify-content-between">
+                      <p class="productpagelines">Order summary (1 item)</p>
+                      <p class="paymentpageprice">₹ 5699.00 ></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="paymentpageleft1">
+                <div class="col-md-12">
+                  <div class="m-0 p-0">
+                    <div class="d-flex justify-content-between">
+                      <p class="productpagelines1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none"
+                          style="margin-top: 25px">
+                          <path
+                            d="M5.08772 6.43765C5.43281 6.43765 5.71255 6.1579 5.71255 5.81282C5.71255 5.46773 5.43281 5.18799 5.08772 5.18799C4.74264 5.18799 4.46289 5.46773 4.46289 5.81282C4.46289 6.1579 4.74264 6.43765 5.08772 6.43765Z"
+                            fill="black" />
+                          <path
+                            d="M9.46174 10.8117C9.80683 10.8117 10.0866 10.5319 10.0866 10.1868C10.0866 9.84176 9.80683 9.56201 9.46174 9.56201C9.11666 9.56201 8.83691 9.84176 8.83691 10.1868C8.83691 10.5319 9.11666 10.8117 9.46174 10.8117Z"
+                            fill="black" />
+                          <path
+                            d="M14.4058 7.48498C14.7973 6.28 14.3715 4.96973 13.3464 4.22493C13.06 4.01686 12.8506 3.72881 12.741 3.39172C12.3495 2.18673 11.2348 1.37695 9.96799 1.37695C9.61402 1.37695 9.27536 1.26667 8.98856 1.0586C7.96353 0.313488 6.58578 0.314113 5.56074 1.0586C5.27426 1.26667 4.9356 1.37695 4.58132 1.37695C3.31416 1.37695 2.19978 2.18673 1.80832 3.39172C1.69898 3.72881 1.48966 4.01686 1.20317 4.22493C0.178138 4.96973 -0.247684 6.27968 0.143772 7.48498C0.25343 7.82177 0.25343 8.17823 0.143772 8.51502C-0.247684 9.72 0.178138 11.0303 1.20317 11.7751C1.48966 11.9831 1.69898 12.2712 1.80863 12.6083C2.20009 13.8133 3.31479 14.6231 4.58163 14.6231C4.9356 14.6231 5.27426 14.7333 5.56106 14.9414C6.07373 15.3138 6.67419 15.5 7.27497 15.5C7.87543 15.5 8.47652 15.3135 8.98888 14.9414C9.27536 14.7333 9.61402 14.6231 9.9683 14.6231C11.2355 14.6231 12.3498 13.8133 12.7413 12.6083C12.8506 12.2712 13.06 11.9831 13.3464 11.7751C14.3715 11.0303 14.7973 9.72031 14.4058 8.51502C14.2962 8.17823 14.2962 7.82177 14.4058 7.48498ZM5.08775 3.93844C6.12153 3.93844 6.96224 4.77915 6.96224 5.81294C6.96224 6.84672 6.12153 7.68743 5.08775 7.68743C4.05396 7.68743 3.21325 6.84672 3.21325 5.81294C3.21325 4.77915 4.05396 3.93844 5.08775 3.93844ZM4.59225 11.5658C4.47041 11.6879 4.31046 11.7488 4.1505 11.7488C3.99054 11.7488 3.83059 11.6879 3.70874 11.5658C3.46475 11.3218 3.46475 10.9262 3.70874 10.6822L9.95705 4.43393C10.2007 4.18994 10.5969 4.18994 10.8406 4.43393C11.0846 4.67793 11.0846 5.07345 10.8406 5.31745L4.59225 11.5658ZM9.46156 12.0612C8.42778 12.0612 7.58707 11.2205 7.58707 10.1868C7.58707 9.15297 8.42778 8.31226 9.46156 8.31226C10.4953 8.31226 11.3361 9.15297 11.3361 10.1868C11.3361 11.2205 10.4953 12.0612 9.46156 12.0612Z"
+                            fill="black" />
+                        </svg>
+                        &nbsp;<input type="int" maxlength="10" placeholder="Enter coupon code" />
+                      </p>
+                      <p class="paymenetapply"><u>Apply</u></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="coupon">
+                <div class="col-md-12">
+                  <div class="url1 m-0">
+                    <div class="d-flex justify-content-center">
+                      <p class="viewcoupon">
+                        View all coupons &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="6" height="12"
+                          viewBox="0 0 6 12" fill="none">
+                          <path
+                            d="M6 5.99683C5.9999 6.10431 5.95476 6.20735 5.87451 6.28331L0.740799 11.121C0.701634 11.1608 0.654403 11.1927 0.601926 11.2149C0.549448 11.2371 0.492798 11.249 0.435356 11.2499C0.377914 11.2509 0.320856 11.2409 0.267587 11.2205C0.214317 11.2001 0.165927 11.1698 0.125303 11.1313C0.0846785 11.0928 0.052653 11.0469 0.0311364 10.9964C0.0096199 10.946 -0.000946921 10.8919 6.65784e-05 10.8375C0.00108008 10.783 0.0136531 10.7293 0.0370354 10.6796C0.0604177 10.6299 0.0941303 10.5851 0.136162 10.548L4.96185 5.9698L0.101937 1.36456C0.0517307 1.28558 0.031439 1.19273 0.0444103 1.10135C0.0573816 1.00997 0.102841 0.925504 0.173287 0.861898C0.243734 0.798292 0.334959 0.759343 0.431909 0.751478C0.52886 0.743612 0.625743 0.767301 0.706574 0.818635L5.8688 5.71035C5.90957 5.74751 5.94216 5.79197 5.96468 5.84114C5.9872 5.89031 5.99921 5.94323 6 5.99683Z"
+                            fill="black" />
+                        </svg>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="coupon">
+                <div class="col-md-12">
+                  <div class="url1 m-0" style="border: 1px solid black">
+                    <div class="d-flex justify-content-between deledit">
+                      <p class="deliverydetails">DELIVERY DETAILS</p>
+                      <p class="editaddreess">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
+                          <path
+                            d="M10.9917 2.08781C10.9535 1.75015 10.7863 1.44612 10.5233 1.23286L9.95413 0.776496C9.69115 0.565134 9.36242 0.4693 9.02744 0.508654C8.69433 0.547371 8.39441 0.716831 8.1859 0.983422L1.01901 10.1462C0.826788 10.3918 0.701551 10.6838 0.655226 10.9942L0.369711 12.923C0.34216 13.1033 0.411663 13.2772 0.552542 13.3908C0.64208 13.4626 0.749783 13.5 0.858735 13.5C0.92135 13.5 0.983964 13.4886 1.04282 13.4645L2.82977 12.7428C3.11655 12.6273 3.37013 12.4356 3.56048 12.1906L10.7274 3.02783C10.9359 2.76125 11.0304 2.42676 10.9916 2.08846L10.9917 2.08781ZM3.18424 11.8872C3.04461 12.0662 2.86053 12.2039 2.65202 12.2883L0.865066 13.01L0.954605 13.236L0.845655 12.9941L1.13117 11.0653C1.16498 10.8393 1.2564 10.6267 1.3954 10.4477L6.8917 3.42015L8.68058 4.85841L3.18427 11.8859L3.18424 11.8872ZM8.97982 4.47636L7.19094 3.03809L7.63989 2.46432L9.42877 3.90259L8.97982 4.47636ZM10.3505 2.72524L9.72682 3.52117L7.93794 2.0829L8.56158 1.28698C8.69119 1.12132 8.8759 1.01722 9.08253 0.993107C9.11322 0.989933 9.14327 0.988029 9.17395 0.988029C9.34864 0.988029 9.51707 1.04642 9.65671 1.15877L10.2259 1.61513C10.3893 1.74651 10.492 1.93375 10.5158 2.14321C10.5396 2.35267 10.482 2.55895 10.3524 2.72333L10.3505 2.72524Z"
+                            fill="black" />
+                        </svg>
+                        &nbsp;<u>Edit</u>
+                      </p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                      <p class="addressename">
+                        Aritra Paul <span>(Default)</span>
+                      </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="addressline1">
+                        A-216, Sector - 83, Noida, Uttar Pradesh, 201308
+                      </p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="addressline1">Mobile: 7059285044</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="cartpagelines">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="12" viewBox="0 0 17 12" fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 1.15647C0 0.793994 0.304399 0.5 0.680502 0.5H10.1997C10.5758 0.5 10.8802 0.793994 10.8802 1.15647V2.4702H13.458C14.1935 2.4702 14.8716 2.8527 15.2342 3.47069L16.5155 5.66097C16.8327 6.20354 17 6.81539 17 7.43876V8.54469C17 9.27044 16.3912 9.85843 15.6398 9.85843H15.2923C15.2063 10.7789 14.4054 11.5 13.4301 11.5C12.4548 11.5 11.6531 10.7789 11.5679 9.85843H5.77242C5.68636 10.7789 4.88552 11.5 3.91019 11.5C2.93485 11.5 2.13402 10.7789 2.04795 9.85843H0.680563C0.30444 9.85843 6.12811e-05 9.56443 6.12811e-05 9.20195L0 1.15647ZM2.11092 9.20199C2.33244 8.44392 3.05439 7.88826 3.91021 7.88826C4.76602 7.88826 5.48797 8.44392 5.70949 9.20199H10.1998V1.15647H0.680645V9.20199H2.11092ZM10.8802 9.20199H11.63C11.8523 8.44392 12.5735 7.88826 13.4301 7.88826C14.2859 7.88826 15.0071 8.44392 15.2294 9.20199H15.6398C16.0151 9.20199 16.3195 8.908 16.3195 8.54475V7.43882C16.3195 7.23949 16.2988 7.0417 16.2581 6.84853L13.2278 5.91729C12.7505 5.7703 12.3959 5.38242 12.3035 4.90756L11.9576 3.12668H10.8803L10.8802 9.20199ZM12.6492 3.12668L12.9719 4.78596C13.0181 5.02376 13.1951 5.21771 13.4341 5.29082L15.9728 6.0712C15.9569 6.04196 15.9401 6.01348 15.9234 5.98424L14.6421 3.79396C14.4006 3.38223 13.948 3.12671 13.4579 3.12671L12.6492 3.12668ZM3.91013 8.54473C3.29815 8.54473 2.79294 8.99187 2.7276 9.56601C2.72282 9.60834 2.72043 9.65067 2.72043 9.69453C2.72043 10.3287 3.25273 10.8436 3.91011 10.8436C4.5675 10.8436 5.0998 10.3287 5.0998 9.69453C5.0998 9.65066 5.09741 9.60834 5.09263 9.56601C5.02729 8.99187 4.52211 8.54473 3.91013 8.54473ZM13.4301 8.54473C12.8173 8.54473 12.3129 8.99187 12.2468 9.56601C12.242 9.60834 12.2396 9.65067 12.2396 9.69453C12.2396 10.3287 12.7727 10.8436 13.4301 10.8436C14.0867 10.8436 14.6198 10.3287 14.6198 9.69453C14.6198 9.65066 14.6174 9.60834 14.6126 9.56601C14.5465 8.99187 14.0421 8.54473 13.4301 8.54473Z"
+                            fill="black" />
+                        </svg>
+                        &nbsp; Delivered by: Thursday, Nov 21 <span style="background:#D9D9D9 ; padding: 2.5px;">Free
+                          shipping
+                          for you</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="paymentpath">
+                <div class="col-md-12">
+                  <div style="border: 1px solid black">
+                    <div class="url1 m-0">
+                      <div class="d-flex justify-content-between">
+                        <p class="cartpagelines">PAY VIA</p>
+                      </div>
+
+                      <div class="d-flex justify-content-between">
+                        <p class="cartpagelines">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8" viewBox="0 0 6 8" fill="none">
+                            <path
+                              d="M5.6992 2.06652H4.71965C4.66258 1.48876 4.37628 0.953139 3.91879 0.568007H5.70061C5.86574 0.568007 6 0.440649 6 0.284004C6 0.127359 5.86574 0 5.70061 0L0.300884 0.0146444H0.271881C0.261589 0.0142006 0.251297 0.0142006 0.241007 0.0146444C0.232119 0.0164194 0.223231 0.0186381 0.214342 0.0217445L0.184404 0.0306196L0.159143 0.0443756L0.133882 0.0568013L0.110024 0.0749957L0.0894408 0.0918587C0.0824239 0.0985151 0.076342 0.106503 0.0688573 0.11449C0.0618405 0.122478 0.0566951 0.126916 0.0520175 0.134016H0.0529531C0.0473396 0.142447 0.0426617 0.151322 0.0384521 0.160198L0.0253534 0.181942L0.0159976 0.211674V0.21123C0.0127231 0.219218 0.0103841 0.227205 0.00851297 0.235193C0.00804521 0.2454 0.00804521 0.255606 0.00851297 0.265812C0.00804521 0.274688 0.00804521 0.284007 0.00851297 0.292882C0.00804521 0.303532 0.00804521 0.313738 0.00851297 0.323945C0.00804521 0.332376 0.00804521 0.341251 0.00851297 0.349682C0.0108519 0.360332 0.0141263 0.370538 0.0183364 0.380745L0.0253534 0.403377C0.0309669 0.414471 0.0375157 0.424677 0.0445333 0.434883C0.0464045 0.440652 0.0492112 0.445977 0.0529536 0.450858L0.0782145 0.48059C0.0782145 0.48059 0.0852315 0.489465 0.0903768 0.493015H0.0899088C0.0992648 0.501447 0.109556 0.509434 0.119847 0.516979L0.134349 0.528516V0.528072C0.146043 0.535172 0.157738 0.540941 0.170368 0.546266L0.184869 0.554254L0.220889 0.56446L0.241473 0.570229H0.241005C0.26112 0.574667 0.281235 0.577329 0.301817 0.576886H2.38578C2.81568 0.582654 3.22922 0.737086 3.54824 1.01088C3.86728 1.28468 4.06983 1.65964 4.11848 2.06523H0.299386C0.134257 2.06523 0 2.19259 0 2.34924C0 2.50633 0.134257 2.63324 0.299386 2.63324H4.09692C4.02301 3.01487 3.81157 3.36011 3.49908 3.60995C3.18659 3.86023 2.79226 3.99957 2.3834 4.00446H0.299434C0.187633 4.00756 0.0865945 4.06924 0.0374712 4.16466C-0.0116473 4.26006 -0.000420352 4.37322 0.0660063 4.45886L2.98921 7.89394C3.04582 7.96095 3.13095 8 3.2217 8C3.33678 7.99911 3.4411 7.93565 3.49069 7.83714C3.54027 7.73818 3.52577 7.62148 3.45373 7.53628L0.925833 4.57242H2.38348C2.94952 4.56665 3.49448 4.36873 3.91969 4.01417C4.34492 3.66005 4.62232 3.17281 4.70184 2.64118H5.69916C5.86476 2.64118 5.99855 2.51382 5.99855 2.35718C5.99855 2.20053 5.86476 2.07317 5.69916 2.07317L5.6992 2.06652Z"
+                              fill="#888888" />
+                          </svg>5699.00 ₹ 5400.00 Pay online and save ₹ 299.00
+                        </p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <p class="cartpagelines2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M18.5708 12.7642L9.56691 21L10.4305 17.9876C10.5078 17.7162 10.7912 17.5591 11.0622 17.6372C11.2215 17.682 11.3418 17.7981 11.3981 17.9409L17.5918 12.2769L14.7159 6.74685L14.7035 6.78875C14.6252 7.06011 14.3428 7.21625 14.0708 7.13913C13.7998 7.062 13.6424 6.77922 13.7197 6.50883L14.4392 4L18.6796 12.1539C18.7855 12.3576 18.7416 12.609 18.5708 12.7642ZM9.98097 16.2071L14.401 12.1644L12.3007 8.12068L9.98097 16.2071ZM8 19.4032L15.6692 12.3881L12.026 5.37298L8 19.4032Z"
+                              fill="black" />
+                          </svg>
+                          &nbsp;UPI (Google pay/Phone pay)
+                        </p>
+
+                        <p class="cartpagelines2">
+                          <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                            aria-label="..." />
+                        </p>
+                      </div>
+
+                      <div class="d-flex justify-content-between" style="border-top: 1px solid black">
+                        <p class="cartpagelines2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                            fill="none">
+                            <path
+                              d="M6.70716 7C5.76661 7 5 7.76484 5 8.70539V10.3456V12.4632V17.7137C5 18.6543 5.76661 19.4209 6.70716 19.4209H20.2922C21.2328 19.4209 22 18.6543 22 17.7137V12.4632V10.3456V8.70539C22 7.76484 21.2328 7 20.2922 7H6.70716ZM6.70716 7.60636H20.2922C20.9074 7.60636 21.3936 8.09027 21.3936 8.70539V10.0413H5.60636V8.70539C5.60636 8.09027 6.09205 7.60636 6.70716 7.60636ZM5.60636 10.6482H21.3936V12.1588H5.60636V10.6482ZM5.60636 12.7652H21.3936V17.7137C21.3936 18.3289 20.9074 18.8146 20.2922 18.8146H6.70716C6.09205 18.8146 5.60636 18.3289 5.60636 17.7137V12.7652ZM7.46156 14.766C7.42118 14.7651 7.38103 14.7723 7.34346 14.7871C7.30589 14.802 7.27167 14.8242 7.24279 14.8524C7.21391 14.8807 7.19097 14.9144 7.17531 14.9516C7.15964 14.9888 7.15158 15.0288 7.15158 15.0692C7.15158 15.1096 7.15964 15.1496 7.17531 15.1868C7.19097 15.224 7.21391 15.2578 7.24279 15.286C7.27167 15.3143 7.30589 15.3364 7.34346 15.3513C7.38103 15.3661 7.42118 15.3733 7.46156 15.3724H11.2774C11.3566 15.3706 11.432 15.3379 11.4874 15.2813C11.5429 15.2246 11.5739 15.1485 11.5739 15.0692C11.5739 14.99 11.5429 14.9138 11.4874 14.8572C11.432 14.8005 11.3566 14.7678 11.2774 14.766H7.46156ZM7.46156 16.4045C7.42118 16.4036 7.38103 16.4108 7.34346 16.4256C7.3059 16.4405 7.27167 16.4626 7.2428 16.4909C7.21392 16.5191 7.19098 16.5529 7.17532 16.5901C7.15966 16.6273 7.15159 16.6673 7.15159 16.7077C7.15159 16.7481 7.15966 16.7881 7.17532 16.8253C7.19098 16.8625 7.21392 16.8962 7.2428 16.9245C7.27167 16.9527 7.3059 16.9749 7.34346 16.9897C7.38103 17.0046 7.42118 17.0118 7.46156 17.0109H9.09116C9.13154 17.0118 9.17169 17.0046 9.20925 16.9897C9.24682 16.9749 9.28105 16.9527 9.30992 16.9245C9.33879 16.8962 9.36174 16.8625 9.3774 16.8253C9.39306 16.7881 9.40113 16.7481 9.40113 16.7077C9.40113 16.6673 9.39306 16.6273 9.3774 16.5901C9.36174 16.5529 9.33879 16.5191 9.30992 16.4909C9.28105 16.4626 9.24682 16.4405 9.20925 16.4256C9.17169 16.4108 9.13154 16.4036 9.09116 16.4045H7.46156Z"
+                              fill="black" />
+                          </svg>&nbsp;Debit/Credit Card
+                        </p>
+
+                        <p class="cartpagelines2">
+                          <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                            aria-label="..." />
+                        </p>
+                      </div>
+
+                      <div class="d-flex justify-content-between" style="border-top: 1px solid black">
+                        <p class="cartpagelines2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                            fill="none">
+                            <path
+                              d="M20.9862 14.1339H19.3453V10.5745H20.792H20.7951C20.9245 10.5745 21.0291 10.47 21.0291 10.3406C21.0291 10.2415 20.9674 10.1565 20.8801 10.1222L13.1226 6.02691C13.054 5.99103 12.9721 5.99103 12.9042 6.02691L5.12479 10.1338C5.02964 10.1837 4.98129 10.2929 5.00703 10.3974C5.03276 10.5019 5.12635 10.5752 5.23397 10.5752H6.68067V16.7448H5.23397C5.10451 16.7448 5 16.8493 5 16.9788V18.6914C5 18.8209 5.10451 18.9254 5.23397 18.9254L12.1899 18.9246V19.8909C12.1899 20.4501 12.6445 20.9047 13.2037 20.9047H20.9861C21.5453 20.9047 22 20.4501 22 19.8909V15.1484C22 14.5892 21.5454 14.1339 20.9862 14.1339ZM21.5321 15.1478V15.9869L12.6578 15.9877V15.1486C12.6578 14.8475 12.9027 14.6026 13.2037 14.6026H14.0764H14.0772H14.0779H17.5539H17.5547H17.5554H20.9863C21.2873 14.6018 21.5321 14.8467 21.5321 15.1478ZM21.5321 17.6209H12.6578V16.4557H21.5321V17.6209ZM8.70604 16.7443V10.5746H10.1582V16.7443H8.70604ZM10.6261 10.5746H11.7149V16.7443H10.6261V10.5746ZM12.1836 10.5746H13.8432V14.134H13.2037C12.6445 14.134 12.1898 14.5887 12.1898 15.1479V16.7435H12.1836L12.1836 10.5746ZM17.3206 10.5746V14.134H15.8685V10.5746H17.3206ZM15.4005 14.134H14.311V10.5746H15.4005V14.134ZM18.8773 14.134H17.7886V10.5746H18.8773V14.134ZM13.0133 6.49813L19.8482 10.1066H6.17821L13.0133 6.49813ZM7.14932 10.5746H8.23804V16.7443H7.14932V10.5746ZM5.46787 18.4569V17.2122H12.1898V18.4569H5.46787ZM20.9862 20.437H13.2038C12.9028 20.437 12.6579 20.1921 12.6579 19.8911V18.0888H21.5322V19.8911C21.5322 20.1921 21.2873 20.437 20.9862 20.437Z"
+                              fill="black" />
+                            <path
+                              d="M20.0029 18.8804H18.7574C18.6279 18.8804 18.5234 18.9849 18.5234 19.1143C18.5234 19.2438 18.6279 19.3483 18.7574 19.3483H20.0029C20.1324 19.3483 20.2369 19.2438 20.2369 19.1143C20.2369 18.9849 20.1324 18.8804 20.0029 18.8804Z"
+                              fill="black" />
+                          </svg>
+                          &nbsp;Net Banking
+                        </p>
+
+                        <p class="cartpagelines2">
+                          <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                            aria-label="..." />
+                        </p>
+                      </div>
+                    </div>
+                    <div class=" m-0">
+                      <div>
+                        <div class="d-flex justify-content-between" style="padding-left: 8px;">
+                          <p class=" cartpagelines">Pay in cash</p>
+                          <p class="" style="border-top: 1px solid #9D9D9D;width: 90%;margin-top: 10px;"></p>
+                        </div>
+                        <div class="d-flex justify-content-between" style="padding-left: 8px; padding-right: 8px;">
+                          <p class="cartpagelines">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                              fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.48172 7.7323V12.5494H7.2653V7.7323H5.48172ZM8.14292 11.9817C9.14078 12.2482 10.049 12.2824 11.0008 12.0882C11.0762 12.073 11.1545 12.0946 11.2112 12.1465L13.2319 13.9857C13.5643 14.2882 14.081 14.2639 14.3834 13.9318C14.6857 13.5994 14.6614 13.0828 14.3293 12.7803L12.3257 10.9567C12.2311 10.8701 12.1525 10.8107 12.0716 10.6674C11.9911 10.5246 11.9554 10.3819 11.9668 10.2424C11.9769 10.1171 12.0812 10.0204 12.207 10.0204H15.7861L14.0437 8.62156C13.8063 8.43096 13.5344 8.33703 13.1352 8.30767C11.14 8.1611 9.30253 8.20591 7.74702 8.27628V11.9738C7.82236 11.9738 8.08762 11.9672 8.14292 11.9817ZM8.36517 15.2289L8.84663 13.4314V15.5458L8.49351 15.4511C8.39796 15.4255 8.33948 15.3243 8.36517 15.2289ZM19.9172 18.5123C20.0139 18.5381 20.1137 18.4804 20.1395 18.3837L20.6668 16.4158H12.0936L19.9172 18.5123ZM16.7778 13.2182C16.7778 12.4715 16.1701 11.8635 15.4233 11.8635C15.0613 11.8635 14.7209 12.0075 14.4698 12.2566L13.5337 11.4045H19.8479V11.951C19.8479 12.0839 19.9557 12.192 20.0886 12.192H20.6351V14.2442H20.0886C19.9557 14.2442 19.8479 14.3523 19.8479 14.4852V15.0317H11.258V14.4852C11.258 14.3523 11.1502 14.2442 11.017 14.2442H10.2115V12.6798C10.4654 12.6633 10.7193 12.6317 10.976 12.5839L12.9077 14.3419C13.4081 14.7975 14.1706 14.7874 14.6594 14.3363C14.8826 14.49 15.1466 14.5725 15.4233 14.5725C16.1701 14.5725 16.7778 13.965 16.7778 13.2182ZM14.9469 13.9493C15.1583 13.5136 15.1094 12.9869 14.8115 12.5965C14.9727 12.4373 15.1914 12.3454 15.4233 12.3454C15.9043 12.3454 16.2959 12.737 16.2959 13.2182C16.2959 13.9136 15.5203 14.3244 14.9469 13.9493ZM21.3368 15.9339H9.5101C9.42011 15.9339 9.34316 15.8653 9.33189 15.7842C9.32176 15.7114 9.32836 12.995 9.32836 12.6758C9.46251 12.6861 9.59641 12.692 9.72982 12.6932V14.4852C9.72982 14.6183 9.83766 14.7262 9.97054 14.7262H10.7763V15.2727C10.7763 15.4053 10.8841 15.5134 11.017 15.5134H20.0886C20.2217 15.5134 20.3296 15.4053 20.3296 15.2727V14.7262H20.8761C21.0087 14.7262 21.1168 14.6183 21.1168 14.4852V11.951C21.1168 11.8179 21.0087 11.7101 20.8761 11.7101H20.3296V11.1638C20.3296 11.0309 20.2217 10.9228 20.0886 10.9228H13.0044L12.6502 10.6003L12.5432 10.5023H21.3368C21.4368 10.5023 21.518 10.5839 21.518 10.6838V15.7521C21.518 15.8523 21.4368 15.9339 21.3368 15.9339ZM7.74702 7.68345V7.79432C9.31215 7.72369 11.16 7.67939 13.1702 7.82722C13.6678 7.86392 14.0303 7.99278 14.3455 8.24616L16.5553 10.0204H21.3368C21.7023 10.0204 22 10.3181 22 10.6838V15.7521C22 16.1181 21.7023 16.4158 21.3368 16.4158H21.1657L20.6047 18.5082C20.51 18.8614 20.1461 19.0721 19.7927 18.9773L10.232 16.4158H9.5101C9.25747 16.4158 9.03774 16.2736 8.92562 16.0657L8.36871 15.9164C8.01393 15.8212 7.80554 15.4558 7.89966 15.1038L8.57756 12.5745C8.4034 12.5416 8.22797 12.5024 8.04926 12.4555H7.74702V12.5983C7.74702 12.837 7.55312 13.0312 7.31466 13.0312H5.43286C5.19416 13.0312 5 12.837 5 12.5983V7.68345C5 7.44473 5.19416 7.25059 5.43286 7.25059H7.31466C7.55312 7.25059 7.74702 7.44473 7.74702 7.68345Z"
+                                fill="black" />
+                            </svg>
+                            &nbsp; Cash on delivery
+                          </p>
+
+                          <p class="cartpagelines">
+                            <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                              aria-label="..." />
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="m-0 p-0 my-4">
+            <div class="d-grid d-md-block">
+              <button class="btn standarddelivery" type="button">
+                Standard Delivery
+              </button>
+              <button class="btn expressdelivery" type="button">
+                Express Delivery
+              </button>
+            </div>
+          </div>
+
+          <div class="url1 m-0 p-0 my-4 p-4" style="border: 1px solid black">
+            <div class="price-details">
+              <p class="item1price">Price Details (1 items)</p>
+              <div class="d-flex justify-content-between">
+                <p class="cartpagelines">MRP</p>
+                <p class="cartpagelines">₹ 6899.00</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="cartpagelines">Discount on MRP</p>
+                <p class="cartpagelines">₹ 5899.00</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="cartpagelines">Coupon Discount</p>
+
+                <p class="cartpagelines">₹ 589.00</p>
+              </div>
+              <p class="shippingforu"><small>EXTRA 10</small></p>
+
+              <div class="d-flex justify-content-between">
+                <p class="cartpagelines">Prepaid Discount</p>
+                <p class="cartpagelines">₹ 299.00</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="cartpagelines">Shipping</p>
+
+                <p class="cartpagelines">FREE</p>
+              </div>
+              <p class="shippingforu"><small>Free shopping for you</small></p>
+              <div class="d-flex justify-content-between">
+                <p class="cartpagelines">Total Price (inc. all taxes)</p>
+                <p class="cartpagelines">₹ 5011.00</p>
+              </div>
+            </div>
+            <div class="">
+              <div style="border-top: 1px solid black">
+                <div class="d-flex justify-content-between pt-4">
+                  <p class="item1price1">Price Details (1 items)</p>
+                  <p class="item1price1">₹ 5011.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="url1 m-0 p-0">
+            <div class="cart-btn">
+              <button class="buttoncontinue" type="button">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid justify-content-between align-items-center text-center faq faqcart g-0">
+      <div class="row w-100">
+        <div class="col">
+          <img src="./assets/images/Groupicon.png" class="img-fluid mb-2" alt="Remarkable Product Quality" />
+          <p class="text-white mb-0">Remarkable Product Quality</p>
+        </div>
+        <div class="col">
+          <img src="./assets/images/customersupport.png" class="img-fluid mb-2" alt="24/7 Customer Support" />
+          <p class="text-white mb-0">24/7 Customer Support</p>
+        </div>
+        <div class="col">
+          <img src="./assets/images/customersupport.png" class="img-fluid mb-2" alt="7 Days Return Policy" />
+          <p class="text-white mb-0">7 Days Return Policy</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Shop -->
+          <div class="col-md-2 col-sm-6">
+            <ul class="footer-links">
+              <p>Shop</p>
+              <li>New drop</li>
+              <li>Dresses</li>
+              <li>Co-Ords</li>
+              <li>Denims</li>
+              <li>Partywears</li>
+              <li>Summer Chic</li>
+              <li>Business Collection</li>
+            </ul>
+          </div>
+
+          <!-- Pages -->
+          <div class="col-md-2 col-sm-6 gapinfooter">
+            <ul class="footer-links">
+              <p>Pages</p>
+
+              <li>Want To Collaborate With Us?</li>
+
+              <li>About Us</li>
+            </ul>
+          </div>
+
+          <!-- Help -->
+          <div class="col-md-2 col-sm-6 gapinfooter">
+            <ul class="footer-links">
+              <p>Help</p>
+
+              <li>Track Order</li>
+              <li>Return & Exchange</li>
+              <li>Customer Service</li>
+              <li>Find A Store</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <!-- Exclusive Benefits -->
+          <div class="col-md-2 col-sm-3">
+            <div class="footer-links">
+              <p>Exclusive Benefits</p>
+
+              <span class="footertext1">Apply for our free membership to receive exclusive deals,
+                news, and events.</span>
+              <div class="input-container">
+                <input type="email" placeholder="&nbsp;&nbsp;&nbsp;&nbsp; Email" />
+                <div class="input-addon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 6 10" fill="none">
+                    <path
+                      d="M5.28996 5C5.28996 5.08333 5.25936 5.15625 5.19815 5.21875L0.91358 9.59375C0.791164 9.71875 0.597338 9.71875 0.485123 9.59375C0.362706 9.46875 0.362706 9.27083 0.485123 9.15625L4.55546 5L0.485123 0.84375C0.362706 0.71875 0.362706 0.520834 0.485123 0.40625C0.607539 0.28125 0.801365 0.28125 0.91358 0.40625L5.19815 4.78125C5.25936 4.84375 5.28996 4.91667 5.28996 5Z"
+                      fill="black" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 row mb-4 text-center">
+        <div class="app-icons">
+          <img src="./assets/images/playstore1.png" alt="Google Play" class="app-icon" />
+
+          <img src="./assets/images/appstore1.png" alt="App Store" class="app-icon" />
+        </div>
+      </div>
+
+      <div class="footer container down">
+        <div class="row">
+          <div class="col-md-6 mb-4 text-center text-md-start">
+            <span class="footer-heading">Follow Us On</span>
+            <ul class="social-links list-unstyled d-flex justify-content-center justify-content-md-start gap">
+              <li>
+                <a href="https://www.facebook.com/sotbellastyle/" class="footer-social__link">
+                  <img src="./assets/images/facebook.svg" alt="facebookicon" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sotbella_in/" class="footer-social__link">
+                  <img src="./assets/images/insta.png" alt="insta" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@Sotbella" class="footer-social__link">
+                  <img src="./assets/images/youtube.svg" alt="youtube" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/sotbellaindia" class="footer-social__link">
+                  <img src="./assets/images/twitter.svg" alt="twitter" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Copyright Section -->
+          <div class="col-md-6 mb-4 text-center text-md-end">
+            <span class="reserved d-block mt-3">&copy; 2024 Sotbella. All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </div>
+</body>
+
+</html>

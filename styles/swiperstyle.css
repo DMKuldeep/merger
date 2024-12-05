@@ -1,0 +1,45 @@
+.containercustomswiper {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  background-color: #fff;
+}
+
+.resizable-div {
+  flex: 1;
+  transition: flex 0.2s ease;
+}
+
+.customswiperleft {
+  background: url("../../assets/images/collection1.jfif") no-repeat center
+    center;
+  background-size: cover;
+  width: 300px;
+  flex: 30;
+  height: 670px;
+}
+
+.customswiperright {
+  background: url("../../assets/images/topview.png") no-repeat center center;
+  background-size: cover;
+  width: 720px;
+  flex: 70;
+  height: 670px;
+}
+
+.resizable-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0px;
+  /* width: 10px; */
+  /* background-color: #2c3e50; */
+  cursor: ew-resize;
+  user-select: none; /* Prevent text selection while dragging */
+}
+
+.resizable-button div {
+  position: absolute;
+  cursor: pointer;
+}
