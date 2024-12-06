@@ -25,6 +25,12 @@ span.default {
   line-height: 20px;
 }
 
+.bg-completed{
+  background-color: #9d9d9d;
+}
+
+
+
 /* fresh css for address */
 
 
@@ -91,11 +97,21 @@ span.default {
   gap: 16px;
 }
 
+.delivery-text {
+  color: #000;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 .coupon {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 12px;
+  margin-bottom: 8px;
 }
 
 
@@ -987,6 +1003,36 @@ button.loginnow {
   line-height: 20px;
 }
 
+.form-select {
+  display: block;
+  width: 115px;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  -moz-appearance: none;
+  appearance: none;
+}
+select.form-select {
+  height: 29px;
+  width: 113px;
+  font-size: 12px;
+}
+
+p.cartpagelines span {
+  color: #3D3D3D;
+  font-family: Lato;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
 p.cartpagelines {
   color: #3D3D3D;
   font-family: Lato;
@@ -994,6 +1040,7 @@ p.cartpagelines {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  margin-bottom: 18px;
 }
 p.item1price {
   color: #000;
@@ -1002,7 +1049,9 @@ p.item1price {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+  text-transform: uppercase;
 }
+
 
 p.item1price1 {
   color: #000;
@@ -1011,7 +1060,10 @@ p.item1price1 {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+  margin-bottom: -5px;
+  margin-top: -6px;
 }
+
 
 .blog2 {
   margin-top: 25px;
@@ -2075,9 +2127,9 @@ input[type="email"]::placeholder {
   margin-bottom: 8px;
 } */
 
-.faq p {
+/* .faq p {
   font-size: 14px;
-}
+} */
 
 /* .faq ul {
   padding: 0;
