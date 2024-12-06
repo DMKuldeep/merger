@@ -2116,6 +2116,30 @@ input[type="email"]::placeholder {
   row-gap: 24px;
 }
 
+.multipleitemlist{
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  max-height: calc(100vh - 20px); /* Adjust for padding/margins if necessary */
+  overflow-y: auto;
+}
+
+.multipleitemlist::-webkit-scrollbar {
+  width: 2px;
+}
+
+.multipleitemlist::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+  width: 0px;
+}
+
+.multipleitemlist::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
 /* .faq {
   background-color: #000;
   padding: 25px 0;
