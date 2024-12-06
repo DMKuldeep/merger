@@ -43,7 +43,7 @@ function changeToStandard() {
 }
 
 function changeToExpress() {
-  // Select buttons
+  // Select button
   var standardBtn = document.querySelector('.standarddelivery');
   var expressBtn = document.querySelector('.expressdelivery');
 
