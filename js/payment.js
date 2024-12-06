@@ -26,6 +26,22 @@ increaseButton.addEventListener('click', () => {
 });
 
 
+ function changeText() {
+    // Select the paragraph element by its class
+    var paragraph = document.querySelector('.expressdeliveryfees');
+
+    // Change the text content to ₹75
+    paragraph.textContent = '₹75';
+  }
+
+  function changeText2() {
+    // Select the paragraph element by its class
+    var paragraph = document.querySelector('.expressdeliveryfees');
+
+    // Change the text content to ₹75
+    paragraph.textContent = 'Free';
+  }
+
 const videoContainers = document.querySelectorAll('.image-container');
 
 videoContainers.forEach(container => {
