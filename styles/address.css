@@ -14,6 +14,20 @@
   overflow: hidden;
 }
 
+/* fresh css for address */
+
+span.default {
+  color: #9D9D9D;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* fresh css for address */
+
+
 .divimage {
   display: flex;
   width: 300px;
@@ -187,6 +201,9 @@ p.productprices {
   font-weight: 400;
   line-height: 20px;
 }
+button.btn span {
+  margin-right: 16px;
+}
 
 .btn-group1, .btn-group1-vertical {
   position: relative;
@@ -195,10 +212,43 @@ p.productprices {
   vertical-align: middle;
   gap: 24px;
   margin-bottom: 16px;
-  border: 0.5px solid #000;
   background: #D9D9D9;
-    background: #D9D9D9;
 
+}
+select.form-select.qty {
+  background: #D9D9D9;
+}
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.form-select.qty {
+  background: #D9D9D9;
+  appearance: none; /* Removes the default dropdown arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  padding-right: 25px; /* Space for custom arrow */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: auto;
+  font-size: 16px;
+}
+
+.btn-group1 select.form-select {
+  /* background: #D9D9D9; */
+  background-color: #D9D9D9;
+}
+
+/* Custom arrow */
+.form-select.qty::after {
+  content: "▼"; /* Unicode character for downward arrow */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: black; /* Black color for the arrow */
 }
 
 p.featuringtext {
@@ -218,11 +268,15 @@ p.featuringtext {
 }
 
 .row.cartitemsection {
-  padding: 16px;
+  padding: 4px;
   align-items: center;
   justify-content: center;
   font-family: lato;
 }
+
+/* .container.col-md-12.addresspagepic {
+  padding: 0px;
+} */
 
 .coupon .firstline {
   margin-top: 16px;
