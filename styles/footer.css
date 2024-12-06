@@ -653,21 +653,11 @@ p.productprices {
   padding-left: 16px;
 }
 
-.gap {
+.footer-heading .gap {
   gap: 24px;
   width: 18px;
   margin-top: 16px;
   margin-bottom: 54px;
-}
-
-/* product page  */
-
-.url {
-  background: #d9d9d9;
-  padding: 16px;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
 }
 
 .url1 {
@@ -677,17 +667,6 @@ p.productprices {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
-}
-
-.pname {
-  color: #000;
-  font-family: Lato;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  /* 157.143% */
-  background: #d9d9d9;
 }
 
 .pname .price1 {
@@ -1051,7 +1030,7 @@ p.item1price1 {
   justify-content: center;
   align-items: center;
   margin-bottom: 28px;
-  width: 147px;
+  /* width: 147px; */
   height: 25px;
 }
 
@@ -1132,7 +1111,7 @@ input[type="email"] {
   width: 100%;
 }
 
-.input-container .input-addon {
+.input-container .input-addon-colaborate {
   position: absolute;
   right: 14px;
 }
