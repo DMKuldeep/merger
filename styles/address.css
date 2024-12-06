@@ -2064,7 +2064,7 @@ input[type="email"]::placeholder {
   row-gap: 24px;
 }
 
-.faq {
+/* .faq {
   background-color: #000;
   padding: 25px 0;
   margin-top: -40px;
@@ -2073,21 +2073,20 @@ input[type="email"]::placeholder {
 .faq img {
   max-width: 80px;
   margin-bottom: 8px;
-}
+} */
 
 .faq p {
   font-size: 14px;
-  color: #fff;
 }
 
-.faq ul {
+/* .faq ul {
   padding: 0;
   margin: 0;
 }
 
 .faq-item {
   flex: 1;
-}
+} */
 
 .spotlight {
   background: url("./assets/images/backgroundspotlight.png") no-repeat center

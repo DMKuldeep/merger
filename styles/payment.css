@@ -70,6 +70,12 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.url1.m-0.deliveryaddresschange {
+  border: 1px solid black;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .form-check-input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -259,8 +265,11 @@ p.paymenetapply {
   /* padding-top: 16px; */
   margin: 0px;
   /* text-decoration: underline; */
-  padding-bottom: 1px;
+  padding-bottom: 0.5px;
   border-bottom: 1px solid black;
+}
+.detailpriceforlastitem {
+  margin-bottom: -24px;
 }
 
 .editaddreess span {
@@ -290,6 +299,10 @@ p.viewcoupon {
 
 .bg-black {
   background: #000;
+}
+
+.bg-completed{
+  background-color: #9d9d9d;
 }
 
 .center-step-text {
@@ -334,7 +347,17 @@ p.viewcoupon {
 .free-shipping {
   background: #d9d9d9;
   padding: 2.5px;
-  border-radius: 3px; /* Optional: Adds rounded corners */
+  
+}
+
+span.rs5699 {
+  text-decoration: line-through;
+  color: #888;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .pay-via {
@@ -371,6 +394,9 @@ span.pay-online {
   margin-left: 16px;
   background: #d9d9d9;
   padding-right: 4px;
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 span.rs299 {
   color: #000;
@@ -413,6 +439,7 @@ p.paymentpageprice {
   line-height: 20px;
   margin-top: 8px;
   margin-bottom: 8px;
+  padding-right: 7px;
 }
 
 button.btn.standarddelivery {
@@ -423,6 +450,11 @@ button.btn.standarddelivery {
   font-weight: 400;
   line-height: 20px;
   background: #3d3d3d;
+  border-radius: 0px;
+}
+
+.container.justify-content-center.d-flex.orderprepaid {
+  margin-bottom: -16px;
 }
 
 button.btn.expressdelivery {
@@ -433,6 +465,7 @@ button.btn.expressdelivery {
   font-weight: 400;
   line-height: 20px;
   border: 0.5px solid #888;
+  border-radius: 0px;
 }
 
 /* payment page css */

@@ -26,21 +26,38 @@ increaseButton.addEventListener('click', () => {
 });
 
 
- function changeText() {
-    // Select the paragraph element by its class
-    var paragraph = document.querySelector('.expressdeliveryfees');
+function changeToStandard() {
+  // Select buttons
+  var standardBtn = document.querySelector('.standarddelivery');
+  var expressBtn = document.querySelector('.expressdelivery');
 
-    // Change the text content to ₹75
-    paragraph.textContent = '₹75';
-  }
+  // Change text
+  var paragraph = document.querySelector('.expressdeliveryfees');
+  paragraph.textContent = 'Free';
 
-  function changeText2() {
-    // Select the paragraph element by its class
-    var paragraph = document.querySelector('.expressdeliveryfees');
+  // Change button styles
+  standardBtn.style.backgroundColor = '#3d3d3d';
+  standardBtn.style.color = '#fff';
+  expressBtn.style.backgroundColor = '#f0f0f0';
+  expressBtn.style.color = '#888';
+}
 
-    // Change the text content to ₹75
-    paragraph.textContent = 'Free';
-  }
+function changeToExpress() {
+  // Select buttons
+  var standardBtn = document.querySelector('.standarddelivery');
+  var expressBtn = document.querySelector('.expressdelivery');
+
+  // Change text
+  var paragraph = document.querySelector('.expressdeliveryfees');
+  paragraph.textContent = '₹75';
+
+  // Change button styles
+  standardBtn.style.backgroundColor = '#f0f0f0';
+  standardBtn.style.color = '#888';
+  expressBtn.style.backgroundColor = '#3d3d3d';
+  expressBtn.style.color = '#fff';
+}
+
 
 const videoContainers = document.querySelectorAll('.image-container');
 

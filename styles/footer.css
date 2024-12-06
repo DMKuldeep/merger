@@ -334,7 +334,7 @@ p.viewcoupon {
 .free-shipping {
   background: #d9d9d9;
   padding: 2.5px;
-  border-radius: 3px; /* Optional: Adds rounded corners */
+
 }
 
 .pay-via {
@@ -350,39 +350,9 @@ p.viewcoupon {
   padding-bottom: 8px;
 }
 
-span.rs5400 {
-  color: #000;
-  font-family: Lato;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  margin-left: 16px;
-}
 
-span.pay-online {
-  color: #000;
-  font-family: Lato;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  margin-left: 16px;
-  background: #d9d9d9;
-  padding-right: 4px;
-}
-span.rs299 {
-  color: #000;
-  font-family: Lato;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  background: #d9d9d9;
-  margin-left: 4px;
-  padding-right: 8px;
-}
+
+
 
 p.productpagelines1 {
   color: #3d3d3d;
@@ -818,32 +788,8 @@ p.discount {
   /* 157.143% */
 }
 
-p.cartpagelines {
-  color: #3d3d3d;
-  font-family: Lato;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-}
 
-p.cartpagelines2 {
-  color: #3d3d3d;
-  font-family: Lato;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  color: #000;
-  font-family: Lato;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: capitalize;
-}
+
 
 .paymentpath {
   margin-bottom: 56px;
@@ -870,14 +816,15 @@ p.item1price1 {
   line-height: 22px;
 }
 
+
+  
+
 .app-icon {
-  width: 181px;
-  height: 55px;
-  border-radius: 20px;
-  margin: 16px;
-  background: url(<path-to-image>) lightgray -11.341px -5.801px / 112.782%
-    121.875% no-repeat;
+  width: 147px;
+  height: 47px;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
+
 
 .app-icon1 {
   width: 181px;
@@ -895,6 +842,7 @@ p.item1price1 {
   font-weight: 300;
   line-height: 20px;
   text-transform: capitalize;
+  margin-top: 46px;
 }
 
 .mini-head {
@@ -971,13 +919,30 @@ p.item1price1 {
 
 .footer-heading {
   color: #000;
-  font-family: "Alike", serif;
+  font-family: "Lato", serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
   text-transform: capitalize;
 }
+.input-container1 {
+  /* width: 268px; */
+  height: 36px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 343px;
+}
+
+
+
+input.footer-input1.emailwidth {
+  width: 343px;
+}
+
+
 
 .col-md-4.col-sm-6.benifits {
   margin-left: -50px;
@@ -1031,7 +996,7 @@ p.item1price1 {
   align-items: center;
   margin-bottom: 28px;
   /* width: 147px; */
-  height: 25px;
+  height: 47px;
 }
 
 .footertext1 {
@@ -1196,10 +1161,7 @@ input[type="email"]::placeholder {
   text-transform: capitalize;
 }
 
-.app-icon {
-  width: 130px;
-  height: auto;
-}
+
 
 .bottom {
   display: flex;
