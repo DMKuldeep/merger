@@ -1,9 +1,5 @@
 
 
-let bigImg = document.querySelector('.big-img img');
-function showImg(pic){
-    bigImg.src = pic;
-}
 
 const decreaseButton = document.getElementById('decrease');
 const increaseButton = document.getElementById('increase');
@@ -49,10 +45,10 @@ videoContainers.forEach(container => {
 
 
 
-setTimeout(() => {
-  const topTextElement = document.getElementById('toptext');
-  topTextElement.textContent = "20% OFF on orders over ₹10,000 | Code: DIWALI10";
-}, 2000); 
+// setTimeout(() => {
+//   const topTextElement = document.getElementById('toptext');
+//   topTextElement.textContent = "20% OFF on orders over ₹10,000 | Code: DIWALI10";
+// }, 2000); 
 
 document.getElementById('heart-container').addEventListener('click', function () {
   const whiteHeart = document.getElementById('white-heart');

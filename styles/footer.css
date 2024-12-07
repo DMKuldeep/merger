@@ -233,14 +233,7 @@ input[type="int"] {
   align-self: stretch;
 }
 
-.productpagelines1 input[type="int"]::placeholder {
-  color: #3d3d3d;
-  font-family: "Lato", sans-serif;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-}
+
 
 p.paymenetapply {
   color: #000;
@@ -338,29 +331,6 @@ p.viewcoupon {
   padding-bottom: 8px;
 }
 
-
-
-
-
-p.productpagelines1 {
-  color: #3d3d3d;
-  font-family: Lato;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-}
-
-p.productpagelines {
-  color: #000;
-  font-family: Lato;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
 
 p.paymentpageprice {
   color: #000;
@@ -501,15 +471,7 @@ p.editaddreess {
   line-height: 22px;
 }
 
-p.shippingforu {
-  margin-top: -19px;
-  color: #3d3d3d;
-  font-family: Lato;
-  font-size: 8px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-}
+
 
 p.customername {
   color: #000;
@@ -564,147 +526,6 @@ p.customeraddress {
   margin-top: 16px;
   margin-bottom: 54px;
 }
-
-
-
-.pname .price1 {
-  color: #000;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 24px;
-  /* 150% */
-  gap: 8px;
-}
-
-.pname .price2 {
-  color: #888;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 24px;
-  /* 150% */
-  text-decoration: line-through;
-  gap: 8px;
-}
-
-.pname .price3 {
-  color: #888;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 22px;
-  /* 157.143% */
-  gap: 16px;
-}
-
-.price {
-  color: #000;
-  font-family: Lato;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  /* 166.667% */
-  display: flex;
-}
-
-.p .underline {
-  color: #000;
-  font-family: Lato;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  text-decoration: underline;
-  text-decoration: solid;
-}
-
-
-.material p {
-  color: #000;
-  font-family: "Lato";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-  /* 166.667% */
-  text-transform: uppercase;
-}
-
-.quantity p {
-  margin-bottom: 8px;
-  color: #000;
-  font-family: Lato;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  /* 166.667% */
-  text-transform: uppercase;
-}
-
-.quantity input {
-  display: flex;
-  padding: 4px 16px;
-  align-items: center;
-  gap: 24px;
-  color: #3d3d3d;
-  font-family: Inter;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px;
-  /* 166.667% */
-}
-
-.counter-container {
-  display: flex;
-  width: 100px;
-  height: 28px;
-  align-items: center;
-  gap: 24px;
-  border: 0.5px solid #9d9d9d;
-  margin-bottom: 16px;
-}
-
-.cart-btn {
-  display: flex;
-  padding: 8px 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-  background: #000;
-  margin-bottom: 62px;
-}
-
-p.discount {
-  color: #000;
-  font-family: Alike;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-}
-
-.buttoncontinue {
-  cursor: pointer;
-  border: none;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  font-family: Lato;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  /* 157.143% */
-}
-
 
 
 
@@ -1009,20 +830,6 @@ input[type="email"]::placeholder {
   text-transform: capitalize;
 }
 
-.description {
-  color: #000;
-  text-align: center;
-  font-family: Lato;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  /* 166.667% */
-  text-transform: uppercase;
-  margin-left: -10px;
-  gap: 16px;
-  display: flex;
-}
 
 /* Default Heart Icon */
 

@@ -14,7 +14,10 @@
 
 /* collection connect */
 
-
+.threesvg{
+  margin-top: -25px ! important;
+  position: relative;
+}
 
 .icon {
   cursor: pointer;

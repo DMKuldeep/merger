@@ -1,0 +1,67 @@
+
+.section6 p {
+    color: white;
+    text-align: center;
+    font-family: Alike;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  
+  .bannerchristmas{
+    color: #FFF;
+text-align: center;
+text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.40);
+font-family: Lato;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 133.333% */
+  }
+
+  .imagefullwidth1 .img {
+    display: flex;
+    width: 1442px;
+    height: 1828px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .imagefullwidth1{
+    background-size: cover;
+    background-position: center center;
+  
+  }
+
+  .section6 .centered {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    font-family: MonteCarlo;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 104px;
+}
+
+.section6 .bannerchristmas{
+    top: 80%; 
+    left: 43%;
+}
+
+.bannerchristmas {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.40);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    position: absolute;
+    justify-content: center;
+}
