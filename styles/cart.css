@@ -285,7 +285,7 @@ p.featuringtext {
   margin-bottom: 24px;
   text-transform: uppercase;
   color: #000;
-  font-family: Alike;
+  font-family: Lato;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -382,23 +382,22 @@ li {
   margin-top: 56px;
   margin-bottom: 32px;
 }
-
-
-.d-flex.justify-content-between.customersay {
-  display: flex
-;
-  width: 832px;
-  justify-content: space-between;
-  align-items: center;
+p.checkdeliverytimeandservice {
   color: #000;
   font-family: Lato;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 0px;
-  background: #DDD;
+  line-height: 22px;
   margin-top: 16px;
-  margin-bottom: 16px;
+}
+
+.d-flex.justify-content-between.m-0.my-4.p-4.checkdeliverytime {
+  background-color: #DDD;
+  padding: -11px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -810,6 +809,82 @@ p.productpagelines {
   margin-bottom: 8px;
 }
 
+
+
+p.cartapplycoupon {
+  color: #000;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  /* text-decoration-line: underline; */
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  align-items: center;
+  /* padding-top: 16px; */
+  margin: 0px;
+  /* text-decoration: underline; */
+  padding-bottom: 1px;
+  border-bottom: 1px solid black;
+}
+
+p.miniumpurchase{
+  color: #3D3D3D;
+font-family: Lato;
+font-size: 12px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; /* 166.667% */
+text-transform: capitalize;
+margin-top: 4px;
+margin-bottom: 8px;
+}
+p.extra65off {
+  color: #3D3D3D;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: capitalize;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.price-detailscart p.productpagelines {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.price-detailscart .bestcouponcart {
+  color: #000;
+  font-family: lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  height: 22px;
+  margin-bottom: 0px;
+}
+
+
+.couponsectiondeal.m-0.my-4.p-4 {
+  padding: 8px;
+  justify-items: normal;
+}
+
 .price-detailscart {
   align-items: center;
   margin-bottom: -26px;
@@ -948,7 +1023,7 @@ p.line4 {
 
 
 
-button.loginnow {
+/* button.loginnow {
   border: 0.5px solid black;
   display: flex;
   padding: 8px 10px;
@@ -962,7 +1037,45 @@ button.loginnow {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+} */
+
+
+/* General styling for all inputs with the 'loginnow' class */
+input.loginnow {
+  display: flex;
+  width: 109px;
+  padding: 8px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: 0.5px solid #000;
+  background: #DDD;
+  color: #000;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
 }
+
+input.loginnow::placeholder {
+  color: #000;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+
+input.loginnow.cart-input {
+  width: 100px;
+  background: #DDD;
+  border: 0.5px solid black;
+  border-radius: 0px;
+  padding: 8px 10px;
+}
+
 
 p.cartpagelines {
   color: #3D3D3D;
