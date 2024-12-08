@@ -186,13 +186,364 @@ a {
 }
 
 .coupon {
-  display: flex;
+  display: flex
+;
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
   border: 0.5px solid #888;
+  margin-bottom: 143px;
+  margin-top: -149px;
+  padding: 16px;
+  border: 0.5px solid #888;
+}
+
+.firstorder p {
+  color: #3D3D3D;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+
+
+.firstorderoffer li:last-child {
+  margin-bottom: 0; /* Ensures no extra spacing after the last item */
+}
+
+.firstorderoffer p {
+  color: #3D3D3D;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* Matches the typography requirements */
+  margin: 0; /* Removes any default margins around <p> tags */
+}
+
+
+.firstorderoffer li {
+  margin-bottom: 8px; /* Adds spacing between offers */
+}
+
+.see-more {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #000;
+  margin-top: -8px;
+  font-size: 12px;
+  font-family: lato;
+}
+
+.see-more svg {
+  margin-left: 5px;
+  width: 7px;
+  height: 4px;
+  fill: #000;
+}
+
+/* /* Styling for the list and its items */
+.firstorderoffer {
+  list-style-type: disc; /* Bullet points */
+  padding-left: 20px; /* Adjust for indentation */
+  margin: 0;
+}
+
+.firstorderoffer li {
+  margin-bottom: 8px; /* Space between each offer */
+}
+
+/* Hidden offers */
+.extra-offer {
+  display: none; /* Initially hidden */
+}
+
+/* Styling for the see-more section */
+.see-more {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #000;
+  margin-top: 10px;
+}
+
+
+.d-flex.justify-content-between.checkboxline {
+  margin-top: -154px;
+}
+
+label.itemselected {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  gap: 2px;
+  margin-left: -29px;
+  margin-top: 5px;
+}
+
+.col-md-2.d-flex.justify-content-between.rightalignsvg {
+  margin-left: 24px;
+  gap: 12px; /* Ensures 12px gap between child elements */
+  justify-content: space-between; /* Adjusts spacing between elements */
+  align-items: center; /* Ensures vertical centering of elements if needed */
+}
+
+
+/* svg */
+
+
+
+
+.svgremove {
+  display: flex;
+  align-items: center;
+}
+
+.svgremove span {
+  display: flex;
+  align-items: center;
+}
+
+.svgremove span::before {
+  content: '|';
+  margin-left: 12px; /* Adds margin before pipe */
+  margin-right: 12px; /* Adds margin after pipe */
+}
+
+.svgremove span:first-child::before {
+  content: ''; /* No pipe before the first SVG */
+  margin-left: 0;
+}
+
+
+
+.row.svgsssection {
+  padding-top: 0px;
+  margin-top: -280px;
+  margin-bottom: 17px;
+}
+
+
+
+
+
+.row.cartitemsection {
+  align-items: center;
+  justify-content: center;
+  /* width: auto; */
+  margin-left: -13px;
+}
+
+.cartitemsection {
+  border: 0.5px solid #888;
+}
+
+p.textwildflower {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top:16px ;
   margin-bottom: 16px;
 }
+p.featuringtext {
+  color: #3D3D3D;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.btn-group, .btn-group-vertical {
+  position: relative;
+  display: inline-flex
+;
+  vertical-align: middle;
+  gap: 24px;
+  margin-bottom: 16px;
+  border: 0.5px solid #000;
+  background: #D9D9D9;
+
+}
+
+.btn-group1 select.form-select {
+  /* background: #D9D9D9; */
+  background-color: #D9D9D9;
+}
+
+.btn-group1, .btn-group1-vertical {
+  position: relative;
+  display: inline-flex
+;    margin-left: 24px;
+  vertical-align: middle;
+  gap: 24px;
+  margin-bottom: 16px;
+  background: #D9D9D9;
+
+}
+
+
+btn-group1, .btn-group1-vertical {
+  position: relative;
+  display: inline-flex
+;
+  margin-left: 24px;
+  vertical-align: middle;
+  gap: 24px;
+  margin-bottom: 16px;
+  /* border: 0.5px solid #000; */
+  background: #D9D9D9;
+}
+
+
+p.productprices {
+  color: #3D3D3D;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+button#dropdownMenuButton {
+  font-size: 12px;
+  color: #3D3D3D;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.form-select {
+  display: block;
+  width: 115px;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  border: 1px solid #ced4da;
+  -moz-appearance: none;
+  appearance: none;
+}
+select.form-select {
+  height: 29px;
+  width: 113px;
+  font-size: 12px;
+}
+select.form-select.qty {
+  background: #D9D9D9;
+}
+
+.form-select.qty {
+  background: #D9D9D9;
+  appearance: none; /* Removes the default dropdown arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  padding-right: 25px; /* Space for custom arrow */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: auto;
+  font-size: 16px;
+}
+
+
+
+/* Custom arrow */
+.form-select.qty::after {
+  content: "▼"; /* Unicode character for downward arrow */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: black; /* Black color for the arrow */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the checkbox itself */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none; /* Remove default styling */
+  appearance: none;
+  border: 1px solid black; /* Border color */
+  background-color: white; /* Initial background color */
+  position: relative;
+  margin-bottom: -3px;
+  display: flex; /* Make checkbox a flex container */
+  align-items: center; /* Vertically center the check mark */
+  justify-content: center; /* Horizontally center the check mark */
+}
+
+/* Style the checkbox when checked */
+input[type="checkbox"]:checked {
+  background-color: black; /* Fill color when checked */
+  border: 1px solid black; /* Optional: maintain black border */
+}
+
+/* Add a check mark (tick) when checked */
+input[type="checkbox"]:checked::before {
+  content: '✔'; /* Unicode check mark */
+  color: white; /* Color of the check mark */
+  font-size: 14px; /* Adjust size of the check mark */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 p.textwildflower {
   color: #000;
@@ -236,17 +587,11 @@ p.productprices {
   vertical-align: middle;
   gap: 24px;
   margin-bottom: 16px;
-  border: 0.5px solid #000;
   background: #D9D9D9;
 }
 
 
-.row.cartitemsection {
-  align-items: center;
-  justify-content: center;
-  width: 103%;
-  margin-left: -21px;
-}
+
 button#dropdownMenuButton {
   font-size: 12px;
   color: #3D3D3D;
@@ -272,6 +617,10 @@ p.featuringtext {
   margin-left: 629px;
   margin-bottom: 16px;
 }
+.col-md-5.anothersection {
+  gap: 24px;
+  margin-left: 24px;
+}
 
 .row.cartitemsection {
   
@@ -281,7 +630,6 @@ p.featuringtext {
 }
 
 .coupon .firstline {
-  margin-top: 16px;
   margin-bottom: 24px;
   text-transform: uppercase;
   color: #000;
@@ -290,8 +638,38 @@ p.featuringtext {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  padding-left: 16px;
 }
+
+.col-md-10.somegap {
+    column-gap: 16px;
+    row-gap: 16px;
+    /* margin-left: 12px; */
+    padding-left: 32px;
+    /* padding-right: 3px; */
+}
+
+
+
+p.available {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* Styling for all <p> elements within the .coupon div */
+.coupon p {
+  color: #3D3D3D;
+  font-family: Lato, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+
+
 
 button.loginnow1 {
   display: flex
@@ -390,12 +768,13 @@ p.checkdeliverytimeandservice {
   font-weight: 400;
   line-height: 22px;
   margin-top: 16px;
+  width: 100%;
 }
 
 .d-flex.justify-content-between.m-0.my-4.p-4.checkdeliverytime {
   background-color: #DDD;
   padding: -11px;
-  height: 52px;
+  height: 63px;
   justify-content: center;
   align-items: center;
 }
@@ -870,7 +1249,7 @@ p.extra65off {
 .price-detailscart .bestcouponcart {
   color: #000;
   font-family: lato;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
