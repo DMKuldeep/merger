@@ -38,7 +38,7 @@
   margin-top: 30px;
 }
 
-.a{
+.a {
   text-emphasis: none;
 }
 ul.liststyle {
@@ -85,7 +85,7 @@ img.jhondoe {
   width: 85px;
   height: 85px;
   border-radius: 85px;
-  background: url(<path-to-image>) lightgray 50% / cover no-repeat, #D9D9D9;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat, #d9d9d9;
   margin-bottom: 80px;
 }
 .content {
@@ -870,7 +870,6 @@ p.discount {
   float: left;
   margin-left: -30px;
 }
-
 
 .profile {
   top: 35px;
@@ -2381,3 +2380,179 @@ img-fluid {
   margin-bottom: 16px;
 }
 /* End My Account*/
+
+.remove-padding {
+  padding: 0px !important;
+}
+
+.coupon-card {
+  padding: 16px;
+}
+
+.coupon-card-heading {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  font-weight: 400;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.coupon-card-description {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 0px;
+  color: #3d3d3d;
+  margin-top: auto;
+}
+
+.coupon-button {
+  padding: 4px 16px;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.save-address-card {
+  display: flex;
+}
+
+.save-address-radio {
+  padding: 16px 0px 0px 16px;
+}
+
+.sa-card-description {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  margin-bottom: 0px;
+  color: #3d3d3d;
+  margin-top: auto;
+}
+
+.radio {
+  color: #3d3d3d;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.sa-mobile {
+  margin-bottom: 0px;
+}
+
+.wallet-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance-heading {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #3d3d3d;
+}
+
+.total-amount {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.wallet .card {
+  border: 1px solid #888888;
+  border-radius: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.wallet .transaction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wallet .card-container {
+  margin-top: 30px;
+}
+
+.wallet .id {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.wallet .date {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 10px;
+  color: #888888;
+}
+
+.add-to-card {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.add-to-card button {
+  padding-left: 0px;
+}
+
+.view-all {
+  margin-top: 40px;
+  text-align: right;
+}
+
+.view-all a {
+  margin-top: 40px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-align: right;
+  color: black;
+}

@@ -325,6 +325,10 @@ p.coords {
   margin-bottom: 24px;
 }
 
+.col-md-1.d-flex.threesvg {
+  gap: 10px;
+}
+
 p.filter {
   color: #000;
   font-family: Lato;
@@ -343,7 +347,7 @@ p.filter1 {
   font-weight: 400;
   line-height: 22px;
   text-transform: capitalize;
-  margin-left: 134px;
+  margin-left: 100px;
   margin-top: 2px;
 }
 .lens {
@@ -369,7 +373,7 @@ p.filter1 {
 
 
 .col-md-4.text-center.linksall.text-style {
-  margin-left: -34px;
+  margin-left: -20px;
   margin-top: -18px;
 }
 

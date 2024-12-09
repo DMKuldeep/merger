@@ -114,6 +114,15 @@
   /* 166.667% */
 }
 
+.pricetax {
+  color: #000;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 .container1 .thirdline span .thirdlinedate {
   color: #3d3d3d;
   font-family: Lato;
@@ -355,18 +364,25 @@ a:visited {
 .featuring {
   margin-top: 24px;
   margin-bottom: 24px;
+  color: #3D3D3D;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
-
 .material p {
   color: #000;
-  font-family: "Lato";
+  font-family: Lato;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px; /* 166.667% */
   text-transform: uppercase;
   margin-top: 16px;
+  height: 20px;
 }
+
 .quantity p {
   margin-bottom: 8px;
   color: #000;
@@ -510,11 +526,15 @@ input[type="text"] {
 .rating1 {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   background-color: black;
   color: white;
-  padding: 0px 8px;
-  border-radius: 5px;
-  font-size: 14px;
+  padding: 2px 8px; /* Adjust padding as needed */
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  gap: 4px; /* Space between the SVG and the text */
 }
 
 .hurry {
@@ -537,7 +557,7 @@ input[type="text"] {
   margin-left: -33px;
 }
 
-.size {
+/* .size {
   display: flex;
   margin-bottom: 16px;
   margin-left: -5px;
@@ -564,7 +584,50 @@ input[type="text"] {
   border-width: 1.5px;
   color: white;
   background-color: #000;
+} */
+
+
+.size {
+  display: flex;
+  flex-wrap: wrap; /* Ensures sizes wrap to the next row if needed */
+  gap: 10px; /* Space between the size boxes */
+  margin-bottom: 16px;
+  margin-left: -5px;
 }
+
+.psize {
+  width: 60px;
+  height: 40px; /* Increased height for better spacing */
+  border: 1px solid black;
+  color: #000;
+  font-size: 16px; /* Text size inside the box */
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  display: flex; /* Flexbox for proper alignment */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  transition: background-color 0.3s, color 0.3s, border-width 0.3s;
+  background: #FFF; /* Ensure consistent white background */
+}
+
+.psize.active {
+  border-width: 1.5px; /* Slightly thicker border for the active state */
+  color: white;
+  background-color: black;
+}
+p.undelinesize {
+  margin-left: 40px;
+  padding-right: 10px;
+}
+
+.psize:hover {
+  background-color: #f0f0f0; /* Add a subtle hover effect */
+}
+span.sizeguide {
+  padding-bottom: 8px;
+}
+
 
 .quantity {
   display: flex;
@@ -592,6 +655,11 @@ input[type="text"] {
   margin-top: 40px;
   margin-bottom: 32px;
 }
+.btn-box1 {
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
 
 p.cartbutton {
   color: white;
@@ -603,12 +671,42 @@ p.cartbutton {
   text-transform: capitalize;
 }
 
+p.cartbutton1 {
+  display: flex
+;
+  padding: 8px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border: 1px solid #000;
+  display: flex
+;
+  width: 505px;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  gap: 8px;
+  margin-left: -24px;
+  margin-top: -32px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+
+
 .btn-box button {
   font-size: 18px;
   padding: 8px 25px;
   border: none;
   outline: none;
-  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+.btn-box1 button {
+  font-size: 18px;
+  padding: 8px 25px;
+  border: none;
+  outline: none;
   cursor: pointer;
   color: white;
 }
@@ -1326,12 +1424,11 @@ input[type="email"]::placeholder {
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 20px;
-  /* 166.667% */
   text-transform: uppercase;
-  margin-left: -10px;
-  gap: 16px;
+  margin-left: -13px;
+  gap: 13px;
   display: flex;
 }
 
@@ -1505,15 +1602,20 @@ input[type="email"]::placeholder {
 .imageheading {
   color: #000;
   font-family: "Lato";
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
-  /* 166.667% */
+  line-height: 22px;
   margin-top: 16px;
   margin-bottom: 8px;
   justify-content: left;
-  margin-left: -10px;
+  /* margin-left: -10px; */
+  text-transform: uppercase;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: -32px;
+  width: 292px;
+  height: 22px;
 }
 
 .contentimage {
