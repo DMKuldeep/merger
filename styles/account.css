@@ -877,6 +877,16 @@ p.discount {
   width: 52px;
   height: 18px;
 }
+/* Remove underline for links with the class 'no-underline' */
+.no-underline {
+  text-decoration: none;
+}
+
+/* Add underline specifically for links with the class 'underline' */
+.underline {
+  text-decoration: underline;
+}
+
 
 .cart {
   top: 35px;
