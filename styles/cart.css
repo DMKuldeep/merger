@@ -1176,18 +1176,10 @@ p.cartapplycoupon {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  /* text-decoration-line: underline; */
-  text-decoration-style: solid;
-  text-decoration-skip-ink: none;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
   align-items: center;
-  /* padding-top: 16px; */
   margin: 0px;
-  /* text-decoration: underline; */
-  padding-bottom: 1px;
-  border-bottom: 1px solid black;
+  padding-bottom: 0px;
+  border-bottom: 0.5px solid black;
 }
 
 p.miniumpurchase{
