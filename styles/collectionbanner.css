@@ -441,7 +441,7 @@ p.filter1 {
   margin-bottom: 40px;
 }
 
-.imagefullwidth .img {
+/* .imagefullwidth .img {
   display: flex;
   width: 1442px;
   height: 1828px;
@@ -450,46 +450,31 @@ p.filter1 {
   align-items: center;
   flex-shrink: 0;
   background: url("../assets/images/collectionbannersection2fullimage.png");
-}
+} */
 
 /* on hover */
 
-.image-hover-container {
-  position: relative;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
+
+
+
+
+
+
+
+
+
+
+
+.addtocart {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.image-hover-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 720px;
-  height: 1100%;
-  object-fit: cover;
-  transition: opacity 0.3s ease-in-out; /* Smooth transition between images */
-}
 
-.image-hover-first {
-  opacity: 1; /* Show the first image by default */
-  z-index: 1;
-}
-
-.image-hover-second {
-  opacity: 0; /* Hide the second image by default */
-  z-index: 0;
-}
-
-.image-hover-container:hover .image-hover-first {
-  opacity: 0; /* Hide the first image on hover */
-  z-index: 0;
-}
-
-.image-hover-container:hover .image-hover-second {
-  opacity: 1; /* Show the second image on hover */
-  z-index: 1;
-}
 
 
 .col-md-6.p-0.image5 {
@@ -1327,4 +1312,70 @@ flex-shrink: 0;
   line-height: 32px;
   margin-top: 24%;
   position: absolute;
+}
+
+
+
+.imageeffect img {
+  width: 1442px;
+  height: 1828px;
+  background: top center;
+}
+
+.imageeffect {
+  display: flex; /* As per your requirements */
+  width: 1442px;
+  height: 1828px;
+  flex-direction: column; /* Align content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  flex-shrink: 0;
+  position: relative; /* Important for stacking images */
+  overflow: hidden; /* Prevent images from spilling out */
+}
+
+.image-hover-first,
+.image-hover-second {
+  position: absolute; /* Stack images on top of each other */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure full width of container */
+  height: 100%; /* Ensure full height of container */
+  object-fit: cover; /* Maintain aspect ratio of the images */
+  transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+}
+
+/* Show the first image by default */
+.image-hover-first {
+  opacity: 1;
+  z-index: 1; /* Bring it to the front */
+}
+
+/* Hide the second image by default */
+.image-hover-second {
+  opacity: 0;
+  z-index: 0; /* Send it to the back */
+}
+
+/* On hover, switch images */
+.imageeffect:hover .image-hover-first {
+  opacity: 0; /* Hide the first image */
+  z-index: 0;
+}
+
+.imageeffect:hover .image-hover-second {
+  opacity: 1; /* Show the second image */
+  z-index: 1;
+}
+
+/* Overlay text styling */
+
+
+.addtocart {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease
 }
