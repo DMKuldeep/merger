@@ -13,10 +13,8 @@
 
 
 /* collection connect */
-
-.threesvg{
-  margin-top: -25px ! important;
-  position: relative;
+.col-md-1.d-flex.threesvg {
+  gap: 4px;
 }
 
 .icon {
@@ -344,7 +342,7 @@ p.filter1 {
   font-weight: 400;
   line-height: 22px;
   text-transform: capitalize;
-  margin-left: 134px;
+  margin-left: 87px;
   margin-top: 2px;
 }
 .lens {
@@ -898,9 +896,7 @@ flex-shrink: 0;
   flex-shrink: 0;
   row-gap: 24px;
 }
-.col-md-1.d-flex {
-  margin-left: 38px;
-}
+
 
 .faq {
   display: flex;

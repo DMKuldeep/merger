@@ -326,7 +326,7 @@ p.coords {
 }
 
 .col-md-1.d-flex.threesvg {
-  gap: 10px;
+  gap: 4px;
 }
 
 p.filter {
@@ -347,7 +347,7 @@ p.filter1 {
   font-weight: 400;
   line-height: 22px;
   text-transform: capitalize;
-  margin-left: 100px;
+  margin-left: 87px;
   margin-top: 2px;
 }
 .lens {
@@ -862,9 +862,9 @@ p.filter1 {
   flex-shrink: 0;
   row-gap: 24px;
 }
-.col-md-1.d-flex {
-  margin-left: 38px;
-}
+/* .col-md-1.d-flex {
+  margin-left: 28px;
+} */
 
 .faq {
   display: flex;
