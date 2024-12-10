@@ -2115,6 +2115,10 @@ input[type="email"]::placeholder {
   flex-shrink: 0;
   row-gap: 24px;
 }
+.no-underline {
+  text-decoration: none;
+}
+
 
 .multipleitemlist{
   position: sticky;
