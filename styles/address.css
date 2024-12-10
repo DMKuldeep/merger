@@ -189,6 +189,47 @@ p.customeraddress {
 
 }
 
+a.text-reset.searchproduct {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+
+
+a.text-reset.bagproduct {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-right: 0px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+a.text-reset.accountproduct {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  text-decoration: none;
+
+
+}
+
+
 p.textwildflower {
   color: #000;
   font-family: Lato;
@@ -198,6 +239,8 @@ p.textwildflower {
   line-height: 22px;
   margin-top:16px ;
   margin-bottom: 16px;
+  text-decoration: none;
+
 }
 .btn-group, .btn-group-vertical {
   position: relative;

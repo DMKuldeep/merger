@@ -15,6 +15,8 @@
 /* collection connect */
 .col-md-1.d-flex.threesvg {
   gap: 4px;
+  margin-top: -28px;
+  margin-left: 48px;
 }
 
 .icon {
@@ -344,6 +346,8 @@ p.filter1 {
   text-transform: capitalize;
   margin-left: 87px;
   margin-top: 2px;
+ 
+  padding-left: 40px;
 }
 .lens {
   top: 57px;

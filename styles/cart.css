@@ -245,6 +245,39 @@ a {
   margin: 0; /* Removes any default margins around <p> tags */
 }
 
+a.text-reset.searchproduct {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+
+a.text-reset.bagproduct {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+a.text-reset.accountproduct {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
 
 .firstorderoffer li {
   margin-bottom: 8px; /* Adds spacing between offers */

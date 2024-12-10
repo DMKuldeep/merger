@@ -58,9 +58,42 @@
   margin-left: 16px;
 }
 
-.content .list-inline-item:not(:last-child) {
-  margin-right: 24px;
+
+a.text-reset.searchproduct {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
 }
+
+
+a.text-reset.bagproduct {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-right: 0px;
+      margin-left: 20px;
+}
+
+a.text-reset.accountproduct {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-left: 14px;
+}
+
+
 
 .coupon .container1 {
   background-color: white;
