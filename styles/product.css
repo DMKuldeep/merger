@@ -1719,6 +1719,96 @@ p.satin {
   fill: white;
 }
 
+/* Style for the big image container */
+.big-img {
+  width: 100%;
+  max-width: 800px; /* Adjust this as needed */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Zoom effect for the image inside the big-img container */
+.productPageFullImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  cursor: zoom-in;
+}
+
+/* On hover, apply the zoom effect */
+.productPageFullImage:hover img {
+  transform: scale(1.5);
+}
+
+/* Optional: Adjust zoom on hover to make the image center zoom */
+.productPageFullImage img:hover {
+  transform-origin: center center; /* Optional to control where the zoom effect originates */
+}
+
+/* on + icon click */
+
+
+/* Styling for the popup pane */
+.description-pane1 {
+  display: none; /* Hidden by default */
+  
+  background-color: white;
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 70vh;
+}
+.description-pane2 {
+  display: none; /* Hidden by default */
+ 
+  background-color: white;
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 70vh;
+}
+.description-pane3 {
+  display: none; /* Hidden by default */
+  
+  background-color: white;
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 70vh;
+}
+
+/* Background overlay for the popup (optional) */
+.description-pane:before {
+  content: "";
+  position: fixed;
+ 
+}
+
+/* Content inside the pane */
+.pane-content p {
+  margin-bottom: 10px;
+}
+
+/* Optional styling for the button */
+.undelinesize1 {
+  cursor: pointer;
+}
+
+/* Optional styling for the close button inside the pane (if needed) */
+.pane-content .close-btn {
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  float: right;
+}
+
+
+
+
+
 
 .input-with-placeholder::placeholder {
   color: #3D3D3D;

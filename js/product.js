@@ -96,6 +96,19 @@ document.getElementById('heart-container').addEventListener('click', function ()
 
 
 
+// Function to toggle the visibility of the description pane
+function togglePane(paneId) {
+  var pane = document.getElementById(paneId);
+  if (pane.style.display === "none" || pane.style.display === "") {
+    pane.style.display = "block";
+  } else {
+    pane.style.display = "none";
+  }
+}
+
+
+
+
 
 
 

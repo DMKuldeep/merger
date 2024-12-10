@@ -385,6 +385,8 @@ input[type="email"]::placeholder{
 
 
 
+
+
 .section6 p {
   color: white;
   text-align: center;
@@ -644,6 +646,28 @@ p.line4 {
   padding: 10px;
   height: 40px;
   font-size: 12px;
+}
+
+
+.mini-head {
+  width: 100%; /* Ensure it's full width */
+}
+
+.toptext {
+  display: inline-block; /* Allows the text to move horizontally */
+  white-space: nowrap; /* Prevents the text from wrapping */
+  font-size: 12px; /* Adjust text size */
+
+  animation: slideIn 9s linear infinite; /* Animation for sliding in */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%); /* Start from off-screen on the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End off-screen on the left */
+  }
 }
 
 .toptext {
