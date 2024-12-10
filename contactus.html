@@ -8,31 +8,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
 
-  <script src="./js/commonscript.js"></script>
   <title>Contact-Us</title>
+  <script src="./js/commonscript.js"></script>
+
 </head>
 
 <body>
   <div id="navdark-placeholder"></div>
+
+
+
+  <div class="container col-md-12 text-start">
+
+    <p class="togglemenuforcontactus">Home > Contact Us</p>
+
+
+  </div>
   <div class="contact-us">
     <p class="contactpage">CONTACT US</p>
     <p class="contactpageline1">
       Our Customer Service Team is available Monday-Saturday from 10am to 7pm IST. We are closed on weekends.
     </p>
     <p class="contactpageline2">
-      CONTACT NUMBER: +91 9266396709 (+91 9773981621)
+      CONTACT NUMBER:<span class="mobilenumber">+91 9266396709 (+91 9773981621)</span>
     </p>
     <p class="contactpageline2">
-      CUSTOMER SERVICE: <a href="mailto:support@sotbella.com">support@sotbella.com</a>
+      CUSTOMER SERVICE: <a href="mailto:support@sotbella.com" class="mailsupport">support@sotbella.com</a>
     </p>
     <p class="contactpageline4">
-      INFORMATION: <a href="mailto:info@sotbella.com">info@sotbella.com</a>
+      INFORMATION: <a href="mailto:info@sotbella.com" class="mailsupport">info@sotbella.com</a>
     </p>
     <div class="spacer"></div>
     <form class="contact-form">
-      <div class="form-row">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
+      <div class="form-row formsection">
+        <input name="name" placeholder="Your Name" required>
+        <input  name="email" placeholder="Your Email" required>
       </div>
       <div class="form-row">
         <input type="tel" name="mobile" placeholder="Your Mobile Number" required>
@@ -40,7 +50,7 @@
       <div class="form-row">
         <textarea name="message" placeholder="Write your message" required></textarea>
       </div>
-      <button type="submit" class="button-text">Send Message</button>
+      <button type="button" class="button-text">Send Message</button>
     </form>
   </div>
   <div id="footerdark-placeholder"></div>
