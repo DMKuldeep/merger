@@ -1,28 +1,16 @@
 
-
 let bigImg = document.querySelector('.big-img img');
-// function showImg(pic){
-//     bigImg.src = pic; 
-
-
-let selectedImgSrc = bigImg.src; // Keeps track of the selected image
+let selectedImgSrc = bigImg.src; 
 let thumbnails = document.querySelectorAll('.small-img img');
 
-
 function showImg(pic) {
-  // Update the selected image source
   selectedImgSrc = pic;
   bigImg.src = pic;
 
-  // Remove the 'selected' class from all thumbnails
   thumbnails.forEach(img => img.classList.remove('selected'));
 
-  // Add the 'selected' class to the clicked thumbnail
   event.target.classList.add('selected');
 }
-
-
-
 
 const decreaseButton = document.getElementById('decrease');
 const increaseButton = document.getElementById('increase');
@@ -73,6 +61,14 @@ videoContainers.forEach(container => {
   });
 });
 
+document.getElementById('heart-svg').addEventListener('click', function () {
+    const path = this.querySelector('path'); // Get the path element
+    if (path.getAttribute('fill') === 'white') {
+      path.setAttribute('fill', 'black'); // Change fill to black
+    } else {
+      path.setAttribute('fill', 'white'); // Change fill to white
+    }
+  });
 
 
 

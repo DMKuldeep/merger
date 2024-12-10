@@ -376,7 +376,7 @@ a:visited {
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 20px; /* 166.667% */
   text-transform: uppercase;
   margin-top: 16px;
@@ -414,13 +414,15 @@ a:visited {
 }
 
 .counter-container {
-  display: flex;
+  display: flex
+;
   width: 100px;
   height: 28px;
   align-items: center;
   gap: 24px;
   border: 0.5px solid #9d9d9d;
   margin-bottom: 16px;
+  margin-top: 8px;
 }
 button {
   cursor: pointer;
@@ -478,7 +480,7 @@ p.extraoff {
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 0px;
   border: 0.5px solid #9d9d9d;
   margin-top: 24px;
   margin-bottom: 16px;
@@ -557,34 +559,7 @@ input[type="text"] {
   margin-left: -33px;
 }
 
-/* .size {
-  display: flex;
-  margin-bottom: 16px;
-  margin-left: -5px;
-}
 
-.size p {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.psize {
-  width: 60px;
-  height: 30px;
-  border: 1px solid black;
-  color: #000;
-  text-align: center;
-  margin: 1px 5px;
-  cursor: pointer;
-  display: inline-block;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.psize.active {
-  border-width: 1.5px;
-  color: white;
-  background-color: #000;
-} */
 
 
 .size {
@@ -592,7 +567,7 @@ input[type="text"] {
   flex-wrap: wrap; /* Ensures sizes wrap to the next row if needed */
   gap: 10px; /* Space between the size boxes */
   margin-bottom: 16px;
-  margin-left: -5px;
+  margin-left: 0px;
 }
 
 .psize {
@@ -1315,7 +1290,17 @@ input[type="email"]::placeholder {
 }
 
 .d-flex.colorbar {
-  gap: 9px;
+  gap: 10px;
+}
+p.satin {
+  color: #3D3D3D;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 /* Container margins */
@@ -1724,6 +1709,27 @@ input[type="email"]::placeholder {
   margin-top: 8px;
   margin-left: -18px;
 }
+
+
+.heart-circle svg path {
+  transition: fill 0.3s ease;
+}
+
+.heart-circle:active svg path {
+  fill: white;
+}
+
+
+.input-with-placeholder::placeholder {
+  color: #3D3D3D;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+
+
 
 .description .price {
   color: #000;
