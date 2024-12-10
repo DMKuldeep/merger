@@ -293,7 +293,7 @@ a.text-reset {
 }
 
 .content {
-  position: absolute;
+  position: fixed;
   top: 0;
   color: white;
   margin-top: 32px;
