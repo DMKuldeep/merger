@@ -29,8 +29,16 @@ icons.forEach(icon => {
 
     // Show the selected content div
     document.getElementById(targetId).classList.add('active');
+    // Set "collection1" as active by default
+document.querySelector('.icon[data-target="collection1"]').classList.add('active');
+document.getElementById('collection1').classList.add('active');
   });
 });
+
+
+
+
+
 
 // Set the first icon and content as active by default when the page loads
 document.addEventListener('DOMContentLoaded', () => {

@@ -275,95 +275,43 @@ hr:not([size]) {
   margin-top: 41px;
 }
 
+
+
+/* Default small image style with gray overlay */
 .small-img img {
   width: 100px;
   height: 100px;
   object-fit: contain;
   cursor: pointer;
   transition: all 0.3s ease;
-  filter: grayscale(100%);
-  /* Apply grayscale by default */
-
+  color: linear-gradient(
+      0deg,
+      rgba(90, 90, 90, 0.50) 0%,
+      rgba(90, 90, 90, 0.50) 100%
+    ),
+    lightgray 50% / contain no-repeat;
+  filter: grayscale(100%); /* Makes the image appear disabled */
+  opacity: 0.7; /* Slightly faded effect */
 }
 
+/* Selected small image style */
 .small-img img.selected {
-  transform: scale(1.2);
-  /* Scale the selected image */
-  filter: grayscale(0%);
-  /* Remove grayscale for the selected image */
+  background: none; /* Removes the overlay */
+  filter: none; /* Removes grayscale effect */
+  opacity: 1; /* Full opacity for the selected image */
+  /* transform: scale(1.2);  */
+  transition: all 0.3s ease;
+  color: linear-gradient(
+      0deg,
+      rgba(90, 90, 90, 0.50) 0%,
+      rgba(90, 90, 90, 0.50) 100%
+    ),
+    lightgray 50% / contain no-repeat;
 }
-
 
 
 p.undelinesize {
   margin-left: 40px;
-}
-
-.small-img img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  filter: grayscale(100%);
-  /* Apply grayscale by default */
-}
-
-.small-img img.selected {
-  transform: scale(1.2);
-  /* Scale the selected image */
-  filter: grayscale(0%);
-  /* Remove grayscale for the selected image */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.big-img img {
-  width: 519px;
-  height: 741px;
-  flex-shrink: 0;
-  border: 1.5px solid black;
-}
-
-.vertical-line {
-  width: 2px;
-  height: 741px;
-  /* Matches the height of the big image */
-  margin: 0 20px;
-  /* Space between big image and line */
-  position: relative;
-  background: linear-gradient(to bottom, black 50%, transparent 50%),
-    linear-gradient(to bottom, transparent 50%, black 50%);
-  background-size: 100% 200%;
-  /* Makes one half solid and one half dashed */
-  background-repeat: no-repeat;
-}
-
-.right {
-  margin-left: 20px;
-  /* Proper alignment of the right column */
-}
-
-.right .url {
-  color: #000;
-  font-family: "Lato";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  /* 140% */
-  text-transform: uppercase;
-  width: 410.21px;
-  margin-bottom: 24px;
 }
 
 .pname {
@@ -1879,6 +1827,28 @@ p.satin {
   transform-origin: center center;
   /* Optional to control where the zoom effect originates */
 }
+
+
+
+
+.resizable-div.customswiperleft {
+  width: 100%; /* Adjust the size of the div */
+ 
+
+  background-size: cover; /* Ensures the image covers the div */
+
+  background-repeat: no-repeat; /* Prevents tiling */
+  transition: transform 0.5s ease, background-size 0.5s ease; /* Smooth zoom effect */
+  cursor: zoom-in;
+}
+
+/* Apply the zoom effect on hover */
+.resizable-div.customswiperleft:hover {
+  background-size: 150%; /* Increase the size of the background image */
+  background-position: center center; /* Keep the zoom effect centered */
+  cursor: zoom-out;
+}
+
 
 
 
