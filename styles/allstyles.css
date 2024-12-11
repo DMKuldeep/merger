@@ -1281,3 +1281,8 @@ input[type="email"] {
   height: 343px;
   display: flex;
 }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
