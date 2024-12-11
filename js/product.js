@@ -32,6 +32,10 @@ increaseButton.addEventListener('click', () => {
     }
 });
 
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const sizeElements = document.querySelectorAll(".psize");
 

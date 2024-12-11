@@ -79,7 +79,7 @@ a.text-reset.bagproduct {
   line-height: 22px;
   text-transform: uppercase;
   margin-right: 0px;
-      margin-left: 20px;
+  margin-left: 20px;
 }
 
 a.text-reset.accountproduct {
@@ -123,7 +123,8 @@ a.text-reset.accountproduct {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  /* 166.667% */
 }
 
 .coupon .secondline {
@@ -181,6 +182,7 @@ a.text-reset.accountproduct {
   text-transform: uppercase;
   margin-left: 0px;
 }
+
 span.sizeguide1 {
   margin-bottom: 16px;
   margin-top: 16px;
@@ -210,6 +212,7 @@ p.undelinesize1 {
   margin-top: 56px;
   margin-bottom: 32px;
 }
+
 hr:not([size]) {
   height: 1px;
   border-bottom: 0.5px solid #9d9d9d;
@@ -224,6 +227,7 @@ hr:not([size]) {
   height: 1px;
   border-bottom: 2.5px solid #9d9d9d;
 }
+
 .heading8 p {
   color: #000;
   text-align: center;
@@ -274,18 +278,54 @@ hr:not([size]) {
 .small-img img {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  object-fit: contain;
   cursor: pointer;
   transition: all 0.3s ease;
-  object-fit: contain;
+  filter: grayscale(100%);
+  /* Apply grayscale by default */
+
 }
+
+.small-img img.selected {
+  transform: scale(1.2);
+  /* Scale the selected image */
+  filter: grayscale(0%);
+  /* Remove grayscale for the selected image */
+}
+
+
 
 p.undelinesize {
   margin-left: 40px;
 }
-.selected {
-  transform: scale(1.2);
+
+.small-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+  /* Apply grayscale by default */
 }
+
+.small-img img.selected {
+  transform: scale(1.2);
+  /* Scale the selected image */
+  filter: grayscale(0%);
+  /* Remove grayscale for the selected image */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .big-img img {
   width: 519px;
@@ -319,7 +359,8 @@ p.undelinesize {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 140% */
+  line-height: 28px;
+  /* 140% */
   text-transform: uppercase;
   width: 410.21px;
   margin-bottom: 24px;
@@ -339,7 +380,8 @@ p.undelinesize {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
   gap: 8px;
 }
 
@@ -349,7 +391,8 @@ p.undelinesize {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
   text-decoration: line-through;
   gap: 8px;
 }
@@ -360,7 +403,8 @@ p.undelinesize {
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: 22px; /* 157.143% */
+  line-height: 22px;
+  /* 157.143% */
   gap: 16px;
 }
 
@@ -370,9 +414,11 @@ p.undelinesize {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  /* 166.667% */
   display: flex;
 }
+
 .p .underline {
   color: #000;
   font-family: Lato;
@@ -392,12 +438,15 @@ p.offwhite {
   font-weight: 400;
   line-height: 18px;
 }
+
 a:link,
 a:visited {
   text-decoration: none;
 
-  color: black; /* Set your desired default link color */
+  color: black;
+  /* Set your desired default link color */
 }
+
 .featuring {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -408,13 +457,15 @@ a:visited {
   font-weight: 400;
   line-height: 20px;
 }
+
 .material p {
   color: #000;
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  /* 166.667% */
   text-transform: uppercase;
   margin-top: 16px;
   height: 20px;
@@ -427,9 +478,11 @@ a:visited {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  /* 166.667% */
   text-transform: uppercase;
 }
+
 .quantity input {
   display: flex;
   padding: 4px 16px;
@@ -440,7 +493,8 @@ a:visited {
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  /* 166.667% */
 }
 
 .team-1-column-sticky {
@@ -451,8 +505,7 @@ a:visited {
 }
 
 .counter-container {
-  display: flex
-;
+  display: flex;
   width: 100px;
   height: 28px;
   align-items: center;
@@ -461,19 +514,22 @@ a:visited {
   margin-bottom: 16px;
   margin-top: 8px;
 }
+
 button {
   cursor: pointer;
   border: none;
   background-color: white;
   color: black;
 }
+
 .number {
   color: #3d3d3d;
   font-family: Inter;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  /* 166.667% */
 }
 
 .offers {
@@ -504,9 +560,11 @@ p.extraoff {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  /* 166.667% */
   text-transform: uppercase;
 }
+
 .accordion {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -531,7 +589,8 @@ p.gapreview {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  /* 166.667% */
   text-transform: uppercase;
 }
 
@@ -552,13 +611,15 @@ input[type="text"] {
   width: 100%;
   margin-bottom: 16px;
 }
+
 .reviews span {
   color: #000;
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  /* 166.667% */
   text-transform: uppercase;
 }
 
@@ -568,12 +629,14 @@ input[type="text"] {
   justify-content: center;
   background-color: black;
   color: white;
-  padding: 2px 8px; /* Adjust padding as needed */
+  padding: 2px 8px;
+  /* Adjust padding as needed */
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 20px;
-  gap: 4px; /* Space between the SVG and the text */
+  gap: 4px;
+  /* Space between the SVG and the text */
 }
 
 .hurry {
@@ -582,16 +645,19 @@ input[type="text"] {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  /* 166.667% */
   margin-bottom: 32px;
 }
+
 .checkdelivery p {
   color: #000;
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  /* 166.667% */
   text-transform: capitalize;
   margin-left: -33px;
 }
@@ -601,41 +667,53 @@ input[type="text"] {
 
 .size {
   display: flex;
-  flex-wrap: wrap; /* Ensures sizes wrap to the next row if needed */
-  gap: 10px; /* Space between the size boxes */
+  flex-wrap: wrap;
+  /* Ensures sizes wrap to the next row if needed */
+  gap: 10px;
+  /* Space between the size boxes */
   margin-bottom: 16px;
   margin-left: 0px;
 }
 
 .psize {
   width: 60px;
-  height: 40px; /* Increased height for better spacing */
+  height: 40px;
+  /* Increased height for better spacing */
   border: 1px solid black;
   color: #000;
-  font-size: 16px; /* Text size inside the box */
+  font-size: 16px;
+  /* Text size inside the box */
   font-weight: 500;
   text-align: center;
   cursor: pointer;
-  display: flex; /* Flexbox for proper alignment */
-  justify-content: center; /* Center text horizontally */
-  align-items: center; /* Center text vertically */
+  display: flex;
+  /* Flexbox for proper alignment */
+  justify-content: center;
+  /* Center text horizontally */
+  align-items: center;
+  /* Center text vertically */
   transition: background-color 0.3s, color 0.3s, border-width 0.3s;
-  background: #FFF; /* Ensure consistent white background */
+  background: #FFF;
+  /* Ensure consistent white background */
 }
 
 .psize.active {
-  border-width: 1.5px; /* Slightly thicker border for the active state */
+  border-width: 1.5px;
+  /* Slightly thicker border for the active state */
   color: white;
   background-color: black;
 }
+
 p.undelinesize {
   margin-left: 40px;
   padding-right: 10px;
 }
 
 .psize:hover {
-  background-color: #f0f0f0; /* Add a subtle hover effect */
+  background-color: #f0f0f0;
+  /* Add a subtle hover effect */
 }
+
 span.sizeguide {
   padding-bottom: 8px;
 }
@@ -667,6 +745,7 @@ span.sizeguide {
   margin-top: 40px;
   margin-bottom: 32px;
 }
+
 .btn-box1 {
   display: flex;
   margin-top: 8px;
@@ -684,16 +763,14 @@ p.cartbutton {
 }
 
 p.cartbutton1 {
-  display: flex
-;
+  display: flex;
   padding: 8px 0px;
   justify-content: center;
   align-items: center;
   gap: 16px;
   align-self: stretch;
   border: 1px solid #000;
-  display: flex
-;
+  display: flex;
   width: 505px;
   flex-direction: column;
   /* align-items: flex-start; */
@@ -714,6 +791,7 @@ p.cartbutton1 {
   cursor: pointer;
   color: white;
 }
+
 .btn-box1 button {
   font-size: 18px;
   padding: 8px 25px;
@@ -778,6 +856,7 @@ p.cartbutton1 {
 
   flex-shrink: 0;
 }
+
 img.toggle-icon {
   margin-left: 10px;
 }
@@ -803,14 +882,16 @@ img.toggle-icon {
 
 .verticalline {
   position: relative;
-  width: 2px; /* Adjust thickness of the line */
-  height: 100%; /* Full height of the parent container */
-  background: linear-gradient(
-    to bottom,
-    black 50%,
-    gray 50%
-  ); /* Top solid, bottom transparent */
-  margin: 0 auto; /* Center the line horizontally */
+  width: 2px;
+  /* Adjust thickness of the line */
+  height: 100%;
+  /* Full height of the parent container */
+  background: linear-gradient(to bottom,
+      black 50%,
+      gray 50%);
+  /* Top solid, bottom transparent */
+  margin: 0 auto;
+  /* Center the line horizontally */
   height: 720px;
 }
 
@@ -877,16 +958,14 @@ p.line4 {
   height: 55px;
   border-radius: 20px;
   margin: 16px;
-  background: url(<path-to-image>) lightgray -11.341px -5.801px / 112.782%
-    121.875% no-repeat;
+  background: url(<path-to-image>) lightgray -11.341px -5.801px / 112.782% 121.875% no-repeat;
 }
 
 .app-icon1 {
   width: 181px;
   height: 55px;
   border-radius: 20px;
-  background: url(<path-to-image>) lightgray -16.023px -26.222px / 118.033%
-    187.963% no-repeat;
+  background: url(<path-to-image>) lightgray -16.023px -26.222px / 118.033% 187.963% no-repeat;
 }
 
 .image5 {
@@ -1196,25 +1275,38 @@ p.line4 {
   line-height: 20px;
   text-transform: capitalize;
 }
+
 .input-wrapper {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc; /* Add border to mimic input */
-  border-radius: 4px; /* Match input border radius */
-  padding: 0; /* Remove padding */
+  border: 1px solid #ccc;
+  /* Add border to mimic input */
+  border-radius: 4px;
+  /* Match input border radius */
+  padding: 0;
+  /* Remove padding */
 }
 
 .input-wrapper svg {
-  margin-left: 6px; /* Gap between input and SVG */
-  height: 100%; /* Match height of input */
+  margin-left: 6px;
+  /* Gap between input and SVG */
+  height: 100%;
+  /* Match height of input */
 }
+
 .input-wrapper input[type="email"] {
-  border: none; /* Remove default input border */
-  outline: none; /* Remove outline on focus */
-  width: 100%; /* Full width */
-  height: 36px; /* Match height */
-  border-radius: 4px; /* Match border radius */
-  padding-right: 6px; /* Space for the SVG */
+  border: none;
+  /* Remove default input border */
+  outline: none;
+  /* Remove outline on focus */
+  width: 100%;
+  /* Full width */
+  height: 36px;
+  /* Match height */
+  border-radius: 4px;
+  /* Match border radius */
+  padding-right: 6px;
+  /* Space for the SVG */
 }
 
 .input-container .input {
@@ -1257,6 +1349,7 @@ input[type="email"] {
   flex-shrink: 0;
   padding-right: 20px;
 }
+
 svg.bi.bi-geo {
   margin-left: -284px;
 }
@@ -1329,6 +1422,7 @@ input[type="email"]::placeholder {
 .d-flex.colorbar {
   gap: 10px;
 }
+
 p.satin {
   color: #3D3D3D;
   font-family: Lato;
@@ -1759,7 +1853,8 @@ p.satin {
 /* Style for the big image container */
 .big-img {
   width: 100%;
-  max-width: 800px; /* Adjust this as needed */
+  max-width: 800px;
+  /* Adjust this as needed */
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -1781,34 +1876,61 @@ p.satin {
 
 /* Optional: Adjust zoom on hover to make the image center zoom */
 .productPageFullImage img:hover {
-  transform-origin: center center; /* Optional to control where the zoom effect originates */
+  transform-origin: center center;
+  /* Optional to control where the zoom effect originates */
 }
+
+
+
+.resizable-div.customswiperright {
+  width: 100%; /* Adjust the size of the div */
+ 
+
+  background-size: cover; /* Ensures the image covers the div */
+
+  background-repeat: no-repeat; /* Prevents tiling */
+  transition: transform 0.5s ease, background-size 0.5s ease; /* Smooth zoom effect */
+  cursor: zoom-in;
+}
+
+/* Apply the zoom effect on hover */
+.resizable-div.customswiperright:hover {
+  background-size: 150%; /* Increase the size of the background image */
+  background-position: center center; /* Keep the zoom effect centered */
+  cursor: zoom-out;
+}
+
 
 /* on + icon click */
 
 
 /* Styling for the popup pane */
 .description-pane1 {
-  display: none; /* Hidden by default */
-  
+  display: none;
+  /* Hidden by default */
+
   background-color: white;
   padding: 20px;
   border-radius: 0px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-height: 70vh;
 }
+
 .description-pane2 {
-  display: none; /* Hidden by default */
- 
+  display: none;
+  /* Hidden by default */
+
   background-color: white;
   padding: 20px;
   border-radius: 0px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-height: 70vh;
 }
+
 .description-pane3 {
-  display: none; /* Hidden by default */
-  
+  display: none;
+  /* Hidden by default */
+
   background-color: white;
   padding: 20px;
   border-radius: 0px;
@@ -1820,7 +1942,7 @@ p.satin {
 .description-pane:before {
   content: "";
   position: fixed;
- 
+
 }
 
 /* Content inside the pane */
@@ -1853,7 +1975,8 @@ p.satin {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 166.667% */
+  line-height: 20px;
+  /* 166.667% */
 }
 
 
@@ -2072,8 +2195,7 @@ p.satin {
 }
 
 .spotlight {
-  background: url("./assets/images/backgroundspotlight.png") no-repeat center
-    center;
+  background: url("./assets/images/backgroundspotlight.png") no-repeat center center;
   background-size: cover;
   height: 343px;
   display: flex;
