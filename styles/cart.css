@@ -14,6 +14,16 @@
   overflow: hidden;
 }
 
+
+.returnoption{
+  padding: 8px 10px;
+  border: 0.5px solid #000;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+}
+
 .linkforhome {
   text-decoration: none;
   color: inherit;
