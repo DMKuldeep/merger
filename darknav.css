@@ -22,36 +22,6 @@
   gap: 16px;
 }
 
-
-/* .main-nav {
-  display: flex
-;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  width: 100%;
-  height: var(--menu-bar-height) !important;
-  position: relative;
-  top: 0;
-  left: 0;
-  text-align: left;
-  background: rgba(255, 255, 255, .98);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.025), 0px 1px 1px 0px rgba(0, 0, 0, 0.01), 0px 0px 50px 0px rgba(0, 0, 0, 0.07);
-  z-index: 1030;
-  transition: all 0.2s var(--ease-default);
-}
-
-.fadeInDown {
-  animation-name: fadeInDown;
-}
-
-.stick-fixed {
-  position: fixed !important;
- 
-} */
-
-
-
 .header {
   position: fixed;
   top: 0;
@@ -125,6 +95,7 @@ img.toggle-icon {
   /* 100% */
   align-items: center;
   margin-left: 16px;
+  margin-top: 16px;
 }
 
 a.text-reset.searchproduct {

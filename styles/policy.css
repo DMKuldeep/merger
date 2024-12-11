@@ -1,100 +1,102 @@
-
 a.text-reset.searchproduct {
-    color: #000;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
-    text-transform: uppercase;
-  }
-  
-  
-  a.text-reset.bagproduct {
-    color: #000;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
-    text-transform: uppercase;
-    margin-right: 0px;
-        margin-left: 20px;
-  }
-  
-  a.text-reset.accountproduct {
-    color: #000;
-    font-family: Lato;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px;
-    text-transform: uppercase;
-    margin-left: 14px;
-  }
-  
-
-  .togglemenuforprivacy{
-    color: #000;
-font-family: Lato;
-font-size: 12px;
-font-style: normal;
-font-weight: 300;
-line-height: 20px; /* 166.667% */
-
-
-margin-left: -31px;
-    margin-top: 32px;
-    margin-bottom: 48px;
-  }
-
-
-  .policyheading p {
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px; /* 133.333% */
-    text-transform: uppercase;
-    margin-bottom: 96px;
-
-
-  }
-
-
-
-.headingspolicy{
-    color: #000;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px; /* 144.444% */
-    text-transform: uppercase;
-    align-self: stretch;
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
 }
 
-.privacycontent{
-    color: #000;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px; /* 187.5% */
-margin-top: 8px;
-margin-bottom: 24px;
+
+a.text-reset.bagproduct {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+a.text-reset.accountproduct {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-left: 14px;
+}
+
+
+.togglemenuforprivacy {
+  color: #000;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  /* 166.667% */
+
+
+  margin-left: -31px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+
+.policyheading p {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  /* 133.333% */
+  text-transform: uppercase;
+  margin-bottom: 96px;
+
+
+}
+
+
+
+.headingspolicy {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  /* 144.444% */
+  text-transform: uppercase;
+  align-self: stretch;
+}
+
+.privacycontent {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  /* 187.5% */
+  margin-top: 8px;
+  margin-bottom: 24px;
 }
 
 
 p {
-    text-align: left;
-    margin: 0; /* Remove unnecessary spacing */
-    padding: 0; /* Optional for precise control */
-    direction: ltr; /* If you're working with a right-to-left language */
-  }
-
-  
-  
-
+  text-align: left;
+  margin: 0;
+  /* Remove unnecessary spacing */
+  padding: 0;
+  /* Optional for precise control */
+  direction: ltr;
+  /* If you're working with a right-to-left language */
+}

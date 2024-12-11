@@ -1,20 +1,4 @@
 
-/* .section1image {
-    background: url("../assets/images/aboutussection1image\(1\)\(1\).jpg") lightgray no-repeat;
-    
-    height: 634px;
-    margin-bottom: 32px;
-    object-fit: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    object-fit: cover;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-} */
-
-
 .section1image {
     background: url("../assets/images/aboutussection1image(1)(1).jpg") lightgray
       no-repeat;
@@ -23,16 +7,15 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    /* overflow: hidden; */
-    /* object-fit: contain; */
+   
   }
 
 .bottom-right {
-    position: absolute; /* Position relative to the parent container */
+    position: absolute; 
   display: block;
-    color: #FFF; /* White text color */
-    font-family: Inter, sans-serif; /* Font family */
-    font-size: 28px; /* Font size */
+    color: #FFF;
+    font-family: "Inter"; 
+    font-size: 28px; 
     font-style: normal; /* No italics */
     font-weight: 500; /* Font weight */
     line-height: 36px; /* Line height */
