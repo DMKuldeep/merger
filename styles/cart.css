@@ -14,16 +14,12 @@
   overflow: hidden;
 }
 
-.linkforhome{
+.linkforhome {
   text-decoration: none;
-  color: inherit; 
-
+  color: inherit;
 }
 
-
 /* fourimage section */
-
-
 
 .container-fluid.fourimages.section4image {
   padding-top: 24px;
@@ -34,11 +30,11 @@
   margin: 0; /* Remove margins between rows */
 }
 
-.col-12, .col-sm-6, .col-md-3 {
+.col-12,
+.col-sm-6,
+.col-md-3 {
   padding: 0; /* Remove padding between columns */
 }
-
-
 
 .card .img-fluid {
   width: 100%; /* Ensure images occupy full width */
@@ -56,7 +52,6 @@
   padding: 0 5px; /* Optional: Add some padding inside the content section */
 }
 
-
 .divimage {
   display: flex;
   width: 300px;
@@ -67,9 +62,7 @@
 .col-md-4.text-center.linksall.text-style {
   margin-left: -20px;
   margin-top: -8px;
-
 }
-
 
 .list-inline-item {
   display: inline-block;
@@ -86,7 +79,6 @@
 .col-md-4.text-center.linksall.text-style {
   margin-left: -20px;
   margin-top: -8px;
-
 }
 
 .btn-close {
@@ -100,7 +92,7 @@
   float: right;
 }
 
-.multipleitemlist{
+.multipleitemlist {
   position: sticky;
   top: 0;
   left: 0;
@@ -189,9 +181,6 @@ a {
   text-decoration: none;
 }
 
-
-
-
 .content .list-inline-item:not(:last-child) {
   margin-right: 12px;
 }
@@ -209,8 +198,7 @@ a {
 }
 
 .coupon {
-  display: flex
-;
+  display: flex;
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
@@ -222,7 +210,7 @@ a {
 }
 
 .firstorder p {
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-family: Lato, sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -230,13 +218,12 @@ a {
   line-height: 20px; /* 166.667% */
 }
 
-
 .firstorderoffer li:last-child {
   margin-bottom: 0; /* Ensures no extra spacing after the last item */
 }
 
 .firstorderoffer p {
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-family: Lato, sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -254,7 +241,6 @@ a.text-reset.searchproduct {
   line-height: 22px;
   text-transform: uppercase;
 }
-
 
 a.text-reset.bagproduct {
   color: #000;
@@ -277,7 +263,6 @@ a.text-reset.accountproduct {
   text-transform: uppercase;
   margin-left: 20px;
 }
-
 
 .firstorderoffer li {
   margin-bottom: 8px; /* Adds spacing between offers */
@@ -325,7 +310,6 @@ a.text-reset.accountproduct {
   margin-top: 10px;
 }
 
-
 .d-flex.justify-content-between.checkboxline {
   margin-top: -154px;
 }
@@ -349,11 +333,7 @@ label.itemselected {
   align-items: center; /* Ensures vertical centering of elements if needed */
 }
 
-
 /* svg */
-
-
-
 
 .svgremove {
   display: flex;
@@ -366,26 +346,21 @@ label.itemselected {
 }
 
 .svgremove span::before {
-  content: '|';
+  content: "|";
   margin-left: 12px; /* Adds margin before pipe */
   margin-right: 12px; /* Adds margin after pipe */
 }
 
 .svgremove span:first-child::before {
-  content: ''; /* No pipe before the first SVG */
+  content: ""; /* No pipe before the first SVG */
   margin-left: 0;
 }
-
-
 
 .row.svgsssection {
   padding-top: 0px;
   margin-top: -280px;
   margin-bottom: 17px;
 }
-
-
-
 
 .row.cartitemsection {
   align-items: center;
@@ -406,11 +381,11 @@ p.textwildflower {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  margin-top:16px ;
+  margin-top: 16px;
   margin-bottom: 16px;
 }
 p.featuringtext {
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
@@ -419,50 +394,47 @@ p.featuringtext {
   margin-bottom: 16px;
 }
 
-.btn-group, .btn-group-vertical {
+.btn-group,
+.btn-group-vertical {
   position: relative;
-  display: inline-flex
-;
+  display: inline-flex;
   vertical-align: middle;
   gap: 24px;
   margin-bottom: 16px;
   border: 0.5px solid #000;
-  background: #D9D9D9;
-
+  background: #d9d9d9;
 }
 
 .btn-group1 select.form-select {
   /* background: #D9D9D9; */
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
-.btn-group1, .btn-group1-vertical {
+.btn-group1,
+.btn-group1-vertical {
   position: relative;
-  display: inline-flex
-;    margin-left: 24px;
+  display: inline-flex;
+  margin-left: 24px;
   vertical-align: middle;
   gap: 24px;
   margin-bottom: 16px;
-  background: #D9D9D9;
-
+  background: #d9d9d9;
 }
 
-
-btn-group1, .btn-group1-vertical {
+btn-group1,
+.btn-group1-vertical {
   position: relative;
-  display: inline-flex
-;
+  display: inline-flex;
   margin-left: 24px;
   vertical-align: middle;
   gap: 24px;
   margin-bottom: 16px;
   /* border: 0.5px solid #000; */
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
 
-
 p.productprices {
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
@@ -471,7 +443,7 @@ p.productprices {
 }
 button#dropdownMenuButton {
   font-size: 12px;
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-family: Lato;
   font-style: normal;
   font-weight: 400;
@@ -487,7 +459,7 @@ button#dropdownMenuButton {
   color: #212529;
   background-color: #fff;
   background-repeat: no-repeat;
-  background-position: right .75rem center;
+  background-position: right 0.75rem center;
   background-size: 16px 12px;
   border: 1px solid #ced4da;
   -moz-appearance: none;
@@ -499,11 +471,11 @@ select.form-select {
   font-size: 12px;
 }
 select.form-select.qty {
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
 
 .form-select.qty {
-  background: #D9D9D9;
+  background: #d9d9d9;
   appearance: none; /* Removes the default dropdown arrow */
   -webkit-appearance: none; /* For Safari */
   -moz-appearance: none; /* For Firefox */
@@ -513,8 +485,6 @@ select.form-select.qty {
   width: auto;
   font-size: 16px;
 }
-
-
 
 /* Custom arrow */
 .form-select.qty::after {
@@ -526,9 +496,6 @@ select.form-select.qty {
   font-size: 18px;
   color: black; /* Black color for the arrow */
 }
-
-
-
 
 /* Style the checkbox itself */
 input[type="checkbox"] {
@@ -553,32 +520,10 @@ input[type="checkbox"]:checked {
 
 /* Add a check mark (tick) when checked */
 input[type="checkbox"]:checked::before {
-  content: '✔'; /* Unicode check mark */
+  content: "✔"; /* Unicode check mark */
   color: white; /* Color of the check mark */
   font-size: 14px; /* Adjust size of the check mark */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 p.textwildflower {
   color: #000;
@@ -587,13 +532,13 @@ p.textwildflower {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  margin-top:16px ;
+  margin-top: 16px;
   margin-bottom: 16px;
 }
-.btn-group, .btn-group-vertical {
+.btn-group,
+.btn-group-vertical {
   position: relative;
-  display: inline-flex
-;
+  display: inline-flex;
   vertical-align: middle;
   gap: 24px;
   margin-bottom: 16px;
@@ -601,7 +546,7 @@ p.textwildflower {
 }
 
 p.productprices {
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
@@ -615,30 +560,28 @@ p.productprices {
   align-items: center;
 }
 
-.btn-group1, .btn-group1-vertical {
+.btn-group1,
+.btn-group1-vertical {
   position: relative;
-  display: inline-flex
-;    margin-left: 24px;
+  display: inline-flex;
+  margin-left: 24px;
   vertical-align: middle;
   gap: 24px;
   margin-bottom: 16px;
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
-
-
 
 button#dropdownMenuButton {
   font-size: 12px;
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-family: Lato;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
 }
 
-
 p.featuringtext {
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
@@ -658,7 +601,6 @@ p.featuringtext {
 }
 
 .row.cartitemsection {
-  
   align-items: center;
   justify-content: center;
   font-family: lato;
@@ -676,14 +618,12 @@ p.featuringtext {
 }
 
 .col-md-10.somegap {
-    column-gap: 16px;
-    row-gap: 16px;
-    /* margin-left: 12px; */
-    padding-left: 32px;
-    /* padding-right: 3px; */
+  column-gap: 16px;
+  row-gap: 16px;
+  /* margin-left: 12px; */
+  padding-left: 32px;
+  /* padding-right: 3px; */
 }
-
-
 
 p.available {
   color: #000;
@@ -696,7 +636,7 @@ p.available {
 
 /* Styling for all <p> elements within the .coupon div */
 .coupon p {
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-family: Lato, sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -704,11 +644,8 @@ p.available {
   line-height: 20px; /* 166.667% */
 }
 
-
-
 button.loginnow1 {
-  display: flex
-;
+  display: flex;
   width: 109px;
   padding: 8px 10px;
   justify-content: center;
@@ -724,7 +661,6 @@ button.loginnow1 {
   margin-left: 16px;
   margin-bottom: 16px;
 }
-
 
 .coupon .secondline {
   color: #3d3d3d;
@@ -807,13 +743,12 @@ p.checkdeliverytimeandservice {
 }
 
 .d-flex.justify-content-between.m-0.my-4.p-4.checkdeliverytime {
-  background-color: #DDD;
+  background-color: #ddd;
   padding: -11px;
   height: 63px;
   justify-content: center;
   align-items: center;
 }
-
 
 /* product page  */
 .flex-box {
@@ -947,8 +882,6 @@ input[type="int"] {
   /* 157.143% */
   gap: 16px;
 }
-
-
 
 .p .underline {
   color: #000;
@@ -1210,7 +1143,6 @@ input[type="text"] {
   align-self: stretch;
   background: #000;
   margin-bottom: 16px;
-  
 }
 p.productpagelines {
   color: #000;
@@ -1222,8 +1154,6 @@ p.productpagelines {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-
-
 
 p.cartapplycoupon {
   color: #000;
@@ -1238,19 +1168,19 @@ p.cartapplycoupon {
   border-bottom: 0.5px solid black;
 }
 
-p.miniumpurchase{
-  color: #3D3D3D;
-font-family: Lato;
-font-size: 12px;
-font-style: normal;
-font-weight: 300;
-line-height: 20px; /* 166.667% */
-text-transform: capitalize;
-margin-top: 4px;
-margin-bottom: 8px;
+p.miniumpurchase {
+  color: #3d3d3d;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 166.667% */
+  text-transform: capitalize;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 p.extra65off {
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
@@ -1285,7 +1215,6 @@ p.extra65off {
   margin-bottom: 0px;
 }
 
-
 .couponsectiondeal.m-0.my-4.p-4 {
   padding: 8px;
   justify-items: normal;
@@ -1296,8 +1225,6 @@ p.extra65off {
   margin-bottom: -26px;
   margin-top: -17px;
 }
-
-
 
 p.discount {
   color: #000;
@@ -1327,8 +1254,6 @@ p.discount {
 .buy-btn:hover {
   background-color: #0066ff;
 }
-
-
 
 .p .black {
   background-color: black;
@@ -1370,10 +1295,8 @@ p.discount {
   margin-left: -30px;
 }
 
-
-
 .row .togglemenu {
-  margin-top: 30px;
+  margin-top: 56px !important;
   margin-bottom: 32px;
   margin-left: -5px;
 }
@@ -1427,8 +1350,6 @@ p.line4 {
   text-decoration: underline;
 }
 
-
-
 /* button.loginnow {
   border: 0.5px solid black;
   display: flex;
@@ -1445,7 +1366,6 @@ p.line4 {
   line-height: 20px;
 } */
 
-
 /* General styling for all inputs with the 'loginnow' class */
 input.loginnow {
   display: flex;
@@ -1456,7 +1376,7 @@ input.loginnow {
   gap: 10px;
   flex-shrink: 0;
   border: 0.5px solid #000;
-  background: #DDD;
+  background: #ddd;
   color: #000;
   font-family: Lato, sans-serif;
   font-size: 12px;
@@ -1476,15 +1396,14 @@ input.loginnow::placeholder {
 
 input.loginnow.cart-input {
   width: 100px;
-  background: #DDD;
+  background: #ddd;
   border: 0.5px solid black;
   border-radius: 0px;
   padding: 8px 10px;
 }
 
-
 p.cartpagelines {
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-family: Lato;
   font-size: 12px;
   font-style: normal;
@@ -1509,7 +1428,6 @@ p.item1price1 {
   line-height: 22px;
 }
 
-
 .withus {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -1517,7 +1435,6 @@ p.item1price1 {
   color: #000;
   margin-bottom: 8px;
 }
-
 
 .sticky-top p {
   color: #fff;
@@ -1530,7 +1447,6 @@ p.item1price1 {
   /* 114.286% */
 }
 
-
 .app-icons {
   display: flex;
   margin: 16px;
@@ -1540,8 +1456,6 @@ p.item1price1 {
   width: 147px;
   height: 25px;
 }
-
-
 
 .input-wrapper {
   display: flex;
@@ -1554,8 +1468,6 @@ p.item1price1 {
   /* Remove padding */
 }
 
-
-
 .input-container {
   width: 268px;
   height: 36px;
@@ -1564,18 +1476,10 @@ p.item1price1 {
   align-items: center;
 }
 
-
-
-
-
 .input-addon {
   margin-top: -31px;
   margin-left: 380px;
 }
-
-
-
-
 
 .withus {
   color: #000 !important;
@@ -1613,8 +1517,6 @@ p.item1price1 {
   flex-shrink: 0;
   flex-shrink: 0;
 }
-
-
 
 /* Image dimensions and styling */
 .card1 img {
@@ -1684,12 +1586,9 @@ p.item1price1 {
   margin-bottom: 64px;
 }
 
-
 .newarrive {
   justify-content: center;
 }
-
-
 
 .description {
   color: #000;
@@ -1702,12 +1601,8 @@ p.item1price1 {
   text-transform: uppercase;
   margin-left: -13px;
   gap: 13px;
-  display: flex
-;
+  display: flex;
 }
-
-
-
 
 .exploreheading {
   color: #000;
@@ -1733,8 +1628,6 @@ p.item1price1 {
   height: 792px;
   width: 589.09px;
 }
-
-
 
 .section5 {
   margin-top: 80px;
@@ -1896,8 +1789,6 @@ p.item1price1 {
   margin-top: 16px;
 }
 
-
-
 .image1 {
   background: url("./assets/images/topimage1.png") no-repeat center center;
 }
@@ -1989,7 +1880,6 @@ p.item1price1 {
 }
 
 .description .price {
-
   font-weight: 300;
   line-height: 20px;
   text-transform: uppercase;
@@ -2023,7 +1913,6 @@ p.item1price1 {
   height: 720px;
   width: 4050px;
 }
-
 
 .item {
   height: 720px;
@@ -2085,7 +1974,6 @@ p.item1price1 {
   margin-bottom: 24px;
 }
 
-
 .videopic {
   display: flex;
   flex-wrap: wrap;
@@ -2117,9 +2005,6 @@ p.item1price1 {
   padding: 25px 0;
   margin-top: -40px;
 }
-
-
-
 
 .faq ul {
   padding: 0;
@@ -2203,7 +2088,6 @@ p.item1price1 {
 }
 /* css forr blog post  */
 
-
 .price-card {
   background: #d9d9d9;
   padding: 0 !important;
@@ -2211,11 +2095,9 @@ p.item1price1 {
   margin-left: 1px;
 }
 
-
 .left-column {
   margin-left: 10%;
 }
-
 
 .product-cards .row {
   margin: 0;
@@ -2231,10 +2113,6 @@ p.item1price1 {
   /* Uniform height for images */
   object-fit: cover;
 }
-
-
-
-
 
 .app-icon {
   width: 130px;
