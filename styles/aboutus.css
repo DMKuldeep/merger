@@ -16,15 +16,16 @@
 
 
 .section1image {
-    background: url("../assets/images/aboutussection1image(1)(1).jpg") lightgray no-repeat;
-    height: 634px;
+    background: url("../assets/images/aboutussection1image(1)(1).jpg") lightgray
+      no-repeat;
+    height: 800px;
     margin-bottom: 32px;
-    background-size: cover; /* Ensure the entire image fits in the div */
-    background-position: center center; /* Keep the focus in the center */
-    background-repeat: no-repeat; /* Avoid tiling */
-    overflow: hidden; /* Prevent content overflow */
-    object-fit: contain;
-}
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+    /* object-fit: contain; */
+  }
 
 .bottom-right {
     position: absolute; /* Position relative to the parent container */
@@ -37,7 +38,7 @@
     line-height: 36px; /* Line height */
     text-transform: uppercase; /* Uppercase text */
     margin:auto;
-    margin-top: 540px;
+    margin-top: 640px;
     margin-left: 1270px;
    
   
