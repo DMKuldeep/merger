@@ -1377,14 +1377,13 @@ a {
 
 .image11,
 .image22 {
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  background-position: top center;
-  height: 848px;
-  
+  display: flex;
+  width: 720px;
+  height: 1000px;
   flex-shrink: 0;
-  /* Prevent shrinking */
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
 }
 
 
@@ -1398,14 +1397,13 @@ a {
 
 .image33,
 .image44 {
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  /* Full width of the column */
-  height: 848px;
-  /* Maintain the specified height */
+  display: flex;
+  width: 720px;
+  height: 1000px;
   flex-shrink: 0;
-  /* Prevent shrinking */
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
 }
 
 
