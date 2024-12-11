@@ -1,6 +1,6 @@
 document.querySelectorAll('.position-relative').forEach(container => {
   const video = container.querySelector('.video');
-  
+
   container.addEventListener('mouseenter', () => {
     video.play(); // Play the video on hover
   });
@@ -19,7 +19,7 @@ const contents = document.querySelectorAll('.collections');
 icons.forEach(icon => {
   icon.addEventListener('click', () => {
     const targetId = icon.getAttribute('data-target');
-    
+
     // Remove active class from all icons and content divs
     icons.forEach(i => i.classList.remove('active'));
     contents.forEach(content => content.classList.remove('active'));
@@ -29,11 +29,13 @@ icons.forEach(icon => {
 
     // Show the selected content div
     document.getElementById(targetId).classList.add('active');
-    // Set "collection1" as active by default
-document.querySelector('.icon[data-target="collection1"]').classList.add('active');
-document.getElementById('collection1').classList.add('active');
   });
 });
+
+// Set "collection1" as active by default
+document.querySelector('.icon[data-target="collection1"]').classList.add('active');
+document.getElementById('collection1').classList.add('active');
+
 
 
 
