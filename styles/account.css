@@ -1214,89 +1214,7 @@ p.item1price1 {
   /* 114.286% */
 }
 
-.footer li {
-  color: #000;
-  text-align: left;
-  font-family: "Lato", serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px;
-  /* 166.667% */
-  text-transform: capitalize;
-}
 
-.footer p {
-  font-family: "Alike", serif;
-  color: #000;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-}
-
-.footer-links a {
-  color: #000;
-  text-align: center;
-  font-family: Lato;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px;
-  /* 166.667% */
-  text-transform: capitalize;
-}
-
-.footer-links li {
-  margin: 4px 0;
-}
-
-.footer-heading {
-  color: #000;
-  font-family: "Alike", serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: capitalize;
-}
-
-.footer {
-  margin-top: 48px;
-  margin-bottom: -100px;
-  font-family: "Alike", serif;
-}
-
-.footer h5 {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin-bottom: 4px;
-}
-
-.footer-links a {
-  text-decoration: none;
-  text-align: center;
-  font-family: "Lato";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px;
-  text-transform: capitalize;
-}
-
-.footer-heading {
-  width: 73px;
-  height: 20px;
-}
 
 .app-icons {
   display: flex;
@@ -1308,20 +1226,7 @@ p.item1price1 {
   height: 25px;
 }
 
-.footertext1 {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  display: flex;
-  width: 410px;
-  height: 20px;
-  color: #000;
-  font-family: Lato;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px;
-  text-transform: capitalize;
-}
+
 
 .input-wrapper {
   display: flex;
@@ -1406,11 +1311,6 @@ input[type="email"]::placeholder {
   text-transform: capitalize;
 }
 
-@media (max-width: 768px) {
-  footer .col-md-2 {
-    margin-bottom: 20px;
-  }
-}
 
 .withus {
   color: #000 !important;

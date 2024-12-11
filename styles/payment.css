@@ -117,33 +117,9 @@ body {
   overflow: hidden;
 }
 
-.footer-input {
-  width: 411px; /* Updated width */
-  height: 36px; /* Updated height */
-  flex-shrink: 0; /* Prevent shrinking */
-  border-radius: 4px; /* Rounded corners */
-  border: 0.5px solid #000; /* Black border */
-  padding-right: 25px; /* Space for the SVG */
-  padding-left: 15px; /* Optional space on the left side of the input */
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
 
-.footer-input1 {
-  width: 343px; /* Updated width */
-  height: 36px; /* Updated height */
-  flex-shrink: 0; /* Prevent shrinking */
-  border-radius: 4px; /* Rounded corners */
-  border: 0.5px solid #000; /* Black border */
-  padding-right: 25px; /* Space for the SVG */
-  padding-left: 15px; /* Optional space on the left side of the input */
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
 
-footer .container {
-  overflow: hidden;
-}
+
 /* streamline dot */
 
 .track_tbl td.track_dot {
@@ -779,10 +755,7 @@ p.productprices {
   text-decoration: solid;
 }
 
-/* .featuring {
-  margin-top: 24px;
-  margin-bottom: 24px;
-} */
+
 
 .row.cartitemsection {
   align-items: center;
@@ -986,52 +959,13 @@ p.item1price1 {
   font-size: 10px;
 }
 
-.footer li {
-  color: #000;
-  text-align: left;
-  font-family: "Lato", serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px;
-  /* 166.667% */
-  text-transform: capitalize;
-}
 
-.footer p {
-  font-family: "Lato", serif;
-  color: #000;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-}
 
-.footer-links a {
-  color: #000;
-  text-align: center;
-  font-family: Lato;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px;
-  /* 166.667% */
-  text-transform: capitalize;
-}
 
-.footer-links li {
-  margin: 4px 0;
-}
 
-.footer-heading {
-  color: #000;
-  font-family: "Alike", serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: capitalize;
-}
+
+
+
 
 .col-md-4.col-sm-6.benifits {
   margin-left: -50px;
@@ -1041,42 +975,6 @@ p.item1price1 {
   margin-left: 49px;
 }
 
-.footer {
-  margin-top: 48px;
-  margin-bottom: -100px;
-  font-family: "Alike", serif;
-}
-
-.footer h5 {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin-bottom: 4px;
-}
-
-.footer-links a {
-  text-decoration: none;
-  text-align: center;
-  font-family: "Lato";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px;
-  text-transform: capitalize;
-}
-
-.footer-heading {
-  width: 73px;
-  height: 20px;
-}
 
 .app-icons {
   display: flex;
@@ -1088,20 +986,7 @@ p.item1price1 {
   height: 25px;
 }
 
-.footertext1 {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  display: flex;
-  width: 410px;
-  height: 20px;
-  color: #000;
-  font-family: Lato;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 20px;
-  text-transform: capitalize;
-}
+
 
 .input-wrapper {
   display: flex;
@@ -1161,9 +1046,7 @@ input[type="email"] {
   padding-right: 20px;
 }
 
-.input-container input.footer-input1 {
-  width: 100%;
-}
+
 
 .input-container .input-addon {
   position: absolute;
@@ -1266,7 +1149,6 @@ input[type="email"]::placeholder {
   margin-bottom: 54px;
 }
 
-/* footer css */
 
 @media (max-width: 768px) {
   .faq ul {
