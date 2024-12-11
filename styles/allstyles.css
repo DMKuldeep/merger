@@ -167,9 +167,12 @@ a.text-reset {
   opacity: 0.3;
 }
 
-.overlaytext:hover .middle {
-  opacity: 1;
-}
+
+
+
+
+
+
 
 .overlaytext1:hover .showtexthover {
   opacity: 0.3;
