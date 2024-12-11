@@ -1356,7 +1356,16 @@ a {
   /* Prevent shrinking */
 }
 
+.carousel-control-prev-icon {
+ 
+  margin-left: -142px;
+}
 
+
+.carousel-control-next-icon {
+ 
+  margin-left: 142px;
+}
 
 .image11 {
   background: url("./assets/images/grey1section3.jfif") no-repeat center center;
@@ -1371,9 +1380,9 @@ a {
   background-size: cover;
   background-position: center center;
   width: 100%;
-  /* Full width of the column */
+  background-position: top center;
   height: 848px;
-  /* Maintain the specified height */
+  
   flex-shrink: 0;
   /* Prevent shrinking */
 }
