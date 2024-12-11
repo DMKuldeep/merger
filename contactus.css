@@ -66,6 +66,18 @@ input::placeholder {
 }
 
 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  text-align: left; /* Aligns placeholder text to the left */
+}
+
+.contact-form input,
+.contact-form textarea {
+  text-align: left; /* Ensures user-entered text is also aligned left */
+}
+
+
+
 
 p.contactpage {
     color: #000;
