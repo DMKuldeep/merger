@@ -653,6 +653,8 @@ p.filter1 {
   background-position: center center;
   width: 100%;
   height: 748px;
+  cursor: pointer;
+  
 
   flex-shrink: 0;
 }
@@ -701,6 +703,7 @@ p.filter1 {
   background-size: cover;
   background-position: center center;
   width: 100%;
+  cursor: pointer;
 }
 
 .image46 {

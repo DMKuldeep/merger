@@ -11,7 +11,6 @@ document.querySelectorAll('.position-relative').forEach(container => {
   });
 });
 
-
 const icons = document.querySelectorAll('.icon');
 const contents = document.querySelectorAll('.collections');
 
@@ -28,7 +27,8 @@ icons.forEach(icon => {
     icon.classList.add('active');
 
     // Show the selected content div
-    document.getElementById(targetId).classList.add('active');
+    const targetContent = document.getElementById(targetId);
+    targetContent.classList.add('active');
   });
 });
 
@@ -41,4 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
   firstIcon.classList.add('active');
   firstContent.classList.add('active');
 });
+
+
 
