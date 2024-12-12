@@ -36,9 +36,61 @@
 /* searchbar css */
 
 
-form.d-flex.seachbar {
-  margin-right: 17px;
-  background: transparent;
+.searchbar {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 200px;
+}
+
+form.d-flex.searchbar {
+  margin-right: 20px;
+}
+
+.form-control {
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+}
+
+.form-control::placeholder {
+  color: transparent;
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 1em;
+  line-height: 1;
+  animation: slideText 3000ms linear infinite;
+}
+
+@keyframes slideText {
+  0%, 20% {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+  25%, 100% {
+    transform: translateY(-50%) translateY(-1em);
+    opacity: 0;
+  }
+}
+
+.placeholder span {
+  display: block;
+  height: 1em;
+  line-height: 1;
+  color: black;
 }
 
 

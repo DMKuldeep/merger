@@ -24,3 +24,16 @@ footerSectionDark();
 
 
 
+ // Synchronize placeholder focus behavior
+ const searchInput = document.getElementById('search');
+ const placeholder = document.querySelector('.placeholder');
+
+ searchInput.addEventListener('focus', () => {
+   placeholder.style.display = 'none';
+ });
+
+ searchInput.addEventListener('blur', () => {
+   if (!searchInput.value) {
+     placeholder.style.display = 'block';
+   }
+ });

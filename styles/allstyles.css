@@ -385,6 +385,151 @@ p.coords {
 }
 
 
+/* filter toggle css */
+
+
+
+.accordion-body {
+display: none;
+
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: #e7f1ff !important;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125)!important;
+}
+
+#accordionExample button{
+ border: 0px !important;
+ box-shadow: none !important ;
+ padding-left: 0px;
+
+}
+
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180eg) !important;
+}
+.accordion-item {
+  border: none !important;
+}
+
+.offcanvas-body {
+  flex-grow: 1;
+  padding: 1rem 1rem;
+  overflow-y: auto;
+  padding-top: 40px;
+  font-family: 'Inter';
+  color: black;
+  opacity: 1.25;
+  overflow-y: scroll;
+  
+  /* Hide scrollbar */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* #accordionExample{
+  background-color: #f2f2f2!important;
+} */
+
+
+.accordion-collapse.collapse .accordion-body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: none!important;
+}
+
+.font_monte{
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 12px;
+  color: #000;
+
+}
+
+.fontulli{
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 10px;
+  color: #000;
+}
+
+.accordion-body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 10px;
+}
+
+
+
+.checkbox-container {
+  gap: 20px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  background-color: black;
+}
+
+
+
+
+.accordion-collapse.collapse .accordion-body {
+  background: white;
+  /* position: absolute; */
+  left: 100%;
+  /* height: 100vh; */
+  width: 200px;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  display: block;
+}
+
+
+.bothbuttonsidebar {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Adds 20px gap between buttons */
+  margin-top: 190px;
+}
+
+button.filterpaneapply {
+  width: 100%;
+  color: white;
+  background: black;
+  border: none;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  height: 30px;
+  text-align: center;
+  justify-content: center;
+  padding: 5px 10px;
+}
+
+/* filter toggle css */
+
 
 
 p.filter {

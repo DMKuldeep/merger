@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding Placeholder Animation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+   
+  </style>
+</head>
+<body>
+  <form class="d-flex searchbar">
+    <input id="search" class="form-control" type="text" placeholder="Search" aria-label="Search">
+    <div class="placeholder">
+      <span>best time to buy Co-Ords</span>
+      <span>best buy Co-Ords me</span>
+      <span>buy Co-Ords</span>
+      <span>20% off on Co-ords</span>
+      <span>fashion week</span>
+    </div>
+  </form>
+
+  <script>
+
+  </script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding Placeholder Animation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    .searchbar {
+      position: relative;
+      display: flex;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    form.d-flex.searchbar {
+      margin-right: 20px;
+    }
+
+    .form-control {
+      padding: 10px 20px;
+      font-size: 16px;
+      width: 100%;
+      border: 2px solid #ccc;
+      border-radius: 25px;
+      outline: none;
+    }
+
+    .form-control::placeholder {
+      color: transparent;
+    }
+
+    .placeholder {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: #999;
+      pointer-events: none;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .placeholder span {
+      display: none;
+    }
+
+    .placeholder span.active {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <form class="d-flex searchbar">
+    <input id="search" class="form-control" type="text" placeholder="Search" aria-label="Search">
+    <div class="placeholder">
+      <span>best time to buy Co-Ords</span>
+      <span>best buy Co-Ords me</span>
+      <span>buy Co-Ords</span>
+      <span>20% off on Co-ords</span>
+      <span>fashion week</span>
+    </div>
+  </form>
+
+  <script>
+    const searchInput = document.getElementById('search');
+    const placeholder = document.querySelector('.placeholder');
+    const spans = placeholder.querySelectorAll('span');
+    let currentIndex = 0;
+
+    function showNextPlaceholder() {
+      spans.forEach((span, index) => {
+        span.classList.remove('active');
+        if (index === currentIndex) {
+          span.classList.add('active');
+        }
+      });
+
+      currentIndex = (currentIndex + 1) % spans.length;
+    }
+
+    // Start the animation loop
+    setInterval(showNextPlaceholder, 2000);
+
+    // Handle focus and blur events
+    searchInput.addEventListener('focus', () => {
+      placeholder.style.display = 'none';
+    });
+
+    searchInput.addEventListener('blur', () => {
+      if (!searchInput.value) {
+        placeholder.style.display = 'block';
+      }
+    });
+
+    // Initialize the first placeholder
+    showNextPlaceholder();
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding Placeholder Animation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    .searchbar {
+      position: relative;
+      display: flex;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    form.d-flex.searchbar {
+      margin-right: 20px;
+    }
+
+    .form-control {
+      padding: 10px 20px;
+      font-size: 16px;
+      width: 100%;
+      border: 2px solid #ccc;
+      border-radius: 25px;
+      outline: none;
+    }
+
+    .form-control::placeholder {
+      color: transparent;
+    }
+
+    .placeholder {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: #999;
+      pointer-events: none;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .placeholder span {
+      display: none;
+    }
+
+    .placeholder span.active {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <form class="d-flex searchbar">
+    <input id="search" class="form-control" type="text" placeholder="Search" aria-label="Search">
+    <div class="placeholder">
+      <span>best time to buy Co-Ords</span>
+      <span>best buy Co-Ords me</span>
+      <span>buy Co-Ords</span>
+      <span>20% off on Co-ords</span>
+      <span>fashion week</span>
+    </div>
+  </form>
+
+  <script>
+  
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+i need the below div on click of fliter
+
+ <p class="filter"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14"
+                fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0.320033 4.09298e-05H14.6793C14.8031 4.09298e-05 14.9159 0.0747751 14.9691 0.192603C15.0224 0.310428 15.0057 0.449129 14.9274 0.550115L9.23072 7.86066V12.1831C9.23072 12.3104 9.16211 12.4269 9.05375 12.4841L6.23288 13.9647C6.13349 14.0165 6.01551 14.0111 5.92125 13.9498C5.82698 13.8886 5.76927 13.7802 5.76927 13.6637V7.86062L0.072552 0.550075C-0.00567841 0.449755 -0.0223501 0.310389 0.030871 0.192562C0.0840938 0.0747377 0.196948 0 0.320706 0L0.320033 4.09298e-05ZM0.996538 0.673319L6.33737 7.52745C6.38418 7.58737 6.40983 7.66278 6.40983 7.74088V13.1191L8.58933 11.9752V7.74093C8.58933 7.66351 8.61498 7.5881 8.66179 7.5275L14.0026 0.673371L0.996538 0.673319Z"
+                  fill="black" />
+              </svg>&nbsp; Filter</p>
+
+
+
+
+ <div class="offcanvas offcanvas-start headeraccordian" tabindex="-1" id="offcanvasWithBackdrop"
+              aria-labelledby="offcanvasWithBackdropLabel">
+              <div class="offcanvas-header" style="background-color: #f2f2f2;">
+                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel" style="opacity: 0;">Offcanvas with backdrop</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <p class="font_monte">NEW IN </p>
+                <p class="font_monte">BASIC ESSENTIALS</p>
+        
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="false" aria-controls="collapseOne">
+                        <p class="font_monte"> ALL COLLECTION</p>
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p class="font_monte">ALL PRODUCTS</p> <br>
+                        <p class="font_monte">SHOP ON TREND</p>
+        
+                        <ul>
+                          <li class="fontulli">ALL DRESSES</li>
+                          <li class="fontulli">PARTY DRESSES</li>
+                          <li class="fontulli">MAXI DRESS</li>
+                          <li class="fontulli">SHORT & SASSY</li>
+                          <li class="fontulli">BODYCON DRESS</li>
+                          <li class="fontulli">SLIT DRESS</li>
+                          <li class="fontulli">BLACK DRESS</li>
+                          <li class="fontulli">SHIRT DRESS</li>
+        
+                        </ul> <br>
+                        <p class="font_monte">BUSINESS COLLECTION</p> <br>
+        
+                        <ul>
+                          <li class="fontulli">OFFICE CO-ORDS</li>
+                          <li class="fontulli">COATS & BLAZERS</li>
+                          <li class="fontulli">SHIRTS</li>
+        
+        
+                        </ul> <br>
+                        <p class="font_monte">WHIMSY WEAR</p> <br>
+                        <ul>
+                          <li class="fontulli">SUMMER BLISS</li>
+                          <li class="fontulli">PARTY WEAR</li>
+                        </ul>
+                        <br>
+                        <p class="font_monte">PARTY WEAR</p>
+                        <br>
+        
+                        <ul>
+                          <li class="fontulli">PARTY CO-ORDS</li>
+                          <li class="fontulli">BLACK PARTY DRESS</li>
+                          <li class="fontulli">SHORT & MINI</li>
+                          <li class="fontulli">LONG DRESS</li>
+                          <li class="fontulli">OFF SHOULDER</li>
+                          <li class="fontulli">ONE SHOULDER</li>
+                          <li class="fontulli">BODYCON DRESS</li>
+                          <li class="fontulli">SLIT DRESS</li>
+                          <li class="fontulli">SEQUIN DRESS</li>
+        
+                        </ul>
+                        <br>
+                        <p class="font_monte">CO-ORDS</p> <br>
+                        <ul>
+                          <li class="fontulli">OCCASION CO-ORDS</li>
+                          <li class="fontulli">BLACK CO-ORDS</li>
+                          <li class="fontulli">CASUAL CO-ORDS</li>
+                          <li class="fontulli">OFFICE CO-ORDS</li>
+                        </ul>
+                        <br>
+                        <p class="font_monte">DENIM</p>
+                        <ul>
+                          <li class="fontulli">JEANS </li>
+                          <li class="fontulli">CARGO</li>
+                        </ul>
+        
+        
+                        <p class="font_monte">SHIRT</p>
+                        <br>
+                        <p class="font_monte">JEANS</p>
+                        <br>
+        
+                        <p class="font_monte">BOTTOMS</p>
+                        <br>
+        
+                        <ul>
+                          <li class="fontulli">JEANS</li>
+                          <li class="fontulli">SKIRT</li>
+                          <li class="fontulli">CARGO</li>
+                        </ul>
+        
+        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <p class="font_monte">CLASSIC CHIC</p>
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p class="font_monte">PARTY -WEAR</p>
+                        <p class="font_monte">CO-ORDS</p>
+        
+                        <p class="font_monte">BUSINESS COLLECTION</p>
+        
+                        <p class="font_monte">DENIM</p>
+        
+                        <p class="font_monte">SHIRT DRESS</p>
+        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <p class="font_monte">SHOP BY COLOR</p>
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p class="font_monte">BLUE</p>
+                        <p class="font_monte">BLACK</p>
+                        <p class="font_monte">WHITE</p>
+                        <p class="font_monte">GREEN</p>
+                        <p class="font_monte">MULTI</p>
+                        <p class="font_monte">PINK</p>
+                        <p class="font_monte">ORANGE</p>
+                        <p class="font_monte">BEIGE</p>
+                        <p class="font_monte">RED</p>
+                        <p class="font_monte">GREY</p>
+                        <p class="font_monte">SILVER</p>
+                        <p class="font_monte">YELLOW</p>
+                        <p class="font_monte">AQUA</p>
+        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+        
+        
+        
+        
+              </div>
+        
+            </div>
+
+
+.accordion-collapse.collapse .accordion-body{
+  background: white;
+  position: absolute;
+  left: 100%;
+  height: 100vh;
+  width: 200px;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  display: block;
+  
+} 
+
+.accordion-body {
+display: none;
+
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: #e7f1ff !important;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125)!important;
+}
+
+#accordionExample button{
+ border: 0px !important;
+ background-color: #f2f2f2 !important;
+ box-shadow: none !important ;
+ padding-left: 0px;
+
+}
+.accordion-collapse.collapse .accordion-body {
+  background: white;
+  position: absolute;
+  left: 100%;
+  height: 100vh;
+  width: 365px;
+  top: 0px;
+  transition: all 0.3s ease 0s;
+  display: block;
+  /* margin-top: 20px; */
+  /* padding: 42px; */
+  padding-top: 125px;
+  overflow-y: scroll;
+  
+  /* Hide scrollbar */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(-90deg) !important;
+}
+.accordion-item {
+  border: none !important;
+}
+
+.offcanvas-body {
+  flex-grow: 1;
+  padding: 1rem 1rem;
+  overflow-y: auto;
+  padding-top: 40px;
+  font-family: 'Inter';
+  color: black;
+  opacity: 1.25;
+  overflow-y: scroll;
+  background-color: #f2f2f2;
+  
+  /* Hide scrollbar */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+#accordionExample{
+  background-color: #f2f2f2!important;
+}
+
+
+.accordion-collapse.collapse .accordion-body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: none!important;
+}
+
+.font_monte{
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 12px;
+  color: #000;
+
+}
+
+.fontulli{
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 10px;
+  color: #000;
+}
+
+.accordion-body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 10px;
+}
+
+
+need gap between two button 20px
+button.filterpaneapply {
+  width: 100%;
+  color: white;
+  background: black;
+  border: none;
+  font-family: lato;
+  font-size: 15px;
+  
+}
+
+
+   <div class="bothbuttonsidebar">
+                    <button class="filterpaneapply" >APPLY</button>
+                    
+                    <button  class="filterpaneapply">CLEAR ALL</button>
+                  </div>
