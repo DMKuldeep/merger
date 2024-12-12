@@ -74,22 +74,96 @@
               </svg>&nbsp; Filter</p>
           </div>
 
+          <!-- <div class="row col-md-2">
+            <p class="filter1">
+              <div class="custom-dropdown">
+                <button class="btn btn--link size--small dropdown-toggle">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <g clip-path="url(#clip0_1453_8445)">
+                      <rect x="1.04822" y="0.75" width="15.5" height="3.5" stroke="black" stroke-width="0.5"/>
+                      <rect x="1.04822" y="6.75" width="11.5" height="3.5" stroke="black" stroke-width="0.5"/>
+                      <rect x="1.04822" y="12.75" width="7.5" height="3.5" stroke="black" stroke-width="0.5"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1453_8445">
+                        <rect width="17" height="17" fill="white" transform="translate(0.798218 0.5)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Sort By
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" data-value="best-selling">Best selling</a>
+                  <a class="dropdown-item" href="#" data-value="price-ascending">Price, low to high</a>
+                  <a class="dropdown-item" href="#" data-value="price-descending">Price, high to low</a>
+                  <a class="dropdown-item" href="#" data-value="created-ascending">Date, old to new</a>
+                  <a class="dropdown-item" href="#" data-value="created-descending">Date, new to old</a>
+                </div>
+              </div>
+            </p>
+          </div> -->
+          
+
+          <!-- <div class="row col-md-2">
+            <p class="filter1">
+              <div class="custom-dropdown">
+                <button class="btn btn--link size--small dropdown-toggle" onclick="toggleDropdown()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <g clip-path="url(#clip0_1453_8445)">
+                      <rect x="1.04822" y="0.75" width="15.5" height="3.5" stroke="black" stroke-width="0.5"/>
+                      <rect x="1.04822" y="6.75" width="11.5" height="3.5" stroke="black" stroke-width="0.5"/>
+                      <rect x="1.04822" y="12.75" width="7.5" height="3.5" stroke="black" stroke-width="0.5"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1453_8445">
+                        <rect width="17" height="17" fill="white" transform="translate(0.798218 0.5)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Sort By
+                </button>
+                <div id="dropdown-menu" class="dropdown-menu">
+                  <a class="dropdown-item" href="#" data-value="best-selling">Best selling</a>
+                  <a class="dropdown-item" href="#" data-value="price-ascending">Price, low to high</a>
+                  <a class="dropdown-item" href="#" data-value="price-descending">Price, high to low</a>
+                  <a class="dropdown-item" href="#" data-value="created-ascending">Date, old to new</a>
+                  <a class="dropdown-item" href="#" data-value="created-descending">Date, new to old</a>
+                </div>
+              </div>
+            </p>
+          </div> -->
+          
           <div class="row col-md-2">
             <p class="filter1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <g clip-path="url(#clip0_1453_8445)">
-                  <rect x="1.04822" y="0.75" width="15.5" height="3.5" stroke="black" stroke-width="0.5" />
-                  <rect x="1.04822" y="6.75" width="11.5" height="3.5" stroke="black" stroke-width="0.5" />
-                  <rect x="1.04822" y="12.75" width="7.5" height="3.5" stroke="black" stroke-width="0.5" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_1453_8445">
-                    <rect width="17" height="17" fill="white" transform="translate(0.798218 0.5)" />
-                  </clipPath>
-                </defs>
-              </svg> &nbsp; Sort By
+              <div class="custom-dropdown">
+                <button id="dropdown-button" class="btn btn--link size--small dropdown-toggle" onclick="toggleDropdown()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <g clip-path="url(#clip0_1453_8445)">
+                      <rect x="1.04822" y="0.75" width="15.5" height="3.5" stroke="black" stroke-width="0.5"/>
+                      <rect x="1.04822" y="6.75" width="11.5" height="3.5" stroke="black" stroke-width="0.5"/>
+                      <rect x="1.04822" y="12.75" width="7.5" height="3.5" stroke="black" stroke-width="0.5"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1453_8445">
+                        <rect width="17" height="17" fill="white" transform="translate(0.798218 0.5)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span id="dropdown-selected">Sort By</span>
+                </button>
+                <div id="dropdown-menu" class="dropdown-menu">
+                  <a class="dropdown-item" href="#" data-value="Best selling" onclick="selectOption(event)">Best selling</a>
+                  <a class="dropdown-item" href="#" data-value="Price, low to high" onclick="selectOption(event)">Price, low to high</a>
+                  <a class="dropdown-item" href="#" data-value="Price, high to low" onclick="selectOption(event)">Price, high to low</a>
+                  <a class="dropdown-item" href="#" data-value="Date, old to new" onclick="selectOption(event)">Date, old to new</a>
+                  <a class="dropdown-item" href="#" data-value="Date, new to old" onclick="selectOption(event)">Date, new to old</a>
+                </div>
+              </div>
             </p>
           </div>
+          
+
+
           <div class="col-md-1 d-flex threesvg">
             <span class="icon" data-target="collection1">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none">

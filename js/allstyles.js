@@ -11,6 +11,43 @@ document.querySelectorAll('.position-relative').forEach(container => {
   });
 });
 
+
+
+
+function toggleDropdown() {
+  const dropdownMenu = document.getElementById('dropdown-menu');
+  dropdownMenu.classList.toggle('show');
+}
+
+// Close the dropdown when clicking outside of it
+window.onclick = function (event) {
+  if (!event.target.matches('.dropdown-toggle') && !event.target.matches('.dropdown-item')) {
+    const dropdowns = document.getElementsByClassName('dropdown-menu');
+    for (let i = 0; i < dropdowns.length; i++) {
+      const openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+};
+
+// Update button text based on selected item
+function selectOption(event) {
+  event.preventDefault(); // Prevent default link behavior
+  const selectedValue = event.target.getAttribute('data-value');
+  document.getElementById('dropdown-selected').textContent = selectedValue;
+
+  // Close dropdown after selection
+  const dropdownMenu = document.getElementById('dropdown-menu');
+  dropdownMenu.classList.remove('show');
+}
+
+
+
+
+
+
 const icons = document.querySelectorAll('.icon');
 const contents = document.querySelectorAll('.collections');
 

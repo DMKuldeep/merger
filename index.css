@@ -32,6 +32,17 @@
 
 }
 
+
+/* searchbar css */
+
+
+form.d-flex.seachbar {
+  margin-right: 17px;
+  background: transparent;
+}
+
+
+
 /* TOGGLE MENU ITEM CSS */
 
 .accordion-collapse.collapse .accordion-body{
