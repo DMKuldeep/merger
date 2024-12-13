@@ -98,7 +98,7 @@ img.toggle-icon {
 
 a.text-reset.searchproduct {
   color: #000;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -108,7 +108,7 @@ a.text-reset.searchproduct {
 
 a.text-reset.bagproduct {
   color: #000;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -2399,7 +2399,6 @@ form.d-flex.searchbar {
 } */
 
 
-
 .searchbar .form-control {
   display: block;
   width: 100%;
@@ -2412,10 +2411,14 @@ form.d-flex.searchbar {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: 0.5px solid gray;
-  margin-top: 10px;
+  border: 0.5px solid lightgray;
+  margin-top: 18px;
   /* margin-left: 12px; */
   /* margin-right: 12px; */
+  height: 30px;
+  font-family: 'Lato';
+  /* margin-left: 12px; */
+  border-radius: 0px !important;
 }
 
 .form-control::placeholder {
@@ -2448,7 +2451,7 @@ form.d-flex.searchbar {
 
 
 form.d-flex.searchbar {
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .homepagelinkssidebar {
