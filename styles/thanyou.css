@@ -1,0 +1,22 @@
+.container.thankyou{
+     justify-content: center;
+     padding-bottom: 200px;
+     justify-content: center;
+     padding-top: 200px;
+     align-items: center;
+     font-family: 'DM Sans', sans-serif;
+}
+
+
+.thankyoucenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center-align text */
+}
+
+.thankyoucenter h1,
+.thankyoucenter h2 {
+    margin: 0; /* Remove default margin */
+    color: dodgerblue;
+}
