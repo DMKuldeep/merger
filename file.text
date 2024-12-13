@@ -1,0 +1,44 @@
+
+keep the images same size and same orientation) and the same color palette. The images are not necessarily the same size,
+but they should be similar in size. The images are not necessarily the same orientation, but they
+should be similar in orientation.
+1st left side image is static and another right should only slide and the the next button only slide to the right side.
+
+
+    <div class="container-fluid row p-0 g-0 section2text">
+      <!-- Left-side image -->
+      <div class="col-md-6 p-0 image11">
+        <div class="rightconer">
+          <div class="bottom-right">Shirt Dress</div>
+        </div>
+      </div>
+      
+      <!-- Carousel -->
+      <div class="col-md-6 p-0">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner carasouelimage">
+            <!-- First Image as part of the carousel -->
+            <div class="carousel-item active">
+              <img src="./assets/images/grey1section3.jfif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/grey1section3.jfif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/grey1section3.jfif" class="d-block w-100" alt="...">
+            </div>
+          </div>
+    
+          <!-- Carousel controls -->
+          
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    
+    
+      
+    </div>
+    

@@ -32,6 +32,113 @@
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* searchbar css */
+
+.searchbar {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 200px;
+}
+
+form.d-flex.searchbar {
+  margin-right: 20px;
+}
+
+.homepagelinkssidebar {
+  margin-right: -66px;
+}
+
+.searchbar .form-control {
+
+  display: block;
+  width: 100%;
+  height: 24px; /* Set the height */
+  font-size: 10px; /* Font size for input text */
+  font-weight: 300;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0.5px solid black; /* Border with 0.5px width */
+  border-radius: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-control::placeholder {
+  color: transparent; /* Hide native placeholder text */
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+
+.placeholder.hidden {
+  opacity: 0; /* Hide the placeholder smoothly */
+}
+
+
+.form-control::placeholder {
+  font-size: 10px; /* Font size for placeholder text */
+  color: #999; /* Adjust the color if needed */
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Adjust to align with input padding */
+  transform: translateY(-50%);
+  font-size: 10px; /* Placeholder text size */
+  color: #999;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.placeholder span {
+  font-size: 10px; /* Dynamic text size */
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* TOGGLE MENU ITEM CSS */
 
 .accordion-collapse.collapse .accordion-body{
@@ -266,17 +373,10 @@ line-height: 64px; /* 114.286% */
 }
 
 
-
-
 .list-inline {
-  display: inline-flex;
-  gap: 10px; /* Uniform gap between links */
-
-    padding-left: 0;
-    list-style: none;
-    margin-left: -21px;
+  padding-left: px;
+  list-style: none;
 }
-
 
 a.text-reset {
   text-decoration: none;
@@ -320,6 +420,7 @@ a.text-reset {
   justify-content: center;
   align-items: center;
 }
+
 
 
 
@@ -539,7 +640,7 @@ p.line4 {
   font-weight: 400;
   line-height: 22px;
   /* text-align-last: right; */
-  margin-top: 103%;
+  margin-top: 141%;
   margin-left: 580px;
 }
 
@@ -554,7 +655,7 @@ p.line4 {
   font-weight: 400;
   line-height: 22px;
   /* text-align-last: right; */
-  margin-top: 103%;
+  margin-top: 141%;
   margin-left: 580px;
 }
 
@@ -570,7 +671,7 @@ p.line4 {
   font-weight: 400;
   line-height: 22px;
   /* text-align-last: right; */
-  margin-top: 103%;
+  margin-top: 141%;
   margin-left: 580px;
 }
 
@@ -654,33 +755,26 @@ p.line4 {
 }
 
 .toptext {
+  width: 100%;
   display: inline-block; /* Allows the text to move horizontally */
-  white-space: nowrap; /* Prevents the text from wrapping */
-  font-size: 12px; /* Adjust text size */
+  font-size: 16px; /* Adjust text size */
 
-  animation: slideIn 9s linear infinite; /* Animation for sliding in */
+  animation: slideIn 4s linear infinite; /* Animation for sliding in */
 }
 
-@keyframes slideIn {
-  0% {
-    transform: translateX(100%); /* Start from off-screen on the right */
-  }
-  100% {
-    transform: translateX(-100%); /* End off-screen on the left */
-  }
-}
 
-.toptext {
+  
+
+/* .toptext {
   color: #FFF;
   font-family: 'Lato', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  /* 166.667% */
   margin-top: 11px;
   margin-bottom: 10px;
-}
+} */
 
 .copy-btn {
   font-family: "Lato";

@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./index.css" />
-  <script src="./js/commonscript.js"></script>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -64,7 +63,9 @@
     
 
   <title>Homepage</title>
+
   <script src="./js/commonscript.js"></script>
+
 </head>
 
 <body style="overflow-x: hidden">
@@ -159,6 +160,10 @@
           <div class="bottom-right">Shirt Dress</div>
         </div>
       </div>
+
+        
+
+
       <div class="col-md-6 p-0 image22">
         <div class="rightconer">
           <div class="bottom-right">Bodycone Dress</div>
@@ -231,13 +236,25 @@
             </a>
           </div>
           <div class="col-md-6 d-flex justify-content-end gap-2">
-            <a href="#" class="text-reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-            </a>
+             <form class="d-flex searchbar">
+              <input
+                id="search"
+                class="form-control"
+                type="text"
+                placeholder=""
+                aria-label="Search"
+                onfocus="disablePlaceholder()"
+                onblur="enablePlaceholder()"
+              />
+              <div class="placeholder" id="placeholder">
+                Search For <span id="dynamicText" style="font-family: lato;">T-Shirt</span>
+              </div>
+            </form>
+            
+            
+              
+              <div class="homepagelinkssidebar">
+            
             <a href="./account.html" class="text-reset">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
@@ -260,25 +277,27 @@
                 <path d="M8 7c0-2.2.5-5 4-5s4 2.8 4 5"></path>
               </svg>
             </a>
+
+          </div>
           </div>
         </div>
   
         <!-- Second Row: Links Below SÖTBELLA -->
         <div class="row align-items-center">
-          <div class="col-md-4 text-center linksall text-style">
+          <div class="col-md-4 text-center linksall text-style" style="font-family: 'Lato';">
             <ul class="list-inline">
-              <li class="list-inline-item">
+              <li class="list-inline-item mx-1">
                 <a href="./collectionbanner.html" class="text-reset text-decoration-none text-style">
                   NEW IN
                   <img src="./assets/images/downarrow.svg" alt="Down arrow" class="downarrow" />
                 </a>
               </li>
-              <li class="list-inline-item">
+              <li class="list-inline-item mx-2">
                 <a href="./allstyles.html" class="text-reset text-decoration-none text-style">
                   ALL STYLES
                 </a>
               </li>
-              <li class="list-inline-item">
+              <li class="list-inline-item mx-2">
                 <a href="./allstyles.html" class="text-reset text-decoration-none text-style">
                   IN TRENDS
                   <img src="./assets/images/downarrow.svg" alt="Down arrow" class="downarrow" />

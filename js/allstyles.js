@@ -11,6 +11,43 @@ document.querySelectorAll('.position-relative').forEach(container => {
   });
 });
 
+
+
+
+function toggleDropdown() {
+  const dropdownMenu = document.getElementById('dropdown-menu');
+  dropdownMenu.classList.toggle('show');
+}
+
+// Close the dropdown when clicking outside of it
+window.onclick = function (event) {
+  if (!event.target.matches('.dropdown-toggle') && !event.target.matches('.dropdown-item')) {
+    const dropdowns = document.getElementsByClassName('dropdown-menu');
+    for (let i = 0; i < dropdowns.length; i++) {
+      const openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+};
+
+// Update button text based on selected item
+function selectOption(event) {
+  event.preventDefault(); // Prevent default link behavior
+  const selectedValue = event.target.getAttribute('data-value');
+  document.getElementById('dropdown-selected').textContent = selectedValue;
+
+  // Close dropdown after selection
+  const dropdownMenu = document.getElementById('dropdown-menu');
+  dropdownMenu.classList.remove('show');
+}
+
+
+
+
+
+
 const icons = document.querySelectorAll('.icon');
 const contents = document.querySelectorAll('.collections');
 
@@ -42,5 +79,48 @@ document.addEventListener('DOMContentLoaded', () => {
   firstContent.classList.add('active');
 });
 
+
+
+const rangeInput = document.querySelectorAll(".range-input input"),
+  priceInput = document.querySelectorAll(".price-input input"),
+  range = document.querySelector(".slider .progress");
+let priceGap = 1000;
+
+priceInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minPrice = parseInt(priceInput[0].value),
+      maxPrice = parseInt(priceInput[1].value);
+
+    if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
+      if (e.target.classList.contains("input-min")) {
+        rangeInput[0].value = minPrice;
+        range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+      } else if (e.target.classList.contains("input-max")) {
+        rangeInput[1].value = maxPrice;
+        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+      }
+    }
+  });
+});
+
+rangeInput.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    let minVal = parseInt(rangeInput[0].value),
+      maxVal = parseInt(rangeInput[1].value);
+
+    if (maxVal - minVal < priceGap) {
+      if (e.target.classList.contains("range-min")) {
+        rangeInput[0].value = maxVal - priceGap;
+      } else if (e.target.classList.contains("range-max")) {
+        rangeInput[1].value = minVal + priceGap;
+      }
+    } else {
+      priceInput[0].value = minVal;
+      priceInput[1].value = maxVal;
+      range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+      range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+    }
+  });
+});
 
 

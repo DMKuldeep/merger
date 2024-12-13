@@ -33,6 +33,241 @@
   display: block;
 }
 
+
+
+
+/* product price css */
+
+
+
+
+
+::selection {
+  color: black;
+  background: black;
+}
+.wrapper {
+  width: 100%;
+  height: 51px;
+}
+
+
+.price-input {
+  width: 100%;
+  display: flex;
+  margin: 30px 0 35px;
+}
+.price-input .field {
+  display: flex
+;
+  width: 100%;
+  height: 5px;
+  align-items: center;
+}
+.field input {
+  width: 100%;
+  height: 26px;
+  outline: none;
+  font-size: 12px;
+  margin-left: 12px;
+  /* border-radius: 5px; */
+  text-align: center;
+  border: 1px solid #999;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.price-input .separator {
+  width: 50px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  height: 5px;
+}
+.slider {
+  height: 5px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+.slider .progress {
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: black;
+}
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: black;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+input[type="range"]::-moz-range-thumb {
+  height: 12px;
+  width: 17px;
+  border: none;
+  border-radius: 50%;
+  background: black;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: black !important;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+input[type="range"]::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  border: none;
+  border-radius: 50%;
+  background: black !important;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.progress{
+  color:black
+}
+.offcanvas-start {
+  top: 108px !important;
+  left: 0;
+  width: 320px !important;
+  transform: translateX(-100%);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  border: 0.5px solid black;
+  padding: 4px;
+}
+
+
+/* General container styles */
+.filter-options-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 boxes per row */
+  gap: 10px; /* Space between the boxes */
+  padding: 10px 0;
+}
+
+/* Individual size box styles */
+.filter-options-list li {
+  list-style: none;
+}
+
+.checkbox-label {
+  display: inline-block;
+  position: relative;
+  
+  justify-content: center;
+  width: 60px; /* Width of the box */
+  height: 50px; /* Height of the box */
+  border: 0.5px solid black; /* Border around the box */
+  font-size: 12px; /* Font size for the size text */
+  font-family: 'Montserrat', sans-serif; /* Optional, for consistent style */
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  background-color: #f9f9f9; /* Optional, light background */
+  border-radius: 4px; /* Slight rounding for a modern look */
+  transition: all 0.2s ease-in-out; /* Smooth hover effects */
+}
+
+/* Style for the checkbox inside the box */
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  top: 3px; /* Inset from the top */
+  left: 3px; /* Inset from the left */
+  margin: 0;
+  width: 12px; /* Checkbox size */
+  height: 12px; /* Checkbox size */
+  cursor: pointer;
+}
+
+/* Hover effect for the box */
+.checkbox-label:hover {
+  background-color: #e6e6e6;
+  
+}
+
+.accordion-body ul {
+  display: flex
+;
+  /* flex-direction: column; */
+  gap: 15px;
+  /* padding-left: 10px; */
+}
+
+/* Checked state styling */
+
+input[type="checkbox"]:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* product price css */
+
+
+
+
+
+/* filtersectitonfx css */
+
+
+.stick-fixed1 {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: white;
+    color: black;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+
+.row.stick-fixed1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+/* filtersectitonfx css */
+
+
 .image2last15{
 
   background: url("../assets/images/collectiion5.jfif") no-repeat center center;
@@ -336,6 +571,199 @@ p.coords {
   margin-left: 48px;
 }
 
+
+
+/* filtercss */
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  min-width: 160px;
+  margin-top: 5px;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.custom-dropdown{
+    margin-top: -20px !important;
+    margin-left: 30px;
+}
+
+
+/* filter toggle css */
+
+
+
+.accordion-body {
+display: none;
+
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: #e7f1ff !important;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125)!important;
+}
+
+#accordionExample button{
+ border: 0px !important;
+ box-shadow: none !important ;
+ padding-left: 0px;
+
+}
+
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180eg) !important;
+}
+.accordion-item {
+  border: none !important;
+}
+
+.offcanvas-body {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-top: 40px;
+  font-family: 'Inter';
+  color: black;
+  opacity: 1.25;
+  overflow-y: scroll;
+  
+  /* Hide scrollbar */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* #accordionExample{
+  background-color: #f2f2f2!important;
+} */
+
+
+.accordion-collapse.collapse .accordion-body::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: none!important;
+}
+
+.font_monte{
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 12px;
+  color: #000;
+  height: 0px;
+
+}
+
+.fontulli{
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 10px;
+  color: #000;
+}
+
+
+
+
+
+.checkbox-container {
+  gap: 10px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 14px;
+}
+
+
+
+
+.accordion-collapse.collapse .accordion-body {
+  background: white;
+  left: 100%;
+  top: 0;
+  transition: all 0.3s ease 0s;
+  display: block;
+}
+
+
+.bothbuttonsidebar {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  margin-top: 190px;
+}
+
+button.filterpaneapply {
+  width: 100%;
+  color: white;
+  background: black;
+  border: none;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  height: 30px;
+  text-align: center;
+  justify-content: center;
+  padding: 5px 10px;
+}
+
+/* filter toggle css */.accordion-body ul {
+    display: flex
+    ;
+        /* flex-direction: column; */
+        gap: 15px;
+        /* padding-left: 10px; */
+    }
+
+
+
 p.filter {
   color: #000;
   font-family: Lato;
@@ -345,6 +773,7 @@ p.filter {
   line-height: 22px;
   text-transform: capitalize;
   margin-bottom: 24px;
+  margin-top: 5px;
 }
 p.filter1 {
   color: #000;
@@ -354,7 +783,7 @@ p.filter1 {
   font-weight: 400;
   line-height: 22px;
   text-transform: capitalize;
-  margin-left: 109px;
+  margin-left: 0px;
   margin-top: 2px;
 }
 .lens {

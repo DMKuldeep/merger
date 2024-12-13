@@ -70,6 +70,63 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+
+
+/* modal css */
+
+
+/* Modal Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto; /* Center vertically */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Width of modal */
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.coupons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.coupon-card {
+  border: 1px solid #888;
+  padding: 15px;
+  border-radius: 5px;
+}
+  /* modalcss */
+
+
+
+
 .url1.m-0.deliveryaddresschange {
   border: 1px solid black;
   padding-left: 16px;
@@ -559,7 +616,29 @@ p.editaddreess {
   line-height: 22px;
 }
 
+.coupon-button {
+  padding: 4px 16px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  height: 28px;
+  justify-content: center;
+}
+
 p.shippingforu {
+  margin-top: -19px;
+  color: #3d3d3d;
+  font-family: Lato;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+p.shippingforu1 {
   margin-top: -19px;
   color: #3d3d3d;
   font-family: Lato;

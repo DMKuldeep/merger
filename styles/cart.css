@@ -1788,7 +1788,10 @@ p.item1price1 {
 
 .contentimage {
   justify-items: baseline;
-  margin-left: 13px;
+  /* margin-left: 13px; */
+  margin-left: 45px;
+
+  
 }
 
 .gap-3 {

@@ -33,7 +33,6 @@
   z-index: 10;
   display: flex;
   align-items: center;
-  
 }
 
 .container.stick-fixed {
@@ -55,7 +54,6 @@
   font-weight: 500;
   text-transform: uppercase;
 }
-
 
 img.toggle-icon {
   margin-right: 8px;
@@ -100,7 +98,7 @@ img.toggle-icon {
 
 a.text-reset.searchproduct {
   color: #000;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -110,7 +108,7 @@ a.text-reset.searchproduct {
 
 a.text-reset.bagproduct {
   color: #000;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -2365,7 +2363,67 @@ img-fluid {
   height: 736px;
 }
 
-
-a{
-    text-decoration: none!important;
+a {
+  text-decoration: none !important;
 }
+
+/* search */
+
+.searchbar {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 200px;
+}
+form.d-flex.searchbar {
+  margin-right: 20px;
+}
+.homepagelinkssidebar {
+  margin-right: -66px;
+}
+
+.searchbar .form-control {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0.5px solid lightgray;
+  margin-top: 18px;
+  height: 30px;
+  font-family: 'Lato';
+  border-radius: 0px !important;
+}
+.form-control::placeholder {
+  color: transparent; 
+}
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.placeholder span {
+  color: black;
+}
+form.d-flex.searchbar {
+  margin-right: 0px;
+}
+.homepagelinkssidebar {
+  margin-right: -66px;
+}
+.placeholder.hidden {
+  opacity: 0; 
+}
+
