@@ -1,114 +1,40 @@
-on click of view coupon  need to show down side div in modal or in op up set it 
-
- <div>
-              <button class="loginnow1" type="button">
-                Change or add address</button>
+ need css when i click small image it gets little out and stic there when i clic second then that one out and stick there and so on
+ 
+ 
+ 
+ 
+  <div class="col-md-6 team-1-column-sticky" style="padding-top: 45px;">
+          <div class="flex-box">
+            <!-- Small Images -->
+            <div class="images">
+              <div class="small-img">
+                <img src="./assets/images/productview1.jfif" onclick="showImg(this.src)">
+              </div>
+              <div class="small-img">
+                <img src="./assets/images/productview2.jfif" onclick="showImg(this.src)">
+              </div>
+              <div class="small-img">
+                <img src="./assets/images/productview3.jfif" onclick="showImg(this.src)">
+              </div>
+              <div class="small-img">
+                <img src="./assets/images/productview4.jfif" onclick="showImg(this.src)">
+              </div>
+              <div class="small-img">
+                <img src="./assets/images/productview5.jfif" onclick="showImg(this.src)">
+              </div>
+              <div class="small-img">
+                <img src="./assets/images/productview6.jfif" onclick="showImg(this.src)">
+              </div>
+              <div class="small-img">
+                <img src="./assets/images/productview7.jfif" onclick="showImg(this.src)">
+              </div>
+            </div>
+            <!-- Big Image -->
+            <div class="big-img">
+              <div class="big-img productPageFullImage">
+                <img src="./assets/images/collection1.jfif" loading="lazy" alt="Product Image">
+              </div>
             </div>
 
-
-<div>
-              <div class="tabs-heading">SAVED ADDRESS</div>
-
-              <div class="col-md-12" style="border: 1px solid #888888; position: relative; margin-bottom: 20px;">
-                <div class="row m-0">
-                  <div class="col-md-12 remove-padding save-address-card">
-                    <div class="save-address-radio">
-                      <!--  -->
-                      <p class="radio">
-                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="..." checked>
-
-                      </p>
-                    </div>
-                    <div class="coupontab coupon-card">
-                      <p class="coupon-card-heading">Aritra Paul (Default)</p>
-
-                      <div class="sa-card-description">
-                        <p class="">A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
-                        <p class="sa-mobile">Mobile: 7059285044</p>
-                      </div>
-
-
-
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12" style="border: 1px solid #888888; position: relative; margin-bottom: 20px;">
-                <div class="row m-0">
-                  <div class="col-md-12 remove-padding save-address-card">
-                    <div class="save-address-radio">
-                      <!--  -->
-                      <p class="radio">
-                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
-                          aria-label="...">
-                      </p>
-                    </div>
-                    <div class="coupontab coupon-card">
-                      <p class="coupon-card-heading">John Deo</p>
-
-                      <div class="sa-card-description">
-                        <p class="">A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
-                        <p class="sa-mobile">Mobile: 7059285044</p>
-                      </div>
-
-
-
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12" style="border: 1px solid #888888; position: relative; margin-bottom: 20px;">
-                <div class="row m-0">
-                  <div class="col-md-12 remove-padding save-address-card">
-                    <div class="save-address-radio">
-                      <!--  -->
-                      <p class="radio">
-                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
-                          aria-label="...">
-                      </p>
-                    </div>
-                    <div class="coupontab coupon-card">
-                      <p class="coupon-card-heading">John Deo</p>
-
-                      <div class="sa-card-description">
-                        <p class="">A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
-                        <p class="sa-mobile">Mobile: 7059285044</p>
-                      </div>
-
-
-
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12" style="border: 1px solid #888888; position: relative; margin-bottom: 20px;">
-                <div class="row m-0">
-                  <div class="col-md-12 remove-padding save-address-card">
-                    <div class="save-address-radio">
-                      <!--  -->
-                      <p class="radio">
-                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
-                          aria-label="...">
-                      </p>
-                    </div>
-                    <div class="coupontab coupon-card">
-                      <p class="coupon-card-heading">John Deo</p>
-
-                      <div class="sa-card-description">
-                        <p class="">A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
-                        <p class="sa-mobile">Mobile: 7059285044</p>
-                      </div>
-
-
-
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
+          </div>
+        </div>

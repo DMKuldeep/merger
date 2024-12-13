@@ -20,7 +20,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
     data-tag="font" />
-  
+
 
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
@@ -75,112 +75,8 @@
 <body style="overflow-x: hidden">
   <div>
 
-    <div class="content">
-      <div class="container">
-        <!-- First Row: Fixed Icon and SÖTBELLA -->
-        <div class="row align-items-center headertop">
-          <div class="col-md-7 d-flex align-items-center">
-            <img src="./assets/images/toggleblack.svg" alt="Toggle" class="toggle-icon">
-            <a href="./index.html" alt="Homepage">
-              <p class="SÖTBELLA">SÖTBELLA</p>
-            </a>
-          </div>
-          <!-- <div class="col-md-6 d-flex justify-content-end gap-4">
-            <a href="#" class="text-reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-            </a>
-            <a href="./account.html" class="text-reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
-                <circle cx="12" cy="7" r="4"></circle>
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              </svg>
-            </a>
-            <a href="./allstyles.html" class="text-reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart">
-                <path
-                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                </path>
-              </svg>
-            </a>
-            <a href="./cart.html" class="text-reset">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag">
-                <path d="M6.7 7c-1 0-1.8.7-2 1.7L3 20c0 1.1 2 2 9 2s9-.9 9-2L19.3 8.7c-.2-1-1-1.7-2-1.7H6.7z"></path>
-                <path d="M8 7c0-2.2.5-5 4-5s4 2.8 4 5"></path>
-              </svg>
-            </a>
-          </div> -->
-        
-          <div class="col-md-5 d-flex justify-content-end gap-2">
-                
-            <form class="d-flex searchbar">
-              <input
-                id="search"
-                class="form-control"
-                type="text"
-                placeholder=""
-                aria-label="Search"
-                onfocus="disablePlaceholder()"
-                onblur="enablePlaceholder()"
-              />
-              <div class="placeholder" id="placeholder">
-                Search For <span id="dynamicText" style="font-family: lato;">T-Shirt</span>
-              </div>
-            </form>
-            <a href="./account.html" class="text-reset accountproduct">
-              MY ACCOUNT
-            </a>
-            <a href="./cart.html" class="text-reset bagproduct">
-              SHOPPING BAG
-            </a>
-          </div>
-        </div>
+    <div id="navdark-placeholder"></div>
 
-        <!-- Second Row: Links Below SÖTBELLA -->
-        <!-- <div class="row align-items-center">
-          <div class="col-md-4 text-center linksall text-style">
-            <ul class="list-inline productlinks">
-              <li class="list-inline-item">
-                <span class="d-flex align-items-center">
-                  <a href="./allstyles.html" class="text-reset text-decoration-none text-style">
-
-                    NEW IN <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
-                      fill="none">
-                      <path
-                        d="M12.75 15C12.6833 15 12.625 14.975 12.575 14.925L9.075 11.425C8.975 11.325 8.975 11.1667 9.075 11.075C9.175 10.975 9.33333 10.975 9.425 11.075L12.75 14.4L16.075 11.075C16.175 10.975 16.3333 10.975 16.425 11.075C16.525 11.175 16.525 11.3333 16.425 11.425L12.925 14.925C12.875 14.975 12.8167 15 12.75 15Z"
-                        fill="black" />
-                    </svg>
-                  </a>
-                </span>
-              </li>
-              <li class="list-inline-item">
-                <a href="./allstyles.html" class="text-reset text-decoration-none text-style">
-                  ALL STYLES
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <span class="d-flex align-items-center">
-                  <a href="./allstyles.html" class="text-reset text-decoration-none text-style">
-
-                    IN TRENDS
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
-                      <path
-                        d="M12.75 15C12.6833 15 12.625 14.975 12.575 14.925L9.075 11.425C8.975 11.325 8.975 11.1667 9.075 11.075C9.175 10.975 9.33333 10.975 9.425 11.075L12.75 14.4L16.075 11.075C16.175 10.975 16.3333 10.975 16.425 11.075C16.525 11.175 16.525 11.3333 16.425 11.425L12.925 14.925C12.875 14.975 12.8167 15 12.75 15Z"
-                        fill="black" />
-                    </svg> </a></span>
-              </li>
-            </ul>
-          </div>
-        </div> -->
-
-      </div>
-    </div>
 
     <div class="container col-md-12 text-start">
       <div class="row">
@@ -191,7 +87,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6 team-1-column-sticky">
+        <div class="col-md-6 team-1-column-sticky" style="padding-top: 45px;">
           <div class="flex-box">
             <!-- Small Images -->
             <div class="images">
@@ -218,24 +114,28 @@
               </div>
             </div>
             <!-- Big Image -->
-           <div class="big-img">
-                  <div class="big-img productPageFullImage">
-                    <img src="./assets/images/collection1.jfif" loading="lazy" alt="Product Image">
-                  </div>
+            <div class="big-img">
+              <div class="big-img productPageFullImage">
+                <img src="./assets/images/collection1.jfif" loading="lazy" alt="Product Image">
               </div>
+            </div>
 
           </div>
         </div>
 
 
-        <div class="col-md-1">
+        <div class="col-md-1" style="
+        padding-top: 45px;
+    ">
 
           <div class="verticalline"></div>
         </div>
 
 
 
-        <div class="container col-md-5">
+        <div class="container col-md-5" style="
+        padding-top: 40px;
+    ">
           <div class="right">
             <div class="url">BASIC WHITE TOP AND SKIRT CO-ORD SET</div>
             <div class="pname">
@@ -245,11 +145,13 @@
 
               <span class="rating1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
-                  <path d="M11.4282 4.01035L8.53973 6.29512L9.46895 9.76325C9.47886 9.80007 9.47694 9.83888 9.46344 9.87464C9.44994 9.91041 9.42549 9.94147 9.39325 9.96381C9.36102 9.98615 9.32248 9.99873 9.28266 9.99991C9.24284 10.0011 9.20356 9.99082 9.16993 9.97044L6 8.05559L2.83007 9.97044C2.79644 9.99079 2.75718 10.001 2.71738 9.99982C2.67758 9.99862 2.63907 9.98604 2.60686 9.96371C2.57464 9.94137 2.5502 9.91032 2.53671 9.87458C2.52321 9.83884 2.52128 9.80005 2.53117 9.76325L3.46039 6.29512L0.571845 4.01035C0.54122 3.9861 0.518928 3.95363 0.507853 3.91716C0.496778 3.88069 0.49743 3.84189 0.509725 3.80577C0.52202 3.76966 0.545391 3.73789 0.576816 3.71459C0.60824 3.69129 0.64627 3.67752 0.685987 3.67507L4.43041 3.44655L5.81525 0.119597C5.82996 0.0843076 5.85543 0.0540435 5.88837 0.0327211C5.92131 0.0113988 5.9602 0 6 0C6.0398 0 6.07869 0.0113988 6.11163 0.0327211C6.14457 0.0540435 6.17004 0.0843076 6.18476 0.119597L7.56959 3.44655L11.314 3.67507C11.3537 3.67752 11.3918 3.69129 11.4232 3.71459C11.4546 3.73789 11.478 3.76966 11.4903 3.80577C11.5026 3.84189 11.5032 3.88069 11.4921 3.91716C11.4811 3.95363 11.4588 3.9861 11.4282 4.01035Z" fill="white" />
+                  <path
+                    d="M11.4282 4.01035L8.53973 6.29512L9.46895 9.76325C9.47886 9.80007 9.47694 9.83888 9.46344 9.87464C9.44994 9.91041 9.42549 9.94147 9.39325 9.96381C9.36102 9.98615 9.32248 9.99873 9.28266 9.99991C9.24284 10.0011 9.20356 9.99082 9.16993 9.97044L6 8.05559L2.83007 9.97044C2.79644 9.99079 2.75718 10.001 2.71738 9.99982C2.67758 9.99862 2.63907 9.98604 2.60686 9.96371C2.57464 9.94137 2.5502 9.91032 2.53671 9.87458C2.52321 9.83884 2.52128 9.80005 2.53117 9.76325L3.46039 6.29512L0.571845 4.01035C0.54122 3.9861 0.518928 3.95363 0.507853 3.91716C0.496778 3.88069 0.49743 3.84189 0.509725 3.80577C0.52202 3.76966 0.545391 3.73789 0.576816 3.71459C0.60824 3.69129 0.64627 3.67752 0.685987 3.67507L4.43041 3.44655L5.81525 0.119597C5.82996 0.0843076 5.85543 0.0540435 5.88837 0.0327211C5.92131 0.0113988 5.9602 0 6 0C6.0398 0 6.07869 0.0113988 6.11163 0.0327211C6.14457 0.0540435 6.17004 0.0843076 6.18476 0.119597L7.56959 3.44655L11.314 3.67507C11.3537 3.67752 11.3918 3.69129 11.4232 3.71459C11.4546 3.73789 11.478 3.76966 11.4903 3.80577C11.5026 3.84189 11.5032 3.88069 11.4921 3.91716C11.4811 3.95363 11.4588 3.9861 11.4282 4.01035Z"
+                    fill="white" />
                 </svg>
                 <span>4.1</span>
               </span>
-              
+
 
             </div>
             <div class="pricetax"> Tax included.&nbsp; <u>Shipping</u> calculated at checkout.</div>
@@ -264,7 +166,7 @@
               <div class="col-md-6 d-flex align-items-center">
                 <span class="sizeguide">SIZE</span>
               </div>
-            
+
               <!-- Right Section (Size Guide with Image and Underline) -->
               <div class="col-md-6 d-flex justify-content-end align-items-center">
                 <p class="undelinesize m-0 d-flex align-items-center">
@@ -273,7 +175,7 @@
                 </p>
               </div>
             </div>
-            
+
 
 
             <div class="size">
@@ -346,7 +248,7 @@
                   viewBox="0 0 16 16">
                   <path
                     d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15" />
-                </svg>  <span>Hurry! Only Few are left in stock</span>
+                </svg> <span>Hurry! Only Few are left in stock</span>
               </p>
             </div>
 
@@ -360,39 +262,30 @@
               <div class="input-container" style="display: flex; position: relative;">
                 <!-- Input wrapper for image and placeholder -->
                 <div style="position: relative; flex: 1;">
-                  <img
-                    src="./assets/images/Group (1).svg"
-                    alt="icon"
-                    style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px;"
-                  />
-                  <input
-                    maxlength="6"
-                    placeholder="Enter your pincode"
-                    style="
+                  <img src="./assets/images/Group (1).svg" alt="icon"
+                    style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px;" />
+                  <input maxlength="6" placeholder="Enter your pincode" style="
                       width: 100%;
                       padding: 8px 16px 8px 40px; /* Adjust padding for image space */
                       border: 0.5px solid #9D9D9D;
                       height: 40px;
                       margin-left: 20;
-                    "
-                  />
+                    " />
                 </div>
-            
+
                 <!-- Button -->
-                <button
-                  style="
+                <button style="
                     padding: 8px 16px;
                     background: #000;
                     color: white;
                     border: none;
                     cursor: pointer;
-                  "
-                >
+                  ">
                   Check
                 </button>
               </div>
             </div>
-            
+
 
 
             <a href="./cart.html">
@@ -403,7 +296,9 @@
 
                   <p class="cartbutton">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18" fill="none">
-                      <path d="M3.98716 3.51282L1.39742 3.53846L0.320496 15.641V15.6667C0.320496 16.9487 1.49998 18 2.96152 18H12.0384C13.5 18 14.6795 16.9487 14.6795 15.6667L13.6025 3.53846H11.0128V3.51282C11.0128 1.56411 9.4487 0 7.49998 0C5.55126 0 3.98716 1.56411 3.98716 3.51282ZM12.8333 4.38462L13.8333 15.6923C13.8333 16.5128 13.0128 17.1538 12.0384 17.1538H2.96152C1.98716 17.1538 1.16665 16.4872 1.16665 15.6923L2.16665 4.38462H3.98716V5.97436H4.83332V4.38462H10.141V5.97436H10.9872V4.38462H12.8333ZM7.49998 0.846154C8.96152 0.846154 10.1666 2.05128 10.1666 3.51282V3.53846H4.85896V3.51282C4.83331 2.05128 6.03844 0.846154 7.49998 0.846154Z" fill="white"/>
+                      <path
+                        d="M3.98716 3.51282L1.39742 3.53846L0.320496 15.641V15.6667C0.320496 16.9487 1.49998 18 2.96152 18H12.0384C13.5 18 14.6795 16.9487 14.6795 15.6667L13.6025 3.53846H11.0128V3.51282C11.0128 1.56411 9.4487 0 7.49998 0C5.55126 0 3.98716 1.56411 3.98716 3.51282ZM12.8333 4.38462L13.8333 15.6923C13.8333 16.5128 13.0128 17.1538 12.0384 17.1538H2.96152C1.98716 17.1538 1.16665 16.4872 1.16665 15.6923L2.16665 4.38462H3.98716V5.97436H4.83332V4.38462H10.141V5.97436H10.9872V4.38462H12.8333ZM7.49998 0.846154C8.96152 0.846154 10.1666 2.05128 10.1666 3.51282V3.53846H4.85896V3.51282C4.83331 2.05128 6.03844 0.846154 7.49998 0.846154Z"
+                        fill="white" />
                     </svg> &nbsp; Add To Cart
                   </p>
 
@@ -411,7 +306,7 @@
               </div>
             </a>
 
-            
+
             <a href="./address.html">
               <div class="btn-box1">
 
@@ -419,7 +314,7 @@
                 <button class="cart-btn1" href="./cart.html">
 
                   <p class="cartbutton1">
-                 BUY NOW
+                    BUY NOW
                   </p>
 
                 </button>
@@ -478,8 +373,8 @@
                 <span class="sizeguide1">DESCRIPTION</span>
               </div>
 
-              <p class="undelinesize1"  onclick="togglePane('descriptionPane1')"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                  viewBox="0 0 18 18" fill="none">
+              <p class="undelinesize1" onclick="togglePane('descriptionPane1')"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M8.99805 0C11.483 0 13.7335 1.00754 15.362 2.63603C16.9905 4.26507 17.998 6.51452 17.998 9C17.998 11.4849 16.9905 13.7355 15.362 15.364C13.733 16.9925 11.483 18 8.99805 18C6.51257 18 4.26257 16.9925 2.63408 15.364C1.00558 13.7349 -0.00195312 11.4849 -0.00195312 9C-0.00195312 6.51452 1.00558 4.26452 2.63408 2.63603C4.26312 1.00754 6.51257 0 8.99805 0ZM4.52672 9.37996C4.294 9.37996 4.10485 9.19081 4.10485 8.95809C4.10485 8.72537 4.294 8.53621 4.52672 8.53621H8.57617V4.48676C8.57617 4.25404 8.76533 4.06489 8.99805 4.06489C9.23077 4.06489 9.41992 4.25404 9.41992 4.48676V8.53621H13.4694C13.7026 8.53621 13.8912 8.72537 13.8912 8.95809C13.8912 9.19136 13.7021 9.37996 13.4694 9.37996H9.41992V13.4294C9.41992 13.6621 9.23077 13.8513 8.99805 13.8513C8.76533 13.8513 8.57617 13.6621 8.57617 13.4294V9.37996H4.52672ZM14.7653 3.23272C13.2896 1.75699 11.2503 0.84375 8.99805 0.84375C6.74584 0.84375 4.7065 1.75699 3.23077 3.23272C1.75503 4.70846 0.841797 6.74779 0.841797 9C0.841797 11.2522 1.75503 13.2915 3.23077 14.7673C4.7065 16.243 6.74584 17.1562 8.99805 17.1562C11.2503 17.1562 13.2896 16.243 14.7653 14.7673C16.2411 13.2915 17.1543 11.2522 17.1543 9C17.1543 6.74779 16.2411 4.70846 14.7653 3.23272Z"
                     fill="black" />
@@ -487,17 +382,20 @@
               </p>
               <div id="descriptionPane1" class="description-pane1">
                 <div class="pane-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia magna in leo laoreet, sit amet efficitur arcu gravida.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia magna in leo laoreet, sit
+                    amet efficitur arcu gravida.</p>
                   <p>Suspendisse potenti. Curabitur at ante id sapien cursus auctor non eu erat.</p>
                   <p>Quisque eget suscipit ligula, at venenatis erat. Phasellus quis est at purus interdum auctor.</p>
                 </div>
               </div>
-              <div style="background: #9D9D9D;height: 0.5px;width: 96%;margin-left: 2%; margin-top: 8px; margin-bottom: 16px; "></div>
+              <div
+                style="background: #9D9D9D;height: 0.5px;width: 96%;margin-left: 2%; margin-top: 8px; margin-bottom: 16px; ">
+              </div>
               <div class="row col-md-8">
                 <span class="sizeguide11">WASH CARE</span>
               </div>
-              <p class="undelinesize1"  onclick="togglePane('descriptionPane2')"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                  viewBox="0 0 18 18" fill="none">
+              <p class="undelinesize1" onclick="togglePane('descriptionPane2')"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="18" height="18" viewBox="0 0 18 18" fill="none">
                   <path
                     d="M8.99805 0C11.483 0 13.7335 1.00754 15.362 2.63603C16.9905 4.26507 17.998 6.51452 17.998 9C17.998 11.4849 16.9905 13.7355 15.362 15.364C13.733 16.9925 11.483 18 8.99805 18C6.51257 18 4.26257 16.9925 2.63408 15.364C1.00558 13.7349 -0.00195312 11.4849 -0.00195312 9C-0.00195312 6.51452 1.00558 4.26452 2.63408 2.63603C4.26312 1.00754 6.51257 0 8.99805 0ZM4.52672 9.37996C4.294 9.37996 4.10485 9.19081 4.10485 8.95809C4.10485 8.72537 4.294 8.53621 4.52672 8.53621H8.57617V4.48676C8.57617 4.25404 8.76533 4.06489 8.99805 4.06489C9.23077 4.06489 9.41992 4.25404 9.41992 4.48676V8.53621H13.4694C13.7026 8.53621 13.8912 8.72537 13.8912 8.95809C13.8912 9.19136 13.7021 9.37996 13.4694 9.37996H9.41992V13.4294C9.41992 13.6621 9.23077 13.8513 8.99805 13.8513C8.76533 13.8513 8.57617 13.6621 8.57617 13.4294V9.37996H4.52672ZM14.7653 3.23272C13.2896 1.75699 11.2503 0.84375 8.99805 0.84375C6.74584 0.84375 4.7065 1.75699 3.23077 3.23272C1.75503 4.70846 0.841797 6.74779 0.841797 9C0.841797 11.2522 1.75503 13.2915 3.23077 14.7673C4.7065 16.243 6.74584 17.1562 8.99805 17.1562C11.2503 17.1562 13.2896 16.243 14.7653 14.7673C16.2411 13.2915 17.1543 11.2522 17.1543 9C17.1543 6.74779 16.2411 4.70846 14.7653 3.23272Z"
                     fill="black" />
@@ -505,18 +403,21 @@
               </p>
               <div id="descriptionPane2" class="description-pane2">
                 <div class="pane-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia magna in leo laoreet, sit amet efficitur arcu gravida.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia magna in leo laoreet, sit
+                    amet efficitur arcu gravida.</p>
                   <p>Suspendisse potenti. Curabitur at ante id sapien cursus auctor non eu erat.</p>
                   <p>Quisque eget suscipit ligula, at venenatis erat. Phasellus quis est at purus interdum auctor.</p>
                 </div>
               </div>
-              <div style="background: #9D9D9D;height: 0.5px;width: 96%;margin-left: 2%;margin-top: 8px; margin-bottom: 16px; "></div>
+              <div
+                style="background: #9D9D9D;height: 0.5px;width: 96%;margin-left: 2%;margin-top: 8px; margin-bottom: 16px; ">
+              </div>
 
               <div class="row col-md-8">
                 <span class="sizeguide11">EXCHANGE & RETURN INFORMATION</span>
               </div>
-              <p class="undelinesize1"  onclick="togglePane('descriptionPane3')"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                  viewBox="0 0 18 18" fill="none">
+              <p class="undelinesize1" onclick="togglePane('descriptionPane3')"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="18" height="18" viewBox="0 0 18 18" fill="none">
 
                   <path d="M8.99805 0C11.483 0 13.7335 1.00754 15.362 2.63603C16.9905 4.26507 17.998 6.51452 17.998 9C17.998 11.4849 
                   16.9905 13.7355 15.362 15.364C13.733 16.9925 11.483 18 8.99805 18C6.51257 18 4.26257 16.9925 2.63408 15.364C1.00558 
@@ -534,7 +435,8 @@
               </p>
               <div id="descriptionPane3" class="description-pane3">
                 <div class="pane-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia magna in leo laoreet, sit amet efficitur arcu gravida.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia magna in leo laoreet, sit
+                    amet efficitur arcu gravida.</p>
                   <p>Suspendisse potenti. Curabitur at ante id sapien cursus auctor non eu erat.</p>
                   <p>Quisque eget suscipit ligula, at venenatis erat. Phasellus quis est at purus interdum auctor.</p>
                 </div>
@@ -728,7 +630,8 @@
           <div class="position-relative">
             <img src="./assets/images/wildflower3.png" alt="girl2" class="img-fluid">
             <div class="heart-circle" id="heart-svg-container">
-              <svg xmlns="http://www.w3.org/2000/svg" width="43" height="44" viewBox="0 0 43 44" fill="none" id="heart-svg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="43" height="44" viewBox="0 0 43 44" fill="none"
+                id="heart-svg">
                 <path
                   d="M26.4501 13.4092C29.6289 13.4092 32.2149 16.0164 32.2149 19.2214C32.2149 26.1425 23.6821 31.5082 21.5507 32.7404C19.4167 31.5093 10.888 26.1546 10.888 19.2214C10.888 16.0167 13.4743 13.4092 16.653 13.4092C18.2258 13.4092 19.6957 14.0375 20.7925 15.1784L21.528 15.9435L21.5473 15.9241L21.571 15.9482L22.3106 15.1789C23.4071 14.0377 24.8771 13.4092 26.4501 13.4092ZM26.4501 12.3604C24.532 12.3604 22.8004 13.1617 21.5632 14.4489L21.5512 14.4368L21.5395 14.4486C20.3023 13.1617 18.5709 12.3606 16.653 12.3606C12.8945 12.3604 9.84766 15.4319 9.84766 19.2214C9.84766 27.8354 21.5512 33.9387 21.5512 33.9387C21.5512 33.9387 33.2552 27.8354 33.2552 19.2214C33.2552 15.4319 30.2084 12.3604 26.4501 12.3604Z"
                   fill="white" />

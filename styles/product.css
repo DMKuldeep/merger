@@ -45,6 +45,55 @@
   flex-shrink: 0;
 }
 
+
+
+/* fixing header  */
+.small-img img {
+  border: 2px solid transparent;
+  transition: transform 0.3s, border 0.3s;
+  cursor: pointer;
+}
+
+.small-img img.selected {
+  transform: scale(1.2); /* Enlarges the image slightly */
+}
+
+.container.stick-fixed {
+  display: flex
+;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 103px;
+  background: white;
+  color: black;
+  z-index: 10;
+  display: flex
+;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .SÖTBELLA {
   color: #000;
   text-align: center;
