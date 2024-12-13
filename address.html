@@ -135,10 +135,118 @@
                 </div>
               </div>
             </div>
-            <div>
+            <!-- <div>
               <button class="loginnow1" type="button">
                 Change or add address</button>
+            </div> -->
+
+
+            <div>
+              <button class="loginnow1" type="button" data-bs-toggle="modal" data-bs-target="#addressModal">
+                Change or Add Address
+              </button>
             </div>
+            <!-- Modal Structure -->
+<div class="modal fade" id="addressModal" tabindex="-1" aria-labelledby="addressModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="addressModalLabel">Saved Addresses</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Address List -->
+        <div class="col-md-12" style="border: 1px solid #888888; margin-bottom: 20px;">
+          <div class="row m-0">
+            <div class="col-md-12 remove-padding save-address-card">
+              <div class="save-address-radio">
+                <p class="radio">
+                  <input class="form-check-input" type="radio" name="radioNoLabel" id="radio1" value="" aria-label="..." checked>
+                </p>
+              </div>
+              <div class="coupontab coupon-card">
+                <p class="coupon-card-heading">Aritra Paul (Default)</p>
+                <div class="sa-card-description">
+                  <p class="">A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
+                  <p class="sa-mobile">Mobile: 7059285044</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-12" style="border: 1px solid #888888; margin-bottom: 20px;">
+          <div class="row m-0">
+            <div class="col-md-12 remove-padding save-address-card">
+              <div class="save-address-radio">
+                <p class="radio">
+                  <input class="form-check-input" type="radio" name="radioNoLabel" id="radio2" value="" aria-label="...">
+                </p>
+              </div>
+              <div class="coupontab coupon-card">
+                <p class="coupon-card-heading">John Deo</p>
+                <div class="sa-card-description">
+                  <p class="">A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
+                  <p class="sa-mobile">Mobile: 7059285044</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+        <div class="col-md-12" style="border: 1px solid #888888; margin-bottom: 20px;">
+          <div class="row m-0">
+            <div class="col-md-12 remove-padding save-address-card">
+              <div class="save-address-radio">
+                <p class="radio">
+                  <input class="form-check-input" type="radio" name="radioNoLabel" id="radio2" value="" aria-label="...">
+                </p>
+              </div>
+              <div class="coupontab coupon-card">
+                <p class="coupon-card-heading">John Deo</p>
+                <div class="sa-card-description">
+                  <p class="">A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
+                  <p class="sa-mobile">Mobile: 7059285044</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12" style="border: 1px solid #888888; margin-bottom: 20px;">
+          <div class="row m-0">
+            <div class="col-md-12 remove-padding save-address-card">
+              <div class="save-address-radio">
+                <p class="radio">
+                  <input class="form-check-input" type="radio" name="radioNoLabel" id="radio2" value="" aria-label="...">
+                </p>
+              </div>
+              <div class="coupontab coupon-card">
+                <p class="coupon-card-heading">John Deo</p>
+                <div class="sa-card-description">
+                  <p class="">A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
+                  <p class="sa-mobile">Mobile: 7059285044</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat for other addresses -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
             <div>
               <p class="addressorder">
                 ORDERS</p>
