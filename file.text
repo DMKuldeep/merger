@@ -1,74 +1,44 @@
-in this div the second image i need as slider carousel as below same as just add 3-4 image path and make it same only right side image is slide and only right side arrow is there 
 
-<div class="container-fluid row p-0 g-0 section2text">
+keep the images same size and same orientation) and the same color palette. The images are not necessarily the same size,
+but they should be similar in size. The images are not necessarily the same orientation, but they
+should be similar in orientation.
+1st left side image is static and another right should only slide and the the next button only slide to the right side.
+
+
+    <div class="container-fluid row p-0 g-0 section2text">
+      <!-- Left-side image -->
       <div class="col-md-6 p-0 image11">
         <div class="rightconer">
           <div class="bottom-right">Shirt Dress</div>
         </div>
       </div>
-      <div class="col-md-6 p-0 image22">
-        <div class="rightconer">
-          <div class="bottom-right">Bodycone Dress</div>
+      
+      <!-- Carousel -->
+      <div class="col-md-6 p-0">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner carasouelimage">
+            <!-- First Image as part of the carousel -->
+            <div class="carousel-item active">
+              <img src="./assets/images/grey1section3.jfif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/grey1section3.jfif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/grey1section3.jfif" class="d-block w-100" alt="...">
+            </div>
+          </div>
+    
+          <!-- Carousel controls -->
+          
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
+    
+    
+      
     </div>
-
-
-
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-      <div class="carousel-inner">
-        <!-- <button class="newdropbtn">NEW DROP</button> -->
-
-        <div class="carousel-item active">
-
-
-          <div class="container-fluid row p-0 g-0 section1text">
-            <div class="col-md-6 p-0 position-relative">
-              <video class="video" muted loop preload="auto">
-                <source src="./assets/videos/homepage1video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <img src="./assets/images/reddress1.jfif" alt="Image 1" class="image" />
-            </div>
-
-            <div class="col-md-6 p-0 position-relative">
-              <video class="video" muted loop preload="auto">
-                <source src="./assets/videos/156adc2bd6b84a66a84de99ef4431803 (1).mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <img src="./assets/images/whitedress1.jfif" alt="Image 2" class="image" />
-            </div>
-          </div>
-
-
-        </div>
-        <div class="carousel-item">
-
-          <div class="container-fluid col-md-12 p-0">
-            <video class="whitetopgirlvideo" autoplay muted loop>
-              <source src="./assets/videos/homepage2.mp4" type="video/mp4" />
-            </video>
-          </div>
-
-        </div>
-        <div class="carousel-item">
-
-
-          <div class="section6">
-            <div class="col-md-12 imagefullwidth">
-
-              <img src="./assets/images/homepage3imagetop.jfif" alt="SlideImage" class="w-100" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+    

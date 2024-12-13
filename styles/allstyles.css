@@ -127,7 +127,7 @@ input[type="range"]::-moz-range-thumb {
   width: 17px;
   border: none;
   border-radius: 50%;
-  background: green;
+  background: black;
   pointer-events: auto;
   -moz-appearance: none;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
