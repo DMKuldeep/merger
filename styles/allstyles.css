@@ -33,6 +33,210 @@
   display: block;
 }
 
+
+
+
+/* product price css */
+
+
+
+
+
+::selection {
+  color: black;
+  background: black;
+}
+.wrapper {
+  width: 100%;
+}
+
+
+.price-input {
+  width: 100%;
+  display: flex;
+  margin: 30px 0 35px;
+}
+.price-input .field {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  align-items: center;
+}
+.field input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 19px;
+  margin-left: 12px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #999;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.price-input .separator {
+  width: 50px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  height: 5px;
+  position: relative;
+  background: #ddd;
+  border-radius: 5px;
+}
+.slider .progress {
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: black;
+}
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: black !important;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+input[type="range"]::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  border: none;
+  border-radius: 50%;
+  background: black !important;
+  pointer-events: auto;
+  -moz-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.progress{
+  color:black
+}
+.offcanvas-start {
+  top: 108px !important;
+  left: 0;
+  width: 320px !important;
+  transform: translateX(-100%);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  border: 0.5px solid black;
+  padding: 4px;
+}
+
+
+/* General container styles */
+.filter-options-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 boxes per row */
+  gap: 10px; /* Space between the boxes */
+  padding: 10px 0;
+}
+
+/* Individual size box styles */
+.filter-options-list li {
+  list-style: none;
+}
+
+.checkbox-label {
+  display: inline-block;
+  position: relative;
+  
+  justify-content: center;
+  width: 60px; /* Width of the box */
+  height: 50px; /* Height of the box */
+  border: 0.5px solid black; /* Border around the box */
+  font-size: 12px; /* Font size for the size text */
+  font-family: 'Montserrat', sans-serif; /* Optional, for consistent style */
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  background-color: #f9f9f9; /* Optional, light background */
+  border-radius: 4px; /* Slight rounding for a modern look */
+  transition: all 0.2s ease-in-out; /* Smooth hover effects */
+}
+
+/* Style for the checkbox inside the box */
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  top: 3px; /* Inset from the top */
+  left: 3px; /* Inset from the left */
+  margin: 0;
+  width: 12px; /* Checkbox size */
+  height: 12px; /* Checkbox size */
+  cursor: pointer;
+}
+
+/* Hover effect for the box */
+.checkbox-label:hover {
+  background-color: #e6e6e6;
+  
+}
+
+.accordion-body ul {
+  display: flex
+;
+  /* flex-direction: column; */
+  gap: 15px;
+  /* padding-left: 10px; */
+}
+
+/* Checked state styling */
+
+
+
+/* product price css */
+
+
+/* filtersectitonfx css */
+
+
+.stick-fixed1 {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: white;
+    color: black;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+
+
+.row.stick-fixed1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+/* filtersectitonfx css */
+
+
 .image2last15{
 
   background: url("../assets/images/collectiion5.jfif") no-repeat center center;
@@ -457,12 +661,7 @@ display: none;
   color: #000;
 }
 
-.accordion-body ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding-left: 10px;
-}
+
 
 
 
@@ -500,7 +699,7 @@ input[type="checkbox"]:checked::after {
   /* position: absolute; */
   left: 100%;
   /* height: 100vh; */
-  width: 200px;
+  /* width: 200px; */
   top: 0;
   transition: all 0.3s ease 0s;
   display: block;
@@ -528,7 +727,13 @@ button.filterpaneapply {
   padding: 5px 10px;
 }
 
-/* filter toggle css */
+/* filter toggle css */.accordion-body ul {
+    display: flex
+    ;
+        /* flex-direction: column; */
+        gap: 15px;
+        /* padding-left: 10px; */
+    }
 
 
 
