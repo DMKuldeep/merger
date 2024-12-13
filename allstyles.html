@@ -50,7 +50,7 @@
   <div>
     <div id="navdark-placeholder"></div>
 
-    
+
     <div style="position: relative; top: 80px;">
       <div class="container col-md-12 text-start">
         <div class="row">
@@ -63,345 +63,351 @@
           <p class="coords">Co-Ords</p>
         </div>
       </div>
-      <div class="container col-md-12 text-start">
-        <div class=" row ">
-          <div class="row col-md-9">
-            <p class="filter" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M0.320033 4.09298e-05H14.6793C14.8031 4.09298e-05 14.9159 0.0747751 14.9691 0.192603C15.0224 0.310428 15.0057 0.449129 14.9274 0.550115L9.23072 7.86066V12.1831C9.23072 12.3104 9.16211 12.4269 9.05375 12.4841L6.23288 13.9647C6.13349 14.0165 6.01551 14.0111 5.92125 13.9498C5.82698 13.8886 5.76927 13.7802 5.76927 13.6637V7.86062L0.072552 0.550075C-0.00567841 0.449755 -0.0223501 0.310389 0.030871 0.192562C0.0840938 0.0747377 0.196948 0 0.320706 0L0.320033 4.09298e-05ZM0.996538 0.673319L6.33737 7.52745C6.38418 7.58737 6.40983 7.66278 6.40983 7.74088V13.1191L8.58933 11.9752V7.74093C8.58933 7.66351 8.61498 7.5881 8.66179 7.5275L14.0026 0.673371L0.996538 0.673319Z"
-                  fill="black" />
-              </svg>
-              &nbsp; Filter
-            </p>
+      <div class="col-md-12 text-start" style="    position: sticky;
+    top: 103px; background: white;z-index: 10;">
+        <div class="container">
+          <div class=" row ">
+            <div class="row col-md-9">
+              <p class="filter" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                aria-controls="offcanvasWithBackdrop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.320033 4.09298e-05H14.6793C14.8031 4.09298e-05 14.9159 0.0747751 14.9691 0.192603C15.0224 0.310428 15.0057 0.449129 14.9274 0.550115L9.23072 7.86066V12.1831C9.23072 12.3104 9.16211 12.4269 9.05375 12.4841L6.23288 13.9647C6.13349 14.0165 6.01551 14.0111 5.92125 13.9498C5.82698 13.8886 5.76927 13.7802 5.76927 13.6637V7.86062L0.072552 0.550075C-0.00567841 0.449755 -0.0223501 0.310389 0.030871 0.192562C0.0840938 0.0747377 0.196948 0 0.320706 0L0.320033 4.09298e-05ZM0.996538 0.673319L6.33737 7.52745C6.38418 7.58737 6.40983 7.66278 6.40983 7.74088V13.1191L8.58933 11.9752V7.74093C8.58933 7.66351 8.61498 7.5881 8.66179 7.5275L14.0026 0.673371L0.996538 0.673319Z"
+                    fill="black" />
+                </svg>
+                &nbsp; Filter
+              </p>
 
 
               <div class="offcanvas offcanvas-start headeraccordian" tabindex="-1" id="offcanvasWithBackdrop"
-              aria-labelledby="offcanvasWithBackdropLabel">
-              <div class="offcanvas-header" style="background-color:white;">
-                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel" style="opacity: 0;">Offcanvas with backdrop</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <p class="font_monte">FILTER </p>
-        
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                        aria-expanded="false" aria-controls="collapseOne">
-                        <p class="font_monte"> PRICE</p>
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse" aria-labelledby="headingOne"
-                      data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        
-                        <div class="d-flex">
-                          <div class="wrapper">
-                           <div class="slider">
-                              <div class="progress"></div>
-                            </div>
-                            <div class="range-input">
-                              <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                              <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                            </div>
-                            <div class="price-input">
-                              <div class="field">
-                                <span>Min</span>
-                                <input type="number" class="input-min" value="2500">
-                              </div>
-                              <div class="separator">-</div>
-                              <div class="field">
-                                <span>Max</span>
-                                <input type="number" class="input-max" value="7500">
-                              </div>
-                            </div>
-                            
-                          </div>
-                         
-                        </div>
-        
-        
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <p class="font_monte">PRODUCT TYPE</p>
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="checkbox-container">
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="checkbox1">
-                            <label for="checkbox1" class="font_monte">CO-ORD SET</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="checkbox2">
-                            <label for="checkbox2" class="font_monte">DRESS</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="checkbox3">
-                            <label for="checkbox3" class="font_monte">JUMPSUIT</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="blue">
-                            <label for="blue" class="font_monte">SHIRT</label>
-                          </div>
-                        </div>
-        
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <p class="font_monte">COLOR</p>
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                      data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="checkbox-container">
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="blue">
-                            <label for="blue" class="font_monte">BLUE</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="black">
-                            <label for="black" class="font_monte">BLACK</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="white">
-                            <label for="white" class="font_monte">WHITE</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="green">
-                            <label for="green" class="font_monte">GREEN</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="multi">
-                            <label for="multi" class="font_monte">MULTI</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="pink">
-                            <label for="pink" class="font_monte">PINK</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="orange">
-                            <label for="orange" class="font_monte">ORANGE</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="beige">
-                            <label for="beige" class="font_monte">BEIGE</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="red">
-                            <label for="red" class="font_monte">RED</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="grey">
-                            <label for="grey" class="font_monte">GREY</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="silver">
-                            <label for="silver" class="font_monte">SILVER</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="yellow">
-                            <label for="yellow" class="font_monte">YELLOW</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="aqua">
-                            <label for="aqua" class="font_monte">AQUA</label>
-                          </div>
-                        </div>
-                        
-        
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <p class="font_monte">MATERIAL</p>
-                      </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                      data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <div class="checkbox-container">
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="chiffon">
-                            <label for="chiffon" class="font_monte">CHIFFON</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="cotton">
-                            <label for="cotton" class="font_monte">COTTON</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="crepe">
-                            <label for="crepe" class="font_monte">CREPE</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="denim">
-                            <label for="denim" class="font_monte">DENIM</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="fleece">
-                            <label for="fleece" class="font_monte">FLEECE</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="gauze">
-                            <label for="gauze" class="font_monte">GAUZE</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="georgette">
-                            <label for="georgette" class="font_monte">GEORGETTE</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="knits">
-                            <label for="knits" class="font_monte">KNITS</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="leather">
-                            <label for="leather" class="font_monte">LEATHER</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="linen">
-                            <label for="linen" class="font_monte">LINEN</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="lurex">
-                            <label for="lurex" class="font_monte">LUREX</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="lycra">
-                            <label for="lycra" class="font_monte">LYCRA</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="organza">
-                            <label for="organza" class="font_monte">ORGANZA</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="polyester">
-                            <label for="polyester" class="font_monte">POLYESTER</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="poplin">
-                            <label for="poplin" class="font_monte">POPLIN</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="rayon">
-                            <label for="rayon" class="font_monte">RAYON</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="satin">
-                            <label for="satin" class="font_monte">SATIN</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="schiffli">
-                            <label for="schiffli" class="font_monte">SCHIFFLI</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="scuba">
-                            <label for="scuba" class="font_monte">SCUBA</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="sequin">
-                            <label for="sequin" class="font_monte">SEQUIN</label>
-                          </div>
-                          <div class="checkbox-item">
-                            <input type="checkbox" id="tencil">
-                            <label for="tencil" class="font_monte">TENCIL</label>
-                          </div>
-                        </div>
-                        
-        
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <p class="font_monte">SIZE</p>
-                      </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                      data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        <ul class="filter-options-list">
-                          <li>
-                            <label class="checkbox-label">
-                              <input type="checkbox" name="filter.v.option.size" value="XS">
-                              <span>XS</span>
-                            </label>
-                          </li>
-                          <li>
-                            <label class="checkbox-label">
-                              <input type="checkbox" name="filter.v.option.size" value="S">
-                              <span>S</span>
-                            </label>
-                          </li>
-                          <li>
-                            <label class="checkbox-label">
-                              <input type="checkbox" name="filter.v.option.size" value="M">
-                              <span>M</span>
-                            </label>
-                          </li>
+                aria-labelledby="offcanvasWithBackdropLabel">
+                <div class="offcanvas-header" style="background-color:white;">
+                  <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel" style="opacity: 0;">Offcanvas with
+                    backdrop
+                  </h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p class="font_monte">FILTER </p>
 
-                        </ul>
- 
-                      </div>
-                          <div class="accordion-body">
-                              <ul class="filter-options-list">
-                                <li>
-                                  <label class="checkbox-label">
-                                    <input type="checkbox" name="filter.v.option.size" value="L">
-                                    <span>L</span>
-                                  </label>
-                                </li>
-                                <li>
-                                  <label class="checkbox-label">
-                                    <input type="checkbox" name="filter.v.option.size" value="XL">
-                                    <span>XL</span>
-                                  </label>
-                                </li>
-                                <li>
-                                  <label class="checkbox-label">
-                                    <input type="checkbox" name="filter.v.option.size" value="XXL">
-                                    <span>XXL</span>
-                                  </label>
-                                </li>
-                              </ul>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          <p class="font_monte"> PRICE</p>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                          <div class="d-flex">
+                            <div class="wrapper">
+                              <div class="slider">
+                                <div class="progress"></div>
+                              </div>
+                              <div class="range-input">
+                                <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                              </div>
+                              <div class="price-input">
+                                <div class="field">
+                                  <span>Min</span>
+                                  <input type="number" class="input-min" value="2500">
+                                </div>
+                                <div class="separator">-</div>
+                                <div class="field">
+                                  <span>Max</span>
+                                  <input type="number" class="input-max" value="7500">
+                                </div>
+                              </div>
+
+                            </div>
 
                           </div>
-                         
-                        
-                       
+
+
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="bothbuttonsidebar" style="position: sticky; top: 0px; bottom: 0px;">
-                    <button class="filterpaneapply">APPLY</button>
-                    <button class="filterpaneapply">CLEAR ALL</button>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <p class="font_monte">PRODUCT TYPE</p>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="checkbox-container">
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="checkbox1">
+                              <label for="checkbox1" class="font_monte">CO-ORD SET</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="checkbox2">
+                              <label for="checkbox2" class="font_monte">DRESS</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="checkbox3">
+                              <label for="checkbox3" class="font_monte">JUMPSUIT</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="blue">
+                              <label for="blue" class="font_monte">SHIRT</label>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <p class="font_monte">COLOR</p>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="checkbox-container">
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="blue">
+                              <label for="blue" class="font_monte">BLUE</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="black">
+                              <label for="black" class="font_monte">BLACK</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="white">
+                              <label for="white" class="font_monte">WHITE</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="green">
+                              <label for="green" class="font_monte">GREEN</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="multi">
+                              <label for="multi" class="font_monte">MULTI</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="pink">
+                              <label for="pink" class="font_monte">PINK</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="orange">
+                              <label for="orange" class="font_monte">ORANGE</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="beige">
+                              <label for="beige" class="font_monte">BEIGE</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="red">
+                              <label for="red" class="font_monte">RED</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="grey">
+                              <label for="grey" class="font_monte">GREY</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="silver">
+                              <label for="silver" class="font_monte">SILVER</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="yellow">
+                              <label for="yellow" class="font_monte">YELLOW</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="aqua">
+                              <label for="aqua" class="font_monte">AQUA</label>
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <p class="font_monte">MATERIAL</p>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="checkbox-container">
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="chiffon">
+                              <label for="chiffon" class="font_monte">CHIFFON</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="cotton">
+                              <label for="cotton" class="font_monte">COTTON</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="crepe">
+                              <label for="crepe" class="font_monte">CREPE</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="denim">
+                              <label for="denim" class="font_monte">DENIM</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="fleece">
+                              <label for="fleece" class="font_monte">FLEECE</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="gauze">
+                              <label for="gauze" class="font_monte">GAUZE</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="georgette">
+                              <label for="georgette" class="font_monte">GEORGETTE</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="knits">
+                              <label for="knits" class="font_monte">KNITS</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="leather">
+                              <label for="leather" class="font_monte">LEATHER</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="linen">
+                              <label for="linen" class="font_monte">LINEN</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="lurex">
+                              <label for="lurex" class="font_monte">LUREX</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="lycra">
+                              <label for="lycra" class="font_monte">LYCRA</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="organza">
+                              <label for="organza" class="font_monte">ORGANZA</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="polyester">
+                              <label for="polyester" class="font_monte">POLYESTER</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="poplin">
+                              <label for="poplin" class="font_monte">POPLIN</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="rayon">
+                              <label for="rayon" class="font_monte">RAYON</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="satin">
+                              <label for="satin" class="font_monte">SATIN</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="schiffli">
+                              <label for="schiffli" class="font_monte">SCHIFFLI</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="scuba">
+                              <label for="scuba" class="font_monte">SCUBA</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="sequin">
+                              <label for="sequin" class="font_monte">SEQUIN</label>
+                            </div>
+                            <div class="checkbox-item">
+                              <input type="checkbox" id="tencil">
+                              <label for="tencil" class="font_monte">TENCIL</label>
+                            </div>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          <p class="font_monte">SIZE</p>
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul class="filter-options-list">
+                            <li>
+                              <label class="checkbox-label">
+                                <input type="checkbox" name="filter.v.option.size" value="XS">
+                                <span>XS</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="checkbox-label">
+                                <input type="checkbox" name="filter.v.option.size" value="S">
+                                <span>S</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="checkbox-label">
+                                <input type="checkbox" name="filter.v.option.size" value="M">
+                                <span>M</span>
+                              </label>
+                            </li>
+
+                          </ul>
+
+                        </div>
+                        <div class="accordion-body">
+                          <ul class="filter-options-list">
+                            <li>
+                              <label class="checkbox-label">
+                                <input type="checkbox" name="filter.v.option.size" value="L">
+                                <span>L</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="checkbox-label">
+                                <input type="checkbox" name="filter.v.option.size" value="XL">
+                                <span>XL</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="checkbox-label">
+                                <input type="checkbox" name="filter.v.option.size" value="XXL">
+                                <span>XXL</span>
+                              </label>
+                            </li>
+                          </ul>
+
+                        </div>
+
+
+
+                      </div>
+                    </div>
+                    <div class="bothbuttonsidebar" style="position: sticky; top: 0px; bottom: 0px;">
+                      <button class="filterpaneapply">APPLY</button>
+                      <button class="filterpaneapply">CLEAR ALL</button>
+                    </div>
                   </div>
                 </div>
+
               </div>
-        
+
+
             </div>
 
-
-          </div>
-
-          <!-- <div class="row col-md-2">
+            <!-- <div class="row col-md-2">
             <p class="filter1">
               <div class="custom-dropdown">
                 <button class="btn btn--link size--small dropdown-toggle">
@@ -429,9 +435,9 @@
               </div>
             </p>
           </div> -->
-          
 
-          <!-- <div class="row col-md-2">
+
+            <!-- <div class="row col-md-2">
             <p class="filter1">
               <div class="custom-dropdown">
                 <button class="btn btn--link size--small dropdown-toggle" onclick="toggleDropdown()">
@@ -459,68 +465,77 @@
               </div>
             </p>
           </div> -->
-          
-          <div class="row col-md-2">
-            <p class="filter1">
+
+            <div class="row col-md-2">
+              <p class="filter1">
               <div class="custom-dropdown">
-                <button id="dropdown-button" class="btn btn--link size--small dropdown-toggle" onclick="toggleDropdown()">
+                <button id="dropdown-button" class="btn btn--link size--small dropdown-toggle"
+                  onclick="toggleDropdown()">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                     <g clip-path="url(#clip0_1453_8445)">
-                      <rect x="1.04822" y="0.75" width="15.5" height="3.5" stroke="black" stroke-width="0.5"/>
-                      <rect x="1.04822" y="6.75" width="11.5" height="3.5" stroke="black" stroke-width="0.5"/>
-                      <rect x="1.04822" y="12.75" width="7.5" height="3.5" stroke="black" stroke-width="0.5"/>
+                      <rect x="1.04822" y="0.75" width="15.5" height="3.5" stroke="black" stroke-width="0.5" />
+                      <rect x="1.04822" y="6.75" width="11.5" height="3.5" stroke="black" stroke-width="0.5" />
+                      <rect x="1.04822" y="12.75" width="7.5" height="3.5" stroke="black" stroke-width="0.5" />
                     </g>
                     <defs>
                       <clipPath id="clip0_1453_8445">
-                        <rect width="17" height="17" fill="white" transform="translate(0.798218 0.5)"/>
+                        <rect width="17" height="17" fill="white" transform="translate(0.798218 0.5)" />
                       </clipPath>
                     </defs>
                   </svg>
                   <span id="dropdown-selected">Sort By</span>
                 </button>
                 <div id="dropdown-menu" class="dropdown-menu">
-                  <a class="dropdown-item" href="#" data-value="Best selling" onclick="selectOption(event)">Best selling</a>
-                  <a class="dropdown-item" href="#" data-value="Price, low to high" onclick="selectOption(event)">Price, low to high</a>
-                  <a class="dropdown-item" href="#" data-value="Price, high to low" onclick="selectOption(event)">Price, high to low</a>
-                  <a class="dropdown-item" href="#" data-value="Date, old to new" onclick="selectOption(event)">Date, old to new</a>
-                  <a class="dropdown-item" href="#" data-value="Date, new to old" onclick="selectOption(event)">Date, new to old</a>
+                  <a class="dropdown-item" href="#" data-value="Best selling" onclick="selectOption(event)">Best
+                    selling</a>
+                  <a class="dropdown-item" href="#" data-value="Price, low to high" onclick="selectOption(event)">Price,
+                    low to high</a>
+                  <a class="dropdown-item" href="#" data-value="Price, high to low" onclick="selectOption(event)">Price,
+                    high to low</a>
+                  <a class="dropdown-item" href="#" data-value="Date, old to new" onclick="selectOption(event)">Date,
+                    old
+                    to new</a>
+                  <a class="dropdown-item" href="#" data-value="Date, new to old" onclick="selectOption(event)">Date,
+                    new
+                    to old</a>
                 </div>
               </div>
-            </p>
-          </div>
-          
+              </p>
+            </div>
 
 
-          <div class="col-md-1 d-flex threesvg">
-            <span class="icon" data-target="collection1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none">
-                <rect x="1.04834" y="0.75" width="4.5" height="14.5" stroke="black" stroke-width="0.5"/>
-                <rect x="7.04834" y="0.75" width="4.5" height="14.5" stroke="black" stroke-width="0.5"/>
-              </svg>
-            </span>&nbsp;
 
-            <span class="icon" data-target="collection3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <rect x="1.04834" y="0.75" width="6.1" height="6.1" stroke="black" stroke-width="0.5" />
-                <rect x="1.04834" y="9.1499" width="6.1" height="6.1" stroke="black" stroke-width="0.5" />
-                <rect x="9.44849" y="0.75" width="6.1" height="6.1" stroke="black" stroke-width="0.5" />
-                <rect x="9.44849" y="9.1499" width="6.1" height="6.1" stroke="black" stroke-width="0.5" />
-              </svg>
-            </span>
+            <div class="col-md-1 d-flex threesvg">
+              <span class="icon" data-target="collection1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16" fill="none">
+                  <rect x="1.04834" y="0.75" width="4.5" height="14.5" stroke="black" stroke-width="0.5" />
+                  <rect x="7.04834" y="0.75" width="4.5" height="14.5" stroke="black" stroke-width="0.5" />
+                </svg>
+              </span>&nbsp;
+
+              <span class="icon" data-target="collection3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect x="1.04834" y="0.75" width="6.1" height="6.1" stroke="black" stroke-width="0.5" />
+                  <rect x="1.04834" y="9.1499" width="6.1" height="6.1" stroke="black" stroke-width="0.5" />
+                  <rect x="9.44849" y="0.75" width="6.1" height="6.1" stroke="black" stroke-width="0.5" />
+                  <rect x="9.44849" y="9.1499" width="6.1" height="6.1" stroke="black" stroke-width="0.5" />
+                </svg>
+              </span>
 
 
-            &nbsp; <span class="icon" data-target="collection2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <rect x="1.04822" y="0.75" width="6.1" height="6.1" stroke="black" stroke-width="0.5" />
-                <rect x="1.04822" y="8.75" width="14.5" height="6.5" stroke="black" stroke-width="0.5" />
-                <rect x="9.44666" y="0.75" width="6.1" height="6.1" stroke="black" stroke-width="0.5" />
-              </svg>
-            </span>
+              &nbsp; <span class="icon" data-target="collection2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <rect x="1.04822" y="0.75" width="6.1" height="6.1" stroke="black" stroke-width="0.5" />
+                  <rect x="1.04822" y="8.75" width="14.5" height="6.5" stroke="black" stroke-width="0.5" />
+                  <rect x="9.44666" y="0.75" width="6.1" height="6.1" stroke="black" stroke-width="0.5" />
+                </svg>
+              </span>
 
+            </div>
           </div>
         </div>
       </div>
-    
+
       <div id="collection1" class="collections">
 
 

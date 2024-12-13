@@ -63,6 +63,92 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <title>Homepage</title>
+
+    <script>
+        const textArray = [
+            { text: "Co-Ords", color: "#d9d9d9", fontWeight: "300", fontFamily: "Lato" },
+            { text: "Latest Fashion", color: "#d9d9d9", fontWeight: "300", fontFamily: "Lato" },
+            { text: "Shirt", color: "#d9d9d9", fontWeight: "300", fontFamily: "Lato" },
+            { text: "Pant", color: "#d9d9d9", fontWeight: "300", fontFamily: "Lato" },
+        ];
+
+        let index = 0; // To keep track of the current text index
+        let interval; // To store the interval ID
+
+        // Function to update the span text and style every 2 seconds
+        function updateText() {
+            const span = document.getElementById("dynamicText"); // Get the span element
+            const currentItem = textArray[index]; // Get the current text and style
+
+            span.textContent = currentItem.text; // Update span text
+            span.style.color = currentItem.color || "inherit"; // Apply color
+            span.style.fontWeight = currentItem.fontWeight || "normal"; // Apply font weight
+            span.style.fontFamily = currentItem.fontFamily || "inherit"; // Apply font family
+
+            index = (index + 1) % textArray.length; // Move to the next index, looping back to 0 if at the end
+        }
+
+        // Start the interval when the page loads
+        interval = setInterval(updateText, 2000);
+
+        // Function to disable placeholder and stop text updates when input is focused
+        function disablePlaceholder() {
+            document.getElementById("placeholder").style.display = "none"; // Hide the placeholder
+            clearInterval(interval); // Stop the interval
+        }
+
+        // Function to enable placeholder and resume text updates when input loses focus
+        function enablePlaceholder() {
+            const searchValue = document.getElementById("search").value; // Get the input value
+            if (searchValue.trim() === "") {
+                document.getElementById("placeholder").style.display = "block"; // Show the placeholder
+                interval = setInterval(updateText, 2000); // Restart the interval
+            }
+        }
+
+        const rangeInput = document.querySelectorAll(".range-input input"),
+            priceInput = document.querySelectorAll(".price-input input"),
+            range = document.querySelector(".slider .progress");
+        let priceGap = 1000;
+
+        priceInput.forEach((input) => {
+            input.addEventListener("input", (e) => {
+                let minPrice = parseInt(priceInput[0].value),
+                    maxPrice = parseInt(priceInput[1].value);
+
+                if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
+                    if (e.target.classList.contains("input-min")) {
+                        rangeInput[0].value = minPrice;
+                        range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+                    } else if (e.target.classList.contains("input-max")) {
+                        rangeInput[1].value = maxPrice;
+                        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+                    }
+                }
+            });
+        });
+
+        rangeInput.forEach((input) => {
+            input.addEventListener("input", (e) => {
+                let minVal = parseInt(rangeInput[0].value),
+                    maxVal = parseInt(rangeInput[1].value);
+
+                if (maxVal - minVal < priceGap) {
+                    if (e.target.classList.contains("range-min")) {
+                        rangeInput[0].value = maxVal - priceGap;
+                    } else if (e.target.classList.contains("range-max")) {
+                        rangeInput[1].value = minVal + priceGap;
+                    }
+                } else {
+                    priceInput[0].value = minVal;
+                    priceInput[1].value = maxVal;
+                    range.style.left = (minVal / rangeInput[0].max) * 100 + "%";
+                    range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+                }
+            });
+        });
+
+    </script>
 </head>
 
 <body>
@@ -126,21 +212,28 @@
 
     <div class="header">
         <div class="container stick-fixed">
-          <div class="row align-items-center headertop w-100">
-            <div class="col-md-7 d-flex align-items-center">
-              <img src="./assets/images/toggleblack.svg" alt="Toggle" class="toggle-icon">
-              <a href="./index.html" alt="Homepage" class="text-decoration-none">
-                <p class="SÖTBELLA">SÖTBELLA</p>
-              </a>
+            <div class="row align-items-center headertop w-100">
+                <div class="col-md-7 d-flex align-items-center">
+                    <img src="./assets/images/toggleblack.svg" alt="Toggle" class="toggle-icon">
+                    <a href="./index.html" alt="Homepage" class="text-decoration-none">
+                        <p class="SÖTBELLA">SÖTBELLA</p>
+                    </a>
+                </div>
+                <div class="col-md-5 d-flex justify-content-end gap-2">
+                    <form class="d-flex searchbar">
+                        <input id="search" class="form-control" type="text" placeholder="" aria-label="Search"
+                            onfocus="disablePlaceholder()" onblur="enablePlaceholder()">
+                        <div class="placeholder" id="placeholder" style="display: block;">
+                            Search For <span id="dynamicText"
+                                style="font-family: Lato; color: rgb(217, 217, 217); font-weight: 300;">Pant</span>
+                        </div>
+                    </form>
+                    <a href="./account.html" class="text-reset accountproduct">MY ACCOUNT</a>
+                    <a href="./cart.html" class="text-reset bagproduct">SHOPPING BAG</a>
+                </div>
             </div>
-            <div class="col-md-5 d-flex justify-content-end gap-2">
-              <a href="./index.html" class="text-reset searchproduct">SEARCH</a>
-              <a href="./account.html" class="text-reset accountproduct">MY ACCOUNT</a>
-              <a href="./cart.html" class="text-reset bagproduct">SHOPPING BAG</a>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 </body>
 
 </html>
