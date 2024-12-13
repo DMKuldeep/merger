@@ -626,6 +626,16 @@ p.shippingforu {
   line-height: 16px;
 }
 
+p.shippingforu1 {
+  margin-top: -19px;
+  color: #3d3d3d;
+  font-family: Lato;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
 p.customername {
   color: #000;
   font-family: Lato;

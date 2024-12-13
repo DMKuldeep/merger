@@ -2,15 +2,20 @@
 
 
 
-
 function changeToStandard() {
   // Select buttons
   var standardBtn = document.querySelector('.standarddelivery');
   var expressBtn = document.querySelector('.expressdelivery');
 
-  // Change text
+  // Select paragraph and elements to show
   var paragraph = document.querySelector('.expressdeliveryfees');
+  var shippingforu1 = document.querySelector('.shippingforu1');
+
+  // Change text
   paragraph.textContent = 'Free';
+
+  // Show free shipping text
+  shippingforu1.style.display = 'block';
 
   // Change button styles
   standardBtn.style.backgroundColor = '#3d3d3d';
@@ -20,13 +25,19 @@ function changeToStandard() {
 }
 
 function changeToExpress() {
-  // Select button
+  // Select buttons
   var standardBtn = document.querySelector('.standarddelivery');
   var expressBtn = document.querySelector('.expressdelivery');
 
-  // Change text
+  // Select paragraph and elements to hide
   var paragraph = document.querySelector('.expressdeliveryfees');
+  var shippingforu1 = document.querySelector('.shippingforu1');
+
+  // Change text
   paragraph.textContent = '₹75';
+
+  // Hide free shipping text
+  shippingforu1.style.display = 'none';
 
   // Change button styles
   standardBtn.style.backgroundColor = '#f0f0f0';
@@ -34,6 +45,7 @@ function changeToExpress() {
   expressBtn.style.backgroundColor = '#3d3d3d';
   expressBtn.style.color = '#fff';
 }
+
 
 
 const videoContainers = document.querySelectorAll('.image-container');

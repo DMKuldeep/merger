@@ -1,40 +1,46 @@
- need css when i click small image it gets little out and stic there when i clic second then that one out and stick there and so on
- 
- 
- 
- 
-  <div class="col-md-6 team-1-column-sticky" style="padding-top: 45px;">
-          <div class="flex-box">
-            <!-- Small Images -->
-            <div class="images">
-              <div class="small-img">
-                <img src="./assets/images/productview1.jfif" onclick="showImg(this.src)">
-              </div>
-              <div class="small-img">
-                <img src="./assets/images/productview2.jfif" onclick="showImg(this.src)">
-              </div>
-              <div class="small-img">
-                <img src="./assets/images/productview3.jfif" onclick="showImg(this.src)">
-              </div>
-              <div class="small-img">
-                <img src="./assets/images/productview4.jfif" onclick="showImg(this.src)">
-              </div>
-              <div class="small-img">
-                <img src="./assets/images/productview5.jfif" onclick="showImg(this.src)">
-              </div>
-              <div class="small-img">
-                <img src="./assets/images/productview6.jfif" onclick="showImg(this.src)">
-              </div>
-              <div class="small-img">
-                <img src="./assets/images/productview7.jfif" onclick="showImg(this.src)">
-              </div>
-            </div>
-            <!-- Big Image -->
-            <div class="big-img">
-              <div class="big-img productPageFullImage">
-                <img src="./assets/images/collection1.jfif" loading="lazy" alt="Product Image">
-              </div>
-            </div>
 
-          </div>
-        </div>
+now this one is correct just add when again click of button standandartd delivery it unhide
+
+function changeToStandard() {
+  // Select buttons
+  var standardBtn = document.querySelector('.standarddelivery');
+  var expressBtn = document.querySelector('.expressdelivery');
+
+  // Select paragraph and elements to show
+  var paragraph = document.querySelector('.expressdeliveryfees');
+  var freeShipping = document.querySelector('.shippingforu');
+
+  // Change text
+  paragraph.textContent = 'Free';
+
+  // Show free shipping text
+  freeShipping.style.display = 'block';
+
+  // Change button styles
+  standardBtn.style.backgroundColor = '#3d3d3d';
+  standardBtn.style.color = '#fff';
+  expressBtn.style.backgroundColor = '#f0f0f0';
+  expressBtn.style.color = '#888';
+}
+
+function changeToExpress() {
+  // Select buttons
+  var standardBtn = document.querySelector('.standarddelivery');
+  var expressBtn = document.querySelector('.expressdelivery');
+
+  // Select paragraph and elements to hide
+  var paragraph = document.querySelector('.expressdeliveryfees');
+  var shippingforu1 = document.querySelector('.shippingforu1');
+
+  // Change text
+  paragraph.textContent = '₹75';
+
+  // Hide free shipping text
+  shippingforu1.style.display = 'none';
+
+  // Change button styles
+  standardBtn.style.backgroundColor = '#f0f0f0';
+  standardBtn.style.color = '#888';
+  expressBtn.style.backgroundColor = '#3d3d3d';
+  expressBtn.style.color = '#fff';
+}

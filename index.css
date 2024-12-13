@@ -33,6 +33,18 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* searchbar css */
 
 .searchbar {
@@ -51,14 +63,21 @@ form.d-flex.searchbar {
 }
 
 .searchbar .form-control {
+
+
+
+
   display: block;
   width: 100%;
-  font-size: 1rem;
+  height: 24px; /* Set the height */
+  font-size: 10px; /* Font size for input text */
   font-weight: 300;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
+  border: 0.5px solid black; /* Border with 0.5px width */
+  border-radius: 4px; /* Optional: adjust based on your design */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -79,13 +98,61 @@ form.d-flex.searchbar {
   transition: opacity 0.3s ease;
 }
 
-.placeholder span {
-  color: black;
-}
+
 
 .placeholder.hidden {
   opacity: 0; /* Hide the placeholder smoothly */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-control::placeholder {
+  font-size: 10px; /* Font size for placeholder text */
+  color: #999; /* Adjust the color if needed */
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Adjust to align with input padding */
+  transform: translateY(-50%);
+  font-size: 10px; /* Placeholder text size */
+  color: #999;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.placeholder span {
+  font-size: 10px; /* Dynamic text size */
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
