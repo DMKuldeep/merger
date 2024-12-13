@@ -1,69 +1,114 @@
 on click of view coupon  need to show down side div in modal or in op up set it 
 
-
-<div class="col-md-12">
-            <div class="d-flex justify-content-center">
-              <p class="viewcoupon">
-                View all coupons &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12"
-                  fill="none">
-                  <path
-                    d="M6 5.99683C5.9999 6.10431 5.95476 6.20735 5.87451 6.28331L0.740799 11.121C0.701634 11.1608 0.654403 11.1927 0.601926 11.2149C0.549448 11.2371 0.492798 11.249 0.435356 11.2499C0.377914 11.2509 0.320856 11.2409 0.267587 11.2205C0.214317 11.2001 0.165927 11.1698 0.125303 11.1313C0.0846785 11.0928 0.052653 11.0469 0.0311364 10.9964C0.0096199 10.946 -0.000946921 10.8919 6.65784e-05 10.8375C0.00108008 10.783 0.0136531 10.7293 0.0370354 10.6796C0.0604177 10.6299 0.0941303 10.5851 0.136162 10.548L4.96185 5.9698L0.101937 1.36456C0.0517307 1.28558 0.031439 1.19273 0.0444103 1.10135C0.0573816 1.00997 0.102841 0.925504 0.173287 0.861898C0.243734 0.798292 0.334959 0.759343 0.431909 0.751478C0.52886 0.743612 0.625743 0.767301 0.706574 0.818635L5.8688 5.71035C5.90957 5.74751 5.94216 5.79197 5.96468 5.84114C5.9872 5.89031 5.99921 5.94323 6 5.99683Z"
-                    fill="black" />
-                </svg>
-              </p>
+ <div>
+              <button class="loginnow1" type="button">
+                Change or add address</button>
             </div>
-          </div>
 
 
-
-
-           <div>
-              <div class="tabs-heading">COUPONS</div>
+<div>
+              <div class="tabs-heading">SAVED ADDRESS</div>
 
               <div class="col-md-12" style="border: 1px solid #888888; position: relative; margin-bottom: 20px;">
-
                 <div class="row m-0">
-                  <div class="col-md-12 remove-padding">
-                    <div class="coupontab coupon-card ">
+                  <div class="col-md-12 remove-padding save-address-card">
+                    <div class="save-address-radio">
+                      <!--  -->
+                      <p class="radio">
+                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="..." checked>
 
-                      <p class="coupon-card-heading">Get upto 50% on order | Black Friday Sale</p>
-                      <div style="display: flex; justify-content: space-between;">
-                        <p class="coupon-card-description">Code: EXTRA20</p>
-                        <div><button style="background: black; color: white;" class="coupon-button">APPLY</button></div>
+                      </p>
+                    </div>
+                    <div class="coupontab coupon-card">
+                      <p class="coupon-card-heading">Aritra Paul (Default)</p>
+
+                      <div class="sa-card-description">
+                        <p class="">A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
+                        <p class="sa-mobile">Mobile: 7059285044</p>
                       </div>
+
+
+
+
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-12" style="border: 1px solid #888888; position: relative; margin-bottom: 20px;">
-
                 <div class="row m-0">
-                  <div class="col-md-12 remove-padding">
-                    <div class="coupontab coupon-card ">
+                  <div class="col-md-12 remove-padding save-address-card">
+                    <div class="save-address-radio">
+                      <!--  -->
+                      <p class="radio">
+                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                          aria-label="...">
+                      </p>
+                    </div>
+                    <div class="coupontab coupon-card">
+                      <p class="coupon-card-heading">John Deo</p>
 
-                      <p class="coupon-card-heading">Get upto 50% on order | Black Friday Sale</p>
-                      <div style="display: flex; justify-content: space-between;">
-                        <p class="coupon-card-description">Code: EXTRA20</p>
-                        <div><button style="background: black; color: white;" class="coupon-button">APPLY</button></div>
+                      <div class="sa-card-description">
+                        <p class="">A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
+                        <p class="sa-mobile">Mobile: 7059285044</p>
                       </div>
+
+
+
+
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-12" style="border: 1px solid #888888; position: relative; margin-bottom: 20px;">
-
                 <div class="row m-0">
-                  <div class="col-md-12 remove-padding">
-                    <div class="coupontab coupon-card ">
+                  <div class="col-md-12 remove-padding save-address-card">
+                    <div class="save-address-radio">
+                      <!--  -->
+                      <p class="radio">
+                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                          aria-label="...">
+                      </p>
+                    </div>
+                    <div class="coupontab coupon-card">
+                      <p class="coupon-card-heading">John Deo</p>
 
-                      <p class="coupon-card-heading">Get upto 50% on order | Black Friday Sale</p>
-                      <div style="display: flex; justify-content: space-between;">
-                        <p class="coupon-card-description">Code: EXTRA20</p>
-                        <div><button style="background: black; color: white;" class="coupon-button">APPLY</button></div>
+                      <div class="sa-card-description">
+                        <p class="">A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
+                        <p class="sa-mobile">Mobile: 7059285044</p>
                       </div>
+
+
+
+
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="col-md-12" style="border: 1px solid #888888; position: relative; margin-bottom: 20px;">
+                <div class="row m-0">
+                  <div class="col-md-12 remove-padding save-address-card">
+                    <div class="save-address-radio">
+                      <!--  -->
+                      <p class="radio">
+                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
+                          aria-label="...">
+                      </p>
+                    </div>
+                    <div class="coupontab coupon-card">
+                      <p class="coupon-card-heading">John Deo</p>
+
+                      <div class="sa-card-description">
+                        <p class="">A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
+                        <p class="sa-mobile">Mobile: 7059285044</p>
+                      </div>
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
 
             </div>
