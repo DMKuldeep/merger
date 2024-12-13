@@ -80,5 +80,26 @@ document.getElementById('heart-container').addEventListener('click', function ()
 
 
 
+// Show Modal
+function showModal() {
+  document.getElementById("couponModal").style.display = "block";
+}
+
+// Close Modal
+function closeModal() {
+  document.getElementById("couponModal").style.display = "none";
+}
+
+// Close Modal When Clicking Outside
+window.onclick = function(event) {
+  const modal = document.getElementById("couponModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
+
+
+
+
 
 
