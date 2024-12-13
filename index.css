@@ -323,17 +323,10 @@ line-height: 64px; /* 114.286% */
 }
 
 
-
-
 .list-inline {
-  display: inline-flex;
-  gap: 10px; /* Uniform gap between links */
-
-    padding-left: 0;
-    list-style: none;
-    margin-left: -21px;
+  padding-left: px;
+  list-style: none;
 }
-
 
 a.text-reset {
   text-decoration: none;
