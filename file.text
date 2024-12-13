@@ -1,46 +1,76 @@
+in this div the second image i need as slider carousel as below same as just add 3-4 image path and make it same only right side image is slide and only right side arrow is there 
 
-now this one is correct just add when again click of button standandartd delivery it unhide
+<div class="container-fluid row p-0 g-0 section2text">
+      <div class="col-md-6 p-0 image11">
+        <div class="rightconer">
+          <div class="bottom-right">Shirt Dress</div>
+        </div>
+      </div>
+      <div class="col-md-6 p-0 image22">
+        <div class="rightconer">
+          <div class="bottom-right">Bodycone Dress</div>
+        </div>
+      </div>
+    </div>
 
-function changeToStandard() {
-  // Select buttons
-  var standardBtn = document.querySelector('.standarddelivery');
-  var expressBtn = document.querySelector('.expressdelivery');
 
-  // Select paragraph and elements to show
-  var paragraph = document.querySelector('.expressdeliveryfees');
-  var freeShipping = document.querySelector('.shippingforu');
 
-  // Change text
-  paragraph.textContent = 'Free';
 
-  // Show free shipping text
-  freeShipping.style.display = 'block';
 
-  // Change button styles
-  standardBtn.style.backgroundColor = '#3d3d3d';
-  standardBtn.style.color = '#fff';
-  expressBtn.style.backgroundColor = '#f0f0f0';
-  expressBtn.style.color = '#888';
-}
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-function changeToExpress() {
-  // Select buttons
-  var standardBtn = document.querySelector('.standarddelivery');
-  var expressBtn = document.querySelector('.expressdelivery');
+      <div class="carousel-inner">
+        <!-- <button class="newdropbtn">NEW DROP</button> -->
 
-  // Select paragraph and elements to hide
-  var paragraph = document.querySelector('.expressdeliveryfees');
-  var shippingforu1 = document.querySelector('.shippingforu1');
+        <div class="carousel-item active">
 
-  // Change text
-  paragraph.textContent = '₹75';
 
-  // Hide free shipping text
-  shippingforu1.style.display = 'none';
+          <div class="container-fluid row p-0 g-0 section1text">
+            <div class="col-md-6 p-0 position-relative">
+              <video class="video" muted loop preload="auto">
+                <source src="./assets/videos/homepage1video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <img src="./assets/images/reddress1.jfif" alt="Image 1" class="image" />
+            </div>
 
-  // Change button styles
-  standardBtn.style.backgroundColor = '#f0f0f0';
-  standardBtn.style.color = '#888';
-  expressBtn.style.backgroundColor = '#3d3d3d';
-  expressBtn.style.color = '#fff';
-}
+            <div class="col-md-6 p-0 position-relative">
+              <video class="video" muted loop preload="auto">
+                <source src="./assets/videos/156adc2bd6b84a66a84de99ef4431803 (1).mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <img src="./assets/images/whitedress1.jfif" alt="Image 2" class="image" />
+            </div>
+          </div>
+
+
+        </div>
+        <div class="carousel-item">
+
+          <div class="container-fluid col-md-12 p-0">
+            <video class="whitetopgirlvideo" autoplay muted loop>
+              <source src="./assets/videos/homepage2.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+
+
+          <div class="section6">
+            <div class="col-md-12 imagefullwidth">
+
+              <img src="./assets/images/homepage3imagetop.jfif" alt="SlideImage" class="w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
