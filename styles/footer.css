@@ -563,16 +563,7 @@ p.customeraddress {
   font-size: 12px;
 }
 
-/* .toptext {
-  color: #fff;
-  font-family: "Lato", sans-serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  margin-top: 11px;
-  margin-bottom: 10px;
-} */
+
 
 .copy-btn {
   font-family: "Lato";
@@ -886,5 +877,63 @@ input[type="email"]::placeholder {
 
   .faq-item {
     margin-bottom: 20px;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .col-md-1, .footer .col-md-2, .footer .col-md-3, .footer .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer .app-icons img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .social-links {
+    justify-content: center;
+  }
+
+  .footer .app-icons img {
+    width: 80px;
+  }
+
+  .footer .reserved {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer .footer-input,
+  .footer .footer-input1 {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .footer .footer-heading {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .footer .app-icons img {
+    width: 70px;
+  }
+
+  .footer .social-links {
+    gap: 10px;
+  }
+
+  .footer .social-links img {
+    width: 20px;
+    height: 20px;
   }
 }

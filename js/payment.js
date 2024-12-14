@@ -92,21 +92,20 @@ document.getElementById('heart-container').addEventListener('click', function ()
 
 
 
-// Show Modal
 function showModal() {
-  document.getElementById("couponModal").style.display = "block";
+  document.getElementById('couponModal').style.display = 'block';
 }
 
-// Close Modal
+// Function to close the modal
 function closeModal() {
-  document.getElementById("couponModal").style.display = "none";
+  document.getElementById('couponModal').style.display = 'none';
 }
 
-// Close Modal When Clicking Outside
+// Close the modal when clicking outside it
 window.onclick = function(event) {
-  const modal = document.getElementById("couponModal");
+  const modal = document.getElementById('couponModal');
   if (event.target === modal) {
-    modal.style.display = "none";
+    modal.style.display = 'none';
   }
 };
 

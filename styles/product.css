@@ -133,7 +133,7 @@ a.text-reset.bagproduct {
 
 a.text-reset.accountproduct {
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -152,7 +152,7 @@ a.text-reset.accountproduct {
 
 .coupon {
   height: 100%;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   background-color: white;
   width: 411px;
   padding: 16px;
@@ -168,7 +168,7 @@ a.text-reset.accountproduct {
   margin-bottom: 8px;
 
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -178,7 +178,7 @@ a.text-reset.accountproduct {
 
 .coupon .secondline {
   color: #3d3d3d;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -188,7 +188,7 @@ a.text-reset.accountproduct {
 
 .coupon .thirdline {
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -199,7 +199,7 @@ a.text-reset.accountproduct {
 
 .pricetax {
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -208,7 +208,7 @@ a.text-reset.accountproduct {
 
 .container1 .thirdline span .thirdlinedate {
   color: #3d3d3d;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -223,7 +223,7 @@ a.text-reset.accountproduct {
   border: 0.5px solid #9d9d9d;
   display: flex;
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -251,7 +251,7 @@ p.undelinesize1 {
 .heading9 p {
   color: #000;
   text-align: left;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -280,7 +280,7 @@ hr:not([size]) {
 .heading8 p {
   color: #000;
   text-align: center;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -292,7 +292,7 @@ hr:not([size]) {
 
 .heading9 .customersay {
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -353,20 +353,13 @@ hr:not([size]) {
       rgba(90, 90, 90, 0.50) 100%),
     lightgray 50% / contain no-repeat;
   filter: grayscale(100%);
-  /* Makes the image appear disabled */
-  opacity: 0.7;
-  /* Slightly faded effect */
+  opacity: 0.3;
 }
 
-/* Selected small image style */
 .small-img img.selected {
   background: none;
-  /* Removes the overlay */
   filter: none;
-  /* Removes grayscale effect */
-  opacity: 1;
-  /* Full opacity for the selected image */
-  /* transform: scale(1.2);  */
+  opacity: 6;
   transition: all 0.3s ease;
   color: linear-gradient(0deg,
       rgba(90, 90, 90, 0.50) 0%,
@@ -404,7 +397,7 @@ form.d-flex.searchbar {
   border: 0.5px solid lightgray;
   margin-top: 18px;
   height: 30px;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   border-radius: 0px !important;
 }
 .form-control::placeholder {
@@ -494,7 +487,7 @@ p.undelinesize {
 
 .p .underline {
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -505,7 +498,7 @@ p.undelinesize {
 
 p.offwhite {
   color: #3d3d3d;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -524,7 +517,7 @@ a:visited {
   margin-top: 24px;
   margin-bottom: 24px;
   color: #3D3D3D;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -533,7 +526,7 @@ a:visited {
 
 .material p {
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -547,7 +540,7 @@ a:visited {
 .quantity p {
   margin-bottom: 8px;
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -612,7 +605,7 @@ button {
 
 p.offerline {
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -629,7 +622,7 @@ p.extraoff {
   align-self: stretch;
   align-items: center;
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -658,7 +651,7 @@ p.gapreview {
   margin-top: 16px;
   margin-left: 16px;
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -687,7 +680,7 @@ input[type="text"] {
 
 .reviews span {
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -714,7 +707,7 @@ input[type="text"] {
 
 .hurry {
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -725,7 +718,7 @@ input[type="text"] {
 
 .checkdelivery p {
   color: #000;
-  font-family: ''Lato'';
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -998,16 +991,7 @@ img.toggle-icon {
   margin-top: 43px;
 }
 
-.testimonial {
-  color: #000;
-  text-align: center;
-  font-family: Alike;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 44px;
-  margin-bottom: 40px;
-}
+
 
 .line4 {
   text-decoration: "underline";
@@ -1079,7 +1063,7 @@ p.line4 {
 }
 
 .reserved {
-  font-family: "'Lato'", serif;
+  font-family: 'Lato' serif;
   color: gray;
   font-size: 12px;
   font-style: normal;
@@ -1096,7 +1080,7 @@ p.line4 {
 }
 
 .withus {
-  font-family: "'Lato'", sans-serif;
+  font-family: 'Lato' sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #000;
@@ -1127,7 +1111,7 @@ p.line4 {
 }
 
 .mini-head {
-  font-family: "'Lato'";
+  font-family: 'Lato';
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1140,7 +1124,7 @@ p.line4 {
 
 .toptext {
   color: #fff;
-  font-family: "'Lato'", sans-serif;
+  font-family: 'Lato' sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1151,7 +1135,7 @@ p.line4 {
 }
 
 .copy-btn {
-  font-family: "'Lato'";
+  font-family: 'Lato';
   background-color: white;
   color: black;
   border: none;
@@ -1165,7 +1149,7 @@ p.line4 {
   text-decoration: none;
   color: white;
   color: #fff;
-  font-family: "'Lato'";
+  font-family: 'Lato';
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1208,7 +1192,7 @@ p.line4 {
   text-decoration: none;
   /* Remove underline from links */
   color: #fff;
-  font-family: "'Lato'";
+  font-family: 'Lato';
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1220,7 +1204,7 @@ p.line4 {
 .sticky-top ul li a {
   text-decoration: none;
   color: #fff;
-  font-family: "'Lato'";
+  font-family: 'Lato';
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1363,7 +1347,7 @@ input[type="email"]::placeholder {
   align-items: flex-start;
   display: flex;
   color: #000;
-  font-family: "'Lato'";
+  font-family: 'Lato';
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -1475,7 +1459,7 @@ p.satin {
   gap: 10px;
 
   text-align: center;
-  font-family: "'Lato'";
+  font-family: 'Lato';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1676,7 +1660,7 @@ p.satin {
 
 .smallpara {
   color: #000;
-  font-family: "'Lato'";
+  font-family: 'Lato';
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
@@ -1687,7 +1671,7 @@ p.satin {
 .shopbtn {
   color: #fff;
   text-align: center;
-  font-family: "'Lato'";
+  font-family: 'Lato';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1697,7 +1681,7 @@ p.satin {
 
 .imageheading {
   color: #000;
-  font-family: "'Lato'";
+  font-family: "Lato";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2231,10 +2215,10 @@ p.satin {
 }
 
 .knockutdetail {
-  font-family: "'Lato'";
+  font-family: 'Lato';
   font-size: 20px;
   color: #3d3d3d;
-  font-family: "'Lato'";
+  font-family: 'Lato';
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -2248,7 +2232,7 @@ p.satin {
 } */
 
 .reserved {
-  font-family: "'Lato'", serif;
+  font-family: 'Lato' serif;
   color: gray;
   font-size: 12px;
   font-style: normal;
@@ -2265,7 +2249,7 @@ p.satin {
 }
 
 .withus {
-  font-family: "'Lato'", sans-serif;
+  font-family: 'Lato' sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #000;
