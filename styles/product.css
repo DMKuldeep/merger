@@ -143,6 +143,9 @@ a.text-reset.accountproduct {
 }
 
 
+/* zoom effect  */
+
+
 
 .coupon .container1 {
   background-color: white;
@@ -1802,7 +1805,7 @@ p.satin {
 }
 
 .heart-circle svg {
-  margin-top: 8px;
+  margin-top: 0px;
   margin-left: -18px;
 }
 
@@ -1844,6 +1847,35 @@ p.satin {
   transform-origin: center center;
   /* Optional to control where the zoom effect originates */
 }
+
+/* Main image container */
+.productPageFullImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+/* Zoom container styles */
+.zoom-container {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  width: 300px; /* Adjust size as needed */
+  height: 300px; /* Adjust size as needed */
+  border: 2px solid #ccc;
+  overflow: hidden;
+  display: none; /* Initially hidden */
+  background-repeat: no-repeat;
+  background-size: 150%; /* Control zoom level */
+  z-index: 1000;
+}
+
+/* When hovering on the main image */
+.productPageFullImage:hover + .zoom-container {
+  display: block;
+}
+
 
 
 
