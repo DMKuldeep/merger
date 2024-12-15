@@ -1856,20 +1856,7 @@ p.satin {
   cursor: zoom-in;
 }
 
-/* Zoom container styles */
-.zoom-container {
-  position: fixed;
-  top: 10%;
-  right: 10%;
-  width: 300px; /* Adjust size as needed */
-  height: 300px; /* Adjust size as needed */
-  border: 2px solid #ccc;
-  overflow: hidden;
-  display: none; /* Initially hidden */
-  background-repeat: no-repeat;
-  background-size: 150%; /* Control zoom level */
-  z-index: 1000;
-}
+
 
 /* When hovering on the main image */
 .productPageFullImage:hover + .zoom-container {
