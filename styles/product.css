@@ -115,12 +115,13 @@
   left: 0px;
   top: 150px;
   bottom: 0px;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%);
   display: flex
 ;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   right: 0px;
+  z-index: 1;
 }
 img#bigImage {
   width: 100%;
