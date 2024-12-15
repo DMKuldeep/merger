@@ -91,11 +91,11 @@
           <div class="flex-box">
             <!-- Small Images -->
             <div class="images">
-              <div class="small-img">
-                <img src="./assets/images/productview1.jfif" onclick="showImg(this.src)">
-              </div>
               <div class="small-img active">
-                <img src="./assets/images/productview2.jfif" onclick="showImg(this.src)">
+                <img class="selected" src="./assets/images/productview1.jfif" onclick="showImg(this.src)">
+              </div>
+              <div class="small-img  ">
+                <img  src="./assets/images/productview2.jfif" onclick="showImg(this.src)">
               </div>
               <div class="small-img">
                 <img src="./assets/images/productview3.jfif" onclick="showImg(this.src)">
@@ -116,7 +116,7 @@
             <!-- Big Image with Zoom Effect -->
             <div class="big-img">
               <div class="productPageFullImage" onmousemove="zoomEffect(event)" onmouseleave="resetZoom()">
-                <img id="bigImage" src="./assets/images/collection1.jfif" loading="lazy" alt="Product Image">
+                <img id="bigImage" src="./assets/images/productview1.jfif" loading="lazy" alt="Product Image">
               </div>
               <!-- Magnifier (Zoomed Area) -->
               <div class="zoom-container"></div>
@@ -126,11 +126,14 @@
         </div>
         <div class="col-md-1" style="
         padding-top: 45px;
+        margin-left: -31px;
+
     ">
           <div class="verticalline"></div>
         </div>
         <div class="container col-md-5" style="
         padding-top: 40px;
+        margin-left: 31px;
     ">
           <div class="right">
             <div class="url">BASIC WHITE TOP AND SKIRT CO-ORD SET</div>
