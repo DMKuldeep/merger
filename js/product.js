@@ -195,6 +195,20 @@ function handleMousemove(event) {
   let yAxis = event.offsetY / height * 100;
   inner.style.transform = `translate(-${xAxis}%, -${yAxis}%)`;
 }
+// Select the element
+const box = document.getElementById('bigImage');
+const box2 = document.getElementById('openpanelimage');
+
+
+// Add event listeners for hover
+box.addEventListener('mouseover', () => {
+  box2.classList.add('open');
+});
+
+
+box.addEventListener('mouseout', () => {
+  box.classList.remove('hovered');
+});
 
 
 
