@@ -115,7 +115,7 @@
             </div>
             <!-- Big Image with Zoom Effect -->
             <div class="big-img">
-              <div class="productPageFullImage" onmousemove="zoomEffect(event)" onmouseleave="resetZoom()">
+              <div class="productPageFullImage left" onmousemove="zoomEffect(event)" onmouseleave="resetZoom()">
                 <img id="bigImage" src="./assets/images/productview1.jfif" loading="lazy" alt="Product Image">
               </div>
               <!-- Magnifier (Zoomed Area) -->
@@ -134,7 +134,18 @@
         <div class="container col-md-5" style="
         padding-top: 40px;
         margin-left: 31px;
+        position: relative;
+
     ">
+
+
+<div class="openpanelimage">
+  <div class="inner">
+    <img id="bigImage" src="./assets/images/productview1.jfif" loading="lazy" alt="Product Image">
+  </div>
+</div>
+
+
           <div class="right">
             <div class="url">BASIC WHITE TOP AND SKIRT CO-ORD SET</div>
             <div class="pname">
@@ -424,6 +435,7 @@
         </div>
       </div>
     </div>
+
   </div>
   <div class="container heading9 mb-4 text-center">
     <p class="customersay">What do customers say</p>
