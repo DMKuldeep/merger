@@ -735,11 +735,30 @@ display: none;
 .size-options label:nth-child(n+4) {
   margin-top: 10px; /* Pushes the rest to the next row */
 }
-
-
+.dropdown-menu.show {
+  display: block;
+  font-size: 12px;
+  font-family: 'Lato';
+}
+button#dropdown-button {
+  margin-left: 70px;
+}
 
 .checkbox-container {
-  gap: 10px;
+  gap: 3px;
+  margin-top: -19px;
+}
+.accordion-header {
+  margin-bottom: -8px;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 22px !important;
+  height: 16px !important;
+  margin-left: auto;
+  content: "";
+
 }
 
 .checkbox-label {
