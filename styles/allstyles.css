@@ -760,6 +760,15 @@ button#dropdown-button {
   content: "";
 
 }
+.sortyfilter {
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: capitalize;
+}
 
 .checkbox-label {
   display: flex;
