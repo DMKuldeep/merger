@@ -1505,6 +1505,26 @@ a {
 
 
 
+span.carousel-control-next-icon.custom-icon {
+  margin-left: 0px !important;
+  color: #d9d9d9;
+}
+
+.carousel-control-next-icon1 {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+.carousel-control-next-icon1 {
+  margin-left: 142px;
+}
+
+
+
 
 
 

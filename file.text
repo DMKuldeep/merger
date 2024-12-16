@@ -162,6 +162,18 @@ function togglePane(paneId, toggleId) {
 
 
 
+span.carousel-control-next-icon.custom-icon {
+  margin-left: 0px !important;
+  color: #d9d9d9;
+}
+
+button is hidden and not working 
+
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon custom-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>  on click of next slide is not coming
 
 
 
