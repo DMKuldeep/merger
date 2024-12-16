@@ -1,7 +1,6 @@
-
-let bigImg = document.querySelector('.big-img img');
-let zoomContainer = document.querySelector('.zoom-container');
-let thumbnails = document.querySelectorAll('.small-img img');
+let bigImg = document.querySelector(".big-img img");
+let zoomContainer = document.querySelector(".zoom-container");
+let thumbnails = document.querySelectorAll(".small-img img");
 
 function zoomEffect(event) {
   const rect = bigImg.getBoundingClientRect();
@@ -30,34 +29,51 @@ function showImg(pic) {
   bigImg.src = pic;
   zoomContainer.style.backgroundImage = `url('${pic}')`;
 
-  thumbnails.forEach(img => img.classList.remove('selected'));
-  event.target.classList.add('selected');
+  thumbnails.forEach((img) => img.classList.remove("selected"));
+  event.target.classList.add("selected");
 }
 
+const inner = document.querySelector(".inner");
+const left = document.querySelector(".left");
+left.addEventListener("mousemove", handleMousemove, false);
+function handleMousemove(event) {
+  let { width, height } = this.getBoundingClientRect();
+  let xAxis = (event.offsetX / width) * 100;
+  let yAxis = (event.offsetY / height) * 100;
+  inner.style.transform = `translate(-${xAxis}%, -${yAxis}%)`;
+}
+// Select the element
+const box = document.getElementById("bigImage");
+const box2 = document.getElementById("openpanelimage");
 
-const decreaseButton = document.getElementById('decrease');
-const increaseButton = document.getElementById('increase');
-const numberDisplay = document.getElementById('number');
+// Add event listeners for hover
+box.addEventListener("mouseover", () => {
+  box2.classList.add("open");
+});
+
+box.addEventListener("mouseout", () => {
+  box.classList.remove("hovered");
+});
+
+const decreaseButton = document.getElementById("decrease");
+const increaseButton = document.getElementById("increase");
+const numberDisplay = document.getElementById("number");
 
 let count = 0;
 
-decreaseButton.addEventListener('click', () => {
-    if (count > 0) {
-        count--;
-        numberDisplay.textContent = count;
-    }
+decreaseButton.addEventListener("click", () => {
+  if (count > 0) {
+    count--;
+    numberDisplay.textContent = count;
+  }
 });
 
-increaseButton.addEventListener('click', () => {
-    if (count < 5) {
-        count++;
-        numberDisplay.textContent = count;
-    }
+increaseButton.addEventListener("click", () => {
+  if (count < 5) {
+    count++;
+    numberDisplay.textContent = count;
+  }
 });
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const sizeElements = document.querySelectorAll(".psize");
@@ -72,22 +88,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const videoContainers = document.querySelectorAll('.image-container');
+const videoContainers = document.querySelectorAll(".image-container");
 
-videoContainers.forEach(container => {
-  const video = container.querySelector('video');
+videoContainers.forEach((container) => {
+  const video = container.querySelector("video");
 
-  container.addEventListener('mouseenter', () => {
-    video.style.display = 'block';
+  container.addEventListener("mouseenter", () => {
+    video.style.display = "block";
     video.play();
   });
 
-  container.addEventListener('mouseleave', () => {
+  container.addEventListener("mouseleave", () => {
     video.pause();
-    video.style.display = 'none';
+    video.style.display = "none";
   });
 });
-
 
 document.querySelectorAll("#heart-svg").forEach((heartIcon) => {
   heartIcon.addEventListener("click", function () {
@@ -122,33 +137,26 @@ document.querySelectorAll("#heart-svg").forEach((heartIcon) => {
   });
 });
 
-
-
-
-
-
-
-
-
 setTimeout(() => {
-  const topTextElement = document.getElementById('toptext');
-  topTextElement.textContent = "20% OFF on orders over ₹10,000 | Code: DIWALI10";
-}, 2000); 
+  const topTextElement = document.getElementById("toptext");
+  topTextElement.textContent =
+    "20% OFF on orders over ₹10,000 | Code: DIWALI10";
+}, 2000);
 
-document.getElementById('heart-container').addEventListener('click', function () {
-  const whiteHeart = document.getElementById('white-heart');
-  const blackHeart = document.getElementById('black-heart');
+document
+  .getElementById("heart-container")
+  .addEventListener("click", function () {
+    const whiteHeart = document.getElementById("white-heart");
+    const blackHeart = document.getElementById("black-heart");
 
-  if (whiteHeart.style.display === 'block') {
-    whiteHeart.style.display = 'none'; // Hide white heart
-    blackHeart.style.display = 'block'; // Show black heart
-  } else {
-    whiteHeart.style.display = 'block'; // Show white heart
-    blackHeart.style.display = 'none'; // Hide black heart
-  }
-});
-
-
+    if (whiteHeart.style.display === "block") {
+      whiteHeart.style.display = "none"; // Hide white heart
+      blackHeart.style.display = "block"; // Show black heart
+    } else {
+      whiteHeart.style.display = "block"; // Show white heart
+      blackHeart.style.display = "none"; // Hide black heart
+    }
+  });
 
 // Function to toggle the visibility of the description pane
 function togglePane(paneId) {
@@ -159,7 +167,6 @@ function togglePane(paneId) {
     pane.style.display = "none";
   }
 }
-
 
 function togglePane(paneId, toggleId) {
   const pane = document.getElementById(paneId);
@@ -181,38 +188,3 @@ function togglePane(paneId, toggleId) {
                 </svg>    `;
   }
 }
-
-
-
-
-
-const inner = document.querySelector(".inner");
-const left = document.querySelector(".left");
-left.addEventListener("mousemove", handleMousemove, false);
-function handleMousemove(event) {
-  let { width, height } = this.getBoundingClientRect();
-  let xAxis = event.offsetX / width * 100;
-  let yAxis = event.offsetY / height * 100;
-  inner.style.transform = `translate(-${xAxis}%, -${yAxis}%)`;
-}
-// Select the element
-const box = document.getElementById('bigImage');
-const box2 = document.getElementById('openpanelimage');
-
-
-// Add event listeners for hover
-box.addEventListener('mouseover', () => {
-  box2.classList.add('open');
-});
-
-
-box.addEventListener('mouseout', () => {
-  box.classList.remove('hovered');
-});
-
-
-
-
-
-
-

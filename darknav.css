@@ -138,7 +138,6 @@ a.text-reset.accountproduct {
 .coupon .firstline {
   margin-top: 16px;
   margin-bottom: 8px;
-
   color: #000;
   font-family: Lato;
   font-size: 12px;
@@ -1754,10 +1753,10 @@ p.satin {
   height: 30px;
 }
 
-.heart-circle svg {
+/* .heart-circle svg {
   margin-top: 8px;
   margin-left: -18px;
-}
+} */
 
 .heart-circle svg path {
   transition: fill 0.3s ease;
@@ -2383,22 +2382,21 @@ form.d-flex.searchbar {
 }
 
 .searchbar .form-control {
+
   display: block;
   width: 100%;
-  font-size: 1rem;
+  height: 24px; /* Set the height */
+  font-size: 10px; /* Font size for input text */
   font-weight: 300;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
+  border: 0.5px solid #d9d9d9; /* Border with 0.5px width */
+  border-radius: 0px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border: 0.5px solid lightgray;
-  margin-top: 18px;
-  height: 30px;
-  font-family: 'Lato';
-  border-radius: 0px !important;
 }
 .form-control::placeholder {
   color: transparent; 
@@ -2408,7 +2406,7 @@ form.d-flex.searchbar {
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
-  font-size: 16px;
+  font-size: 11px;
   color: #999;
   pointer-events: none;
   transition: opacity 0.3s ease;
@@ -2419,6 +2417,9 @@ form.d-flex.searchbar {
 }
 form.d-flex.searchbar {
   margin-right: 0px;
+  padding-top: 17px;
+  width: 150px;
+  /* font-size: 10px; */
 }
 .homepagelinkssidebar {
   margin-right: -66px;
