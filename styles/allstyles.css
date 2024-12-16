@@ -568,9 +568,13 @@ p.coords {
   margin-bottom: 24px;
 }
 
+
+
 .col-md-1.d-flex.threesvg {
-  gap: 4px;
+  /* gap: 14px; */
   margin-left: 48px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 

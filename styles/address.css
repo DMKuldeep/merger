@@ -1085,7 +1085,7 @@ p.item1price1 {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  margin-bottom: -5px;
+  margin-bottom: 8px;
   margin-top: -6px;
 }
 
@@ -1096,6 +1096,16 @@ p.item1price1 {
   width: 430px;
   background-color: #281a1a21;
   /* color: #5a1010; */
+}
+
+button.addnewaddress {
+  font-family: 'lato';
+  height: 24px;
+  font-size: 12px;
+  /* float: left; */
+  color: white;
+  background: black;
+  margin-right: 520px;
 }
 
 .app-icon {

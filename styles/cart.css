@@ -1886,6 +1886,9 @@ p.item1price1 {
   width: 30px;
   height: 30px;
 }
+.checkboxsection1 {
+  position: relative;
+}
 
 .heart-circle svg {
   margin-top: 8px;

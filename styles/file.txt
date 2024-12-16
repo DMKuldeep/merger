@@ -82,3 +82,33 @@
   filter: invert(0%) sepia(100%) saturate(500%) hue-rotate(0deg);
   transform: scale(1.1);
 }
+
+
+
+i need that checkbox at the top left of the image 
+<div class="col-md-2">
+                      <div class="checkboxsection1">
+                        <div class="d-flex align-items-center">
+                          <input type="checkbox" id="checkbox1">
+    
+                        </div>
+                      </div>
+                      <img src="./assets/images/collection1.jfif" alt="white dress"
+                        style="height: 140px; width: 119px; object-fit: cover;" />
+                    </div>
+
+
+                    want to reduce gap between the line name address and next line  <div class="col-md-12" style="border: 1px solid #888888; margin-bottom: 20px;">
+                      <div class="row m-0">
+                        <div class="col-auto save-address-radio">
+                          <input class="form-check-input" type="radio" name="radioNoLabel" id="radio2" value="" aria-label="...">
+                        </div>
+                        <div class="col coupontab coupon-card">
+                          <p class="coupon-card-heading">John Deo</p>
+                          <div class="sa-card-description">
+                            <p>A-216, Sector - 83, Noida, Uttar Pradesh, 201308</p>
+                            <p class="sa-mobile">Mobile: 7059285044</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
