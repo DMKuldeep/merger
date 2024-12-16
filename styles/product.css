@@ -472,7 +472,6 @@ form.d-flex.searchbar {
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
-
 .placeholder span {
   color: black;
 }
