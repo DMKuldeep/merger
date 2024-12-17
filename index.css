@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap");
 
 
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { }
 
 * {
   margin: 0;
@@ -31,6 +32,20 @@
   gap: 16px;
 
 }
+
+/* Ensures videos and images stay responsive */
+.video, .image {
+  object-fit: cover;
+}
+
+
+/* Handles video for smaller screens */
+@media (max-width: 768px) {
+  .video, .image {
+    height: auto;
+  }
+}
+
 
 
 
