@@ -1,0 +1,37 @@
+<div class="col-md-9">
+  <div class="d-flex align-items-center">
+    <label id="itemselected" class="itemselected">0/5 Items selected</label>
+  </div>
+</div>
+
+<div class="row multipleitemlist">
+  <div class="moreproducts">
+    <!-- Example of 5 cards -->
+    <div class="col-md-12">
+      <div class="row cartitemsection">
+        <div class="col-md-2">
+          <div class="checkboxsection1 position-relative">
+            <input type="checkbox" class="item-checkbox" />
+            <img src="./assets/images/collection1.jfif" alt="Item Image" style="height: 140px; width: 119px; object-fit: cover;" />
+          </div>
+        </div>
+      </div>
+      <div class="row cartitemsection">
+        <div class="col-md-2">
+          <div class="checkboxsection1 position-relative">
+            <input type="checkbox" class="item-checkbox" />
+            <img src="./assets/images/collection1.jfif" alt="Item Image" style="height: 140px; width: 119px; object-fit: cover;" />
+          </div>
+        </div>
+      </div>
+      <div class="row cartitemsection">
+        <div class="col-md-2">
+          <div class="checkboxsection1 position-relative">
+            <input type="checkbox" class="item-checkbox" />
+            <img src="./assets/images/collection1.jfif" alt="Item Image" style="height: 140px; width: 119px; object-fit: cover;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

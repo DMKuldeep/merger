@@ -71,6 +71,28 @@ document.querySelectorAll("#heart-svg").forEach((heartIcon) => {
   });
 });
 
+// Get all checkbox elements
+const checkboxes = document.querySelectorAll('.item-checkbox');
+const selectedLabel = document.getElementById('itemselected');
+
+// Total number of items
+const totalItems = checkboxes.length;
+
+// Function to update the count
+function updateSelectionCount() {
+  const checkedCount = document.querySelectorAll('.item-checkbox:checked').length;
+  selectedLabel.textContent = `${checkedCount}/${totalItems} Items selected`;
+}
+
+// Add event listeners to each checkbox
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener('change', updateSelectionCount);
+});
+
+// Initial update
+updateSelectionCount();
+
+
 
 
 
