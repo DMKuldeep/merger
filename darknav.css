@@ -14,6 +14,11 @@
   overflow: hidden;
 }
 
+/* .col-md-5.d-flex.justify-content-end.gap-2.p-0 {
+ 
+  margin-left: -70px;
+} */
+
 .divimage {
   display: flex;
   width: 300px;
